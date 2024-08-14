@@ -4,15 +4,15 @@ import SliderBar from "./SliderBar";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
 export default function Slider() {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState<number>(0);
   const [items, setItems] = useState<string[]>([]);
   const len: number = heroImgs.length;
 
-  const handleCurrent = (item: number) => {
+  const handleCurrent = (item: number): void => {
     setCurrent(item);
   };
 
-  const nextSlide = () => {
+  const nextSlide = (): void => {
     if (current + 1 >= len) {
       setCurrent(0);
     } else {
@@ -20,11 +20,11 @@ export default function Slider() {
     }
   };
 
-  useEffect(() => {
+  useEffect((): void => {
     setItems((prev: string[]) => [...prev, ...heroImgs]);
   }, [current]);
 
-  const prevSlide = () => {
+  const prevSlide = (): void => {
     if (current - 1 < 0) {
       setCurrent(len - 1);
     } else {
@@ -33,10 +33,16 @@ export default function Slider() {
   };
 
   return (
-    <div className="relative flex w-full h-full">
+    <div className="flex relative w-full h-full">
       {items.map((slide, index) => {
         if (current === index) {
-          return <img key={index} src={slide} alt={`Image ${index + 1}`}></img>;
+          return (
+            <div
+              key={index}
+              style={{ backgroundImage: `url(${slide})` }}
+              className="w-full h-full bg-no-repeat bg-cover"
+            ></div>
+          );
         }
       })}
 
