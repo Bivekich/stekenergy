@@ -1,6 +1,6 @@
 export default function AboutComapny() {
   return (
-    <div className="flex justify-center items-center w-full h-[60%]">
+    <div className="flex justify-center items-center w-full h-screen min-w-screen">
       <div className="w-full h-5/6">
         <div className="w-full h-full flex justify-center">
           <div className="flex flex-col w-[29%] h-full justify-center mr-20">

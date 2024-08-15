@@ -20,7 +20,7 @@ export default function MainProducts() {
   }, []);
 
   return (
-    <div className="flex w-screen min-h-screen">
+    <div className="flex w-screen min-h-fit mb-20">
       <div className="flex mt-10 w-full text-white flex-col justify-center items-center">
         <div className="flex w-full h-fit justify-center mb-14">
           <span className="text-5xl text-bold text-[#333333]">ПРОДУКЦИЯ</span>
@@ -46,7 +46,7 @@ export default function MainProducts() {
           </li>
         </ul>
 
-        <div className="flex justify-center w-11/12 mt-20">
+        <div className="flex justify-center w-11/12 mt-20 m-auto">
           <div className="grid grid-cols-4 gap-x-2">
             {images.map((item, index) => {
               console.log(item);

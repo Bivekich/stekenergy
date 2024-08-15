@@ -35,15 +35,19 @@ export default function Slider() {
   return (
     <div className="flex relative w-full h-full">
       {items.map((slide, index) => {
-        if (current === index) {
-          return (
-            <div
-              key={index}
-              style={{ backgroundImage: `url(${slide})` }}
-              className="w-full h-full bg-no-repeat bg-cover"
-            ></div>
-          );
-        }
+        return (
+          <div
+            className={`absolute w-full h-full transition-transform duration-1000 ease-in-out ${
+              index === current
+                ? "translate-x-0"
+                : index < current
+                ? "-translate-x-full"
+                : "translate-x-full"
+            }`}
+          >
+            <img key={index} src={`${slide}`} className="w-full h-full"></img>
+          </div>
+        );
       })}
 
       <div className="flex absolute h-full items-center ml-14">

@@ -2,9 +2,9 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 export default function Products() {
   return (
-    <div className="bg-red-600 w-screen h-screen">
+    <div className="bg-red-600 w-screen h-screen min-h-screen min-w-screen">
       <div className="grid grid-cols-2 md:grid-cols-3 grid-rows-4 gap-0 h-full w-full">
-        <div className="flex w-full h-full row-span-4  bg-[url('/factory.webp')] bg-no-repeat bg-cover justify-center items-center text-center text-white flex-col gap-20">
+        <div className="flex w-full h-full row-span-4 bg-[url('/factory.webp')] bg-no-repeat bg-cover justify-center items-center text-center text-white flex-col gap-20">
           <div>
             <img src="/royal.webp"></img>
           </div>
@@ -17,16 +17,16 @@ export default function Products() {
               вами и совместного развития для многообещающего будущего!
             </span>
           </div>
-          <div>
-            <button className="w-48 h-14 border-t-2 border-b-2">
-              VIEW MORE +
+          <div className="transition-colors duration-300 ease-in-out hover:bg-[#b4b4b5] hover:text-black">
+            <button className="w-48 h-14 border-t-2 border-b-2 text-lg">
+              <span className="flex items-center justify-center">БОЛЬШЕ +</span>
             </button>
           </div>
         </div>
 
         <div className="row-span-2 h-full object-cover">
           <div className="relative w-full h-full">
-            <div className="w-full h-full bg-[url('/metalformingeq.webp')] bg-no-repeat bg-cover"></div>
+            <div className="w-full h-full bg-[url('/metalformingeq.webp')] bg-no-repeat bg-cover bg-center"></div>
 
             <div className="flex absolute bottom-0 w-full h-24 items-center justify-between">
               <span className="ml-7 text-xl">
@@ -40,7 +40,7 @@ export default function Products() {
 
         <div className="row-span-2 col-start-1 md:col-start-2 row-start-3">
           <div className="relative w-full h-full">
-            <div className="w-full h-full bg-[url('/powergen.webp')] bg-no-repeat bg-cover"></div>
+            <div className="w-full h-full bg-[url('/powergen.webp')] bg-no-repeat bg-cover bg-center"></div>
 
             <div className="flex absolute bottom-0 w-full h-24 items-center justify-between">
               <span className="ml-7 text-xl">Генераторы энергии</span>
@@ -52,7 +52,7 @@ export default function Products() {
 
         <div className="row-span-2 col-start-2 md:col-start-3 row-start-1">
           <div className="relative w-full h-full">
-            <div className="w-full h-full bg-[url('/coldChain.webp')] bg-no-repeat bg-cover"></div>
+            <div className="w-full h-full bg-[url('/coldChain.webp')] bg-no-repeat bg-cover bg-center"></div>
 
             <div className="flex absolute bottom-0 w-full h-24 items-center justify-between">
               <span className="ml-7 text-xl">Холодильные хранилища</span>
@@ -64,7 +64,7 @@ export default function Products() {
 
         <div className="row-span-2 col-start-2 md:col-start-3 row-start-3">
           <div className="relative w-full h-full">
-            <div className="w-full h-full bg-[url('/waterpump.webp')] bg-no-repeat bg-cover"></div>
+            <div className="w-full h-full bg-[url('/waterpump.webp')] bg-no-repeat bg-cover bg-center"></div>
 
             <div className="flex absolute bottom-0 w-full h-24 items-center justify-between">
               <span className="ml-7 text-xl">Водяной насосы</span>
