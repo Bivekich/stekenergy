@@ -5,7 +5,6 @@ import Products from "./componensts/Products/Products";
 import MainProducts from "./componensts/MainProducts/MainProducts";
 import Contact from "./componensts/Contact/Contact";
 import Power from "./componensts/Power/Power";
-import Nothing from "./componensts/Nothing/Nothin";
 import News from "./componensts/News/News";
 import Footer from "./componensts/Footer/Footer";
 export default function App() {

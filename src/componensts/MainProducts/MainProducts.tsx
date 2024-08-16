@@ -19,6 +19,15 @@ export default function MainProducts() {
     }
   }, []);
 
+  const product = [
+    { title: "Дизельный генератор", ref: "#" },
+    { title: "азотурбинный двигатель", ref: "#" },
+    { title: "Морской генератор", ref: "#" },
+    { title: "Металлообрабатывающее оборудование", ref: "#" },
+    { title: "Дизельный насосный агрегат", ref: "#" },
+    { title: "Газовый генератор", ref: "#" },
+  ];
+
   return (
     <div className="flex w-screen min-h-fit mb-20">
       <div className="flex mt-10 w-full text-white flex-col justify-center items-center">
@@ -26,24 +35,16 @@ export default function MainProducts() {
           <span className="text-5xl text-bold text-[#333333]">ПРОДУКЦИЯ</span>
         </div>
         <ul className="flex flex-row gap-5 justify-center">
-          <li className="flex bg-[#0e6eb8] w-52 h-16 items-center justify-center">
-            <a>Дизельный генератор</a>
-          </li>
-          <li className="flex bg-[#0e6eb8] w-52 h-16 items-center justify-center">
-            <a>Газотурбинный двигатель</a>
-          </li>
-          <li className="flex bg-[#0e6eb8] w-52 h-16 items-center justify-center">
-            <a>Морской генератор</a>
-          </li>
-          <li className="flex bg-[#0e6eb8] w-80 h-16 items-center justify-center">
-            <a>Металлообрабатывающее оборудование</a>
-          </li>
-          <li className="flex bg-[#0e6eb8] w-52 h-16 items-center justify-center">
-            <a>Газовый генератор</a>
-          </li>
-          <li className="flex bg-[#0e6eb8] w-64 h-16 items-center justify-center">
-            <a>Дизельный насосный агрегат</a>
-          </li>
+          {product.map((item, index) => {
+            return (
+              <li
+                key={index}
+                className="flex bg-[#0e6eb8] w-52 h-16 items-center justify-center text-center"
+              >
+                <a href={item.ref}>{item.title}</a>
+              </li>
+            );
+          })}
         </ul>
 
         <div className="flex justify-center w-11/12 mt-20 m-auto">

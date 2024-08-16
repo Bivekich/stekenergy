@@ -44,10 +44,10 @@ export default {
       animation: {
         underlineGrow: "underlineGrow 0.3s ease-in-out forwards",
         showRight: "showRight 0.3 ease-in-out forwards",
-        slideInRight: "slideInRight 1s ease-in-out forwards",
+        slideInRight: "slideInRight 0.5s ease-in-out forwards",
         slideInLeft: "slideInLeft 1s ease-in-out forwards",
-        slideOutRight: "slideOutRight 1s ease-in-out forwards",
-        slideOutLeft: "slideOutLeft 1s ease-in-out forwards",
+        slideOutRight: "slideOutRight 0.5s ease-in-out forwards",
+        slideOutLeft: "slideOutLeft 0.5s ease-in-out forwards",
       },
     },
   },

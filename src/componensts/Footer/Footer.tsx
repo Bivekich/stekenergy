@@ -13,6 +13,27 @@ export default function Footer() {
       setEmailRequired(true);
     }
   };
+  /*            */
+  const productCategory = [
+    "Дизельный генератор",
+    "Морской генератор",
+    "Газовый генератор",
+    "Оборудование для обработки металла",
+    "Холодильная камера",
+    "Дизельная насосная установка",
+    "Химические вещества",
+  ];
+
+  const quickLinks = [
+    "Главная",
+    "Продукция",
+    "О нас",
+    "Новости",
+    "Свяжитесь с нами",
+    "Скачать",
+    "Часто задаваемые вопросы",
+    "Политика конфиденциальности",
+  ];
 
   const handleMassageRequired = (e: React.FormEvent<HTMLTextAreaElement>) => {
     if (e.currentTarget.value !== "") {
@@ -23,124 +44,69 @@ export default function Footer() {
   };
   return (
     <div className="flex w-full min-h-[50rem] flex-col bg-[#222222] text-white justify-center items-center">
-      <div className="flex-grow flex w-3/4 nin-h-2/4 gap-x-24 flex-wrap justify-center">
+      <div className="flex-grow flex min-w-3/4 nin-h-2/4 gap-x-24 flex-wrap justify-center">
         <div className="flex flex-col gap-5 mt-10">
           <img src="/logo-1.webp" className="w-64"></img>
           <span className="w-80">
-            We look forward to establishing good cooperative relations with you
-            and seeking development together for a promising future!
+            Мы с нетерпением ждем установления хороших партнерских отношений с
+            вами и совместного развития для многообещающего будущего!
           </span>
           <ul className="flex gap-2">
-            <li className="flex bg-red-600 w-8 h-8 items-center justify-center rounded-full">
+            <li className="flex bg-[#ffffff] w-8 h-8 items-center justify-center rounded-full">
               <a>
-                <FaFacebookF />
+                <FaFacebookF fill="#0e6eb8" />
               </a>
             </li>
-            <li className="flex bg-red-600 w-8 h-8 items-center justify-center rounded-full">
+            <li className="flex bg-[#ffffff] w-8 h-8 items-center justify-center rounded-full">
               <a>
-                <FaXTwitter />
+                <FaXTwitter fill="#0e6eb8" />
               </a>
             </li>
-            <li className="flex bg-red-600 w-8 h-8 items-center justify-center rounded-full">
+            <li className="flex bg-[#ffffff] w-8 h-8 items-center justify-center rounded-full">
               <a>
-                <IoLogoYoutube />
+                <IoLogoYoutube fill="#0e6eb8" />
               </a>
             </li>
-            <li className="flex bg-red-600 w-8 h-8 items-center justify-center rounded-full">
+            <li className="flex bg-[#ffffff] w-8 h-8 items-center justify-center rounded-full">
               <a>
-                <FaInstagram />
+                <FaInstagram fill="#0e6eb8" />
               </a>
             </li>
           </ul>
         </div>
 
         <div className="flex flex-col mt-10 gap-1">
-          <span className="text-2xl w-56">Product Category</span>
+          <span className="text-2xl w-56">Категория товара</span>
           <ul className="flex flex-col gap-1">
-            <li>
-              <a href="#" className="hover:text-blue-400">
-                Diesel Generator
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-400">
-                Marine Generator
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-400">
-                Gas Generator
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-400">
-                Metel Forming Equipment
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-400">
-                Cold Storage Room
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-400">
-                Diesel Pump Set
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-400">
-                Chemicals
-              </a>
-            </li>
+            {productCategory.map((item, index) => {
+              return (
+                <li key={index}>
+                  <a href="#" className="hover:text-blue-400">
+                    {item}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
 
         <div className="flex flex-col mt-10 gap-1">
-          <span className="text-2xl w-32">Quick Links</span>
+          <span className="text-2xl w-52">Быстрые ссылки</span>
           <ul className="flex flex-col gap-1">
-            <li>
-              <a href="#" className="hover:text-blue-400">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-400">
-                Products
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-400">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-400">
-                News
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-400">
-                Contact Us
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-400">
-                Download
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-400">
-                FAQ
-              </a>
-            </li>
-            <li>
-              <a href="#">Privacy Policy</a>
-            </li>
+            {quickLinks.map((item, index) => {
+              return (
+                <li key={index}>
+                  <a href="#" className="hover:text-blue-400">
+                    {item}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
 
         <form className="flex flex-col mt-10 gap-y-2">
-          <span>Contact Us</span>
+          <span className="text-2xl w-72">Обратная связь</span>
           <div className="flex gap-y-2 flex-col">
             <div className="flex gap-3 text-black">
               <div>
@@ -151,34 +117,34 @@ export default function Footer() {
                   onBlur={handleEmailRequired}
                   onFocus={handleEmailRequired}
                 />
-                {emailRequired && <p className="text-red-500">Required!</p>}
+                {emailRequired && <p className="text-red-500">Необходимо!</p>}
               </div>
 
               <input
                 className="bg-gray-400 w-24 h-8 placeholder-black"
                 type="text"
-                placeholder="Name"
+                placeholder="Имя"
               />
               <input
                 className="bg-gray-400 w-24 h-8 placeholder-black"
                 type="tel"
-                placeholder="Tel"
+                placeholder="Тел"
               />
             </div>
 
             <div>
               <textarea
-                placeholder="*Message"
+                placeholder="*Сообщение"
                 className="bg-gray-400 placeholder-black required w-full h-32"
                 onBlur={handleMassageRequired}
                 onFocus={handleMassageRequired}
               ></textarea>
-              {messageRequired && <p className="text-red-500">Required!</p>}
+              {messageRequired && <p className="text-red-500">Необходимо!</p>}
             </div>
           </div>
           <input
             type="submit"
-            value={"click"}
+            value={"отправить"}
             className="bg-red-500 h-8"
           ></input>
         </form>

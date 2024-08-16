@@ -1,13 +1,13 @@
 export default function AboutComapny() {
   return (
-    <div className="flex justify-center items-center w-full h-screen min-w-screen">
-      <div className="w-full h-5/6">
-        <div className="w-full h-full flex justify-center">
-          <div className="flex flex-col w-[29%] h-full justify-center mr-20">
+    <div className="flex justify-center items-center w-full h-screen min-w-screen px-4 md:px-0">
+      <div className="flex flex-col lg:flex-row justify-center items-center h-full w-full md:w-5/6 lg:w-4/5 xl:w-3/4">
+        <div className="flex flex-col lg:flex-row justify-center lg:space-x-20 h-full items-center">
+          <div className="flex flex-col w-full lg:w-1/3 justify-center">
             <span className="text-xl text-[#06365b]">
               Royal Power Machinery
             </span>
-            <span className="text-5xl mt-5 text-[#0e6ebc]">
+            <span className="text-3xl lg:text-5xl mt-5 text-[#0e6ebc]">
               О Нашей Компании
             </span>
             <span className="mt-10 text-[#959597]">
@@ -30,13 +30,11 @@ export default function AboutComapny() {
             </button>
           </div>
 
-          <div className="flex h-full/6 w-1/4 justify-center items-center">
-            <div className="pt-10">
+          <div className="flex justify-center items-center w-full lg:w-2/4 pt-10 lg:pt-0">
+            <div className="flex w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-none h-auto md:pl-5 items-center justify-center">
               <img
                 src={"/aboutUs.webp"}
-                width={"650px"}
-                height={"600px"}
-                className="min-w-[580px]"
+                className="“w-full h-auto object-contain md:w-3/4"
               ></img>
             </div>
           </div>
