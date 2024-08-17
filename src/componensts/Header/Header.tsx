@@ -3,6 +3,14 @@ import { FaShoppingCart } from "react-icons/fa";
 import PopUp from "../ShopCartPopUp/PopUP";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
+import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
+const router = createBrowserRouter([
+  {
+    path: "/helloworld",
+    element: <div>Hello world!</div>,
+  },
+]);
+
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [isHide, setIsHide] = useState<boolean>(false);
@@ -22,13 +30,34 @@ export default function Header() {
   };
 
   const headerButtons = [
-    "Главная",
-    "Продукты",
-    "О нас",
-    "FAQ",
-    "Новости",
-    "Контакты",
-    "Видео",
+    {
+      title: "Главная",
+      href: "/",
+    },
+    {
+      title: "Продукты",
+      href: "ProductsPage",
+    },
+    {
+      title: "О нас",
+      href: "ProductsPage",
+    },
+    {
+      title: "FAQ",
+      href: "ProductsPage",
+    },
+    {
+      title: "Новости",
+      href: "ProductsPage",
+    },
+    {
+      title: "Контакты",
+      href: "ProductsPage",
+    },
+    {
+      title: "Видео",
+      href: "ProductsPage",
+    },
   ];
 
   useEffect(() => {
@@ -46,7 +75,7 @@ export default function Header() {
 
   return (
     <div
-      className={`relative md:fixed top-0 left-0 w-screen  bg-[#222222] text-white z-40 ${
+      className={`fixed top-0 left-0 w-screen bg-[#222222] text-white z-40 ${
         isScrolled ? `duration-500 ease-out bg-opacity-70` : `bg-opacity-100`
       }`}
     >
@@ -71,12 +100,12 @@ export default function Header() {
                   key={index}
                   className="relative group inline-block cursor-pointer"
                 >
-                  <a
-                    href="#"
+                  <Link
+                    to={item.href}
                     className="text-white transition-colors duration-300"
                   >
-                    {item}
-                  </a>
+                    {item.title}
+                  </Link>
                   <span className="absolute left-1/2 bottom-[2px] w-full h-[2px] bg-white scale-x-0 group-hover:scale-x-100 transform -translate-x-1/2 origin-center transition-transform duration-300 ease-in-out"></span>
                 </li>
               );
@@ -93,16 +122,17 @@ export default function Header() {
           <FaShoppingCart size={"2rem"} />
         </div>
       </div>
+
       {isMenuOpen && (
-        <div className="md:hidden bg-[#222222] bg-opacity-90 top-full left-0 w-full absolute z-30">
+        <div className="md:hidden bg-[#222222] bg-opacity-90 left-0 w-full absolute z-30">
           <ul className="flex flex-col items-center py-4">
             {headerButtons.map((item, index) => (
               <li key={index} className="mb-4">
                 <a
-                  href="#"
+                  href={item.href}
                   className="text-white transition-colors duration-300"
                 >
-                  {item}
+                  {item.title}
                 </a>
               </li>
             ))}

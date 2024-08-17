@@ -34,15 +34,6 @@ export default function Slider() {
   };
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    handleResize(); // Initialize state
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  useEffect(() => {
     if (isAutoPlaying) {
       const interval = setInterval(nextSlide, 5000);
       return () => clearInterval(interval);
@@ -52,6 +43,19 @@ export default function Slider() {
   const stopAutoPlay = () => {
     setIsAutoPlaying(false);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const updateItems = () => {
@@ -69,12 +73,12 @@ export default function Slider() {
   };
 
   return (
-    <div className="flex relative w-full h-full md:h-full overflow-hidden">
+    <div className="relative flex w-screen h-full overflow-hidden ">
       {items.map((slide, index) => {
         return (
           <div
             key={index}
-            className={`absolute w-full md:h-full transition-transform duration-1000 ease-in-out ${
+            className={`absolute w-screen h-full transition-transform duration-1000 ease-in-out ${
               index === current
                 ? "translate-x-0"
                 : index < current
@@ -83,10 +87,10 @@ export default function Slider() {
             }`}
           >
             <a href="#">
-              <img
-                src={`${slide}`}
-                className="w-full h-full object-contain md:object-cover"
-              ></img>
+              <div
+                style={{ backgroundImage: `url(${slide})` }}
+                className="w-full md:h-full h-5/6 bg-no-repeat bg-cover md:bg-cover bg-center"
+              ></div>
             </a>
           </div>
         );

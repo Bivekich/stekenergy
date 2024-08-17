@@ -44,7 +44,7 @@ export default function Footer() {
   };
   return (
     <div className="flex w-full min-h-[50rem] flex-col bg-[#222222] text-white justify-center items-center">
-      <div className="flex-grow flex min-w-3/4 nin-h-2/4 gap-x-24 flex-wrap justify-center">
+      <div className="flex-grow flex min-w-3/4 nin-h-2/4 gap-x-24 flex-wrap flex-col md:flex-row justify-center">
         <div className="flex flex-col gap-5 mt-10">
           <img src="/logo-1.webp" className="w-64"></img>
           <span className="w-80">

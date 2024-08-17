@@ -10,7 +10,7 @@ export default function Products() {
     { src: "/waterpump.webp", title: "Водяной насосы" },
   ];
   return (
-    <div className="bg-red-600 w-screen h-screen min-h-screen min-w-screen mt-5 md:mt-0 mb-10 md:mb-0">
+    <div className="w-screen h-[60rem] md:h-full min-w-screen mb-5 md:mt-0 md:mb-0">
       <div className="md:grid grid-cols-2 md:grid-cols-3 grid-rows-4 gap-0 h-full w-full flex flex-col">
         <div className="flex w-full h-full row-span-4 bg-[url('/factory.webp')] bg-no-repeat bg-cover justify-center items-center text-center text-white flex-col gap-20 pt-5 md:pt-0">
           <div>
@@ -32,15 +32,12 @@ export default function Products() {
           </div>
         </div>
 
-        <div className="w-screen h-screen bg-black md:hidden">
+        <div className="w-screen h-full md:hidden">
           <Swiper pagination={true} modules={[Pagination]}>
             {products.map((item, index) => {
               return (
                 <div key={index}>
-                  <SwiperSlide
-                    key={index}
-                    className="relative w-full h-96 bg-red-600"
-                  >
+                  <SwiperSlide key={index} className="relative w-full h-96">
                     <a href="#">
                       <img
                         key={index}

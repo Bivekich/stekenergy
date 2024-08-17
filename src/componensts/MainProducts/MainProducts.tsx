@@ -21,7 +21,7 @@ export default function MainProducts() {
 
   const product = [
     { title: "Дизельный генератор", ref: "#" },
-    { title: "азотурбинный двигатель", ref: "#" },
+    { title: "Азотурбинный двигатель", ref: "#" },
     { title: "Морской генератор", ref: "#" },
     { title: "Металлообрабатывающее оборудование", ref: "#" },
     { title: "Дизельный насосный агрегат", ref: "#" },
@@ -29,26 +29,28 @@ export default function MainProducts() {
   ];
 
   return (
-    <div className="flex w-screen min-h-fit mb-20">
+    <div className="flex w-screen min-h-full mb-20">
       <div className="flex mt-10 w-full text-white flex-col justify-center items-center">
         <div className="flex w-full h-fit justify-center mb-14">
           <span className="text-5xl text-bold text-[#333333]">ПРОДУКЦИЯ</span>
         </div>
-        <ul className="flex flex-row gap-5 justify-center">
+        <ul className="flex md:flex-row flex-col gap-5 justify-center items-center">
           {product.map((item, index) => {
             return (
               <li
                 key={index}
-                className="flex bg-[#0e6eb8] w-52 h-16 items-center justify-center text-center"
+                className="flex bg-[#0e6eb8] p-4 w-full sm:w-auto items-center justify-center text-center"
               >
-                <a href={item.ref}>{item.title}</a>
+                <a href={item.ref} className="text-sm sm:text-base">
+                  {item.title}
+                </a>
               </li>
             );
           })}
         </ul>
 
-        <div className="flex justify-center w-11/12 mt-20 m-auto">
-          <div className="grid grid-cols-4 gap-x-2">
+        <div className="flex justify-center w-full md:w-11/12 mt-20 m-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {images.map((item, index) => {
               console.log(item);
               return (

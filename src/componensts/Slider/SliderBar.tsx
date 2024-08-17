@@ -10,7 +10,7 @@ export default function SliderBar({
   handleCurrent,
 }: slideBarCurrentItem) {
   return (
-    <div className="flex absolute bottom-0 w-full justify-center mb-5 gap-3">
+    <div className="flex absolute md:bottom-0  bottom-20 w-screen justify-center md:mb-5 gap-3">
       {Array.from({ length: 5 }).map((_, index) => {
         return (
           <div key={index} onClick={() => handleCurrent(index)}>

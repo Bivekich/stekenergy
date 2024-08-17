@@ -1,6 +1,6 @@
 export default function AboutComapny() {
   return (
-    <div className="flex justify-center items-center w-full h-screen min-w-screen px-4 md:px-0">
+    <div className="relative flex justify-center items-center w-full md:h-screen h-[70rem] px-4 md:px-0">
       <div className="flex flex-col lg:flex-row justify-center items-center h-full w-full md:w-5/6 lg:w-4/5 xl:w-3/4">
         <div className="flex flex-col lg:flex-row justify-center lg:space-x-20 h-full items-center">
           <div className="flex flex-col w-full lg:w-1/3 justify-center">
@@ -34,7 +34,7 @@ export default function AboutComapny() {
             <div className="flex w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-none h-auto md:pl-5 items-center justify-center">
               <img
                 src={"/aboutUs.webp"}
-                className="“w-full h-auto object-contain md:w-3/4"
+                className="relative w-full h-auto object-contain md:w-3/4"
               ></img>
             </div>
           </div>

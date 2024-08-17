@@ -7,7 +7,7 @@ interface Scrolled {
 export default function PopUp({ isScrolled, clickAnime }: Scrolled) {
   return (
     <div
-      className={`flex fixed md:w-96 h-4/5 bg-white right-0 z-50 flex-col border-l-4 border-[#0e7fdf] border-b-4 shadow-2xl${
+      className={`flex fixed md:w-96 w-full h-4/5 bg-white right-0 z-50 flex-col md:border-l-4 border-[#0e7fdf] md:border-b-4 shadow-2xl${
         isScrolled
           ? `top-10 duration-500 ease-out`
           : `inset-y-24 duration-500 ease-out`
@@ -15,7 +15,7 @@ export default function PopUp({ isScrolled, clickAnime }: Scrolled) {
         clickAnime === "left" ? `animate-slideOutLeft` : `animate-slideInRight`
       }`}
     >
-      <div className="h-5/6 overflow-y-auto">
+      <div className="h-5/6 overflow-y-scroll">
         <PopUpItem></PopUpItem>
         <PopUpItem></PopUpItem>
         <PopUpItem></PopUpItem>
