@@ -3,13 +3,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import PopUp from "../ShopCartPopUp/PopUP";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
-import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
-const router = createBrowserRouter([
-  {
-    path: "/helloworld",
-    element: <div>Hello world!</div>,
-  },
-]);
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
