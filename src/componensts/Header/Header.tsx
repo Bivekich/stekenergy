@@ -30,19 +30,19 @@ export default function Header() {
     },
     {
       title: "Продукты",
-      href: "ProductsPage",
+      href: "/ProductsPage",
     },
     {
       title: "О нас",
-      href: "ProductsPage",
+      href: "/AboutUs",
     },
     {
       title: "FAQ",
-      href: "ProductsPage",
+      href: "/FAQ",
     },
     {
       title: "Новости",
-      href: "ProductsPage",
+      href: "/News",
     },
     {
       title: "Контакты",
