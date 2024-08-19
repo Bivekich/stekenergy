@@ -1,7 +1,7 @@
-interface QestionAnswer {
+/*interface QestionAnswer {
   que: string;
   ans: string;
-}
+}*/
 
 export default function QuestionCard() {
   return (
