@@ -46,11 +46,11 @@ export default function Header() {
     },
     {
       title: "Контакты",
-      href: "ProductsPage",
+      href: "/Contacts",
     },
     {
       title: "Видео",
-      href: "ProductsPage",
+      href: "/Video",
     },
   ];
 

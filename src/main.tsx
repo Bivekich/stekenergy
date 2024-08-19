@@ -7,6 +7,9 @@ import AboutUsPage from "./pages/AboutUsPage/AboutUs.tsx";
 import "./index.css";
 import FaqPage from "./pages/FAQPage/FAQPage.tsx";
 import NewsPage from "./pages/News/NewsPage.tsx";
+import ContactsPage from "./pages/Contacts/Contacts.tsx";
+import VideoPage from "./pages/VideoPage/VideoPage.tsx";
+import GoodsPage from "./pages/GoodsPage/GoodsPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +31,18 @@ const router = createBrowserRouter([
   {
     path: "/News",
     element: <NewsPage></NewsPage>,
+  },
+  {
+    path: "/Contacts",
+    element: <ContactsPage></ContactsPage>,
+  },
+  {
+    path: "/Video",
+    element: <VideoPage></VideoPage>,
+  },
+  {
+    path: "/ProductsPage/:article/:nameOfProduct",
+    element: <GoodsPage></GoodsPage>,
   },
 ]);
 

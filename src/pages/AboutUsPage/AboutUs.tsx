@@ -25,42 +25,44 @@ export default function AboutUsPage() {
           <span className="text-3xl">About Our Company</span>
           <span className="flex flex-col gap-5 text-lg">
             <p>
-              China Royal Power Machinery Co., Ltd, founded in 2004, is a
-              machinery trade and manufacture enterprise which integrates
-              design, production and shipment of diesel generator sets, gas
-              generator sets, marine generators and diesel/gas power plant,
-              forming a whole industrial chain.
+              China Royal Power Machinery Co., Ltd, основанная в 2004 году,
+              является предприятием по торговле и производству машинного
+              оборудования, которое объединяет проектирование, производство и
+              поставку дизельных генераторов, газовых генераторов, морских
+              генераторов и дизельных/газовых электростанций, формируя полную
+              производственную цепочку.
             </p>
             <p>
-              Over the past 18 years, the Company has developed steadily, and
-              now owns five wholly owned or holding subsidiaries directly or
-              indirectly Includes Changzhou Fugesen Refrigeration Engineering
-              Co., Ltd, Wuxi Yuanjia aluminium extrusion machine Co., Ltd, China
-              Royal Power machinery Co.Ltd (H.K), Taizhou Royal Power Machinery
-              IMP&EXP Co., Ltd，Nantong Fancywill International Co.,Ltd and
-              Jiangsu Wantai Power Machinery Co., Ltd. We are forming five major
-              business sectors of energy, refrigeration, aluminium extrusion,
-              textile and international trade.
+              За последние 18 лет компания стабильно развивалась и сейчас
+              владеет пятью полностью или частично дочерними предприятиями,
+              включая Changzhou Fugesen Refrigeration Engineering Co., Ltd, Wuxi
+              Yuanjia Aluminium Extrusion Machine Co., Ltd, China Royal Power
+              Machinery Co. Ltd (H.K), Taizhou Royal Power Machinery IMP&EXP
+              Co., Ltd, Nantong Fancywill International Co., Ltd и Jiangsu
+              Wantai Power Machinery Co., Ltd. Мы формируем пять основных
+              бизнес-секторов: энергетика, холодильное оборудование, алюминиевое
+              экструзионное оборудование, текстиль и международная торговля.
             </p>
             <p>
-              Our products are exported to nearly a lot of countries and
-              regions, including the United States, the European Union, Mid-East
-              Aisa, Africa and South America. In 2021, the annual sales revenue,
-              total profit and total export-import volume were CNY 50 billion,
-              CNY 40 million and USD 5 million respectively.
+              Наши продукты экспортируются в многочисленные страны и регионы,
+              включая Соединенные Штаты Америки, Европейский Союз, Ближний
+              Восток, Азию, Африку и Южную Америку. В 2021 году годовой объем
+              продаж составил 50 миллиардов юаней, общая прибыль - 40 миллионов
+              юаней, а общий объем экспорта-импорта - 5 миллионов долларов США.
             </p>
             <p>
-              Our powerful professional team provides 24hour services regarding
-              the order tracking, production schedule and quality to help
-              customers solve the problems, grasp the business opportunities by
-              virtue of expeditious response and premium products, thus
-              receiving the recognition from consumers.
+              Наша мощная профессиональная команда предоставляет круглосуточные
+              услуги по отслеживанию заказов, производственному графику и
+              качеству для помощи клиентам в решении проблем и использовании
+              деловых возможностей благодаря оперативному реагированию и
+              высококачественным продуктам, что заслужило признание
+              потребителей.
             </p>
             <p>
-              Royal Power Machinery Co., Ltd is liable for and dedicated to
-              providing valuable services to foreign and domestic customers. We
-              look forward to establishing good cooperative relations with you
-              and seeking development together for a promising future! ​​​​​​​
+              Royal Power Machinery Co., Ltd несет ответственность за
+              предоставление ценных услуг иностранным и отечественным клиентам.
+              Мы с нетерпением ждем установления хороших партнерских отношений с
+              вами и совместного развития ради светлого будущего!
             </p>
           </span>
           <div className="w-full lg:h-[35rem] h-auto lg:mb-0 mb-10">

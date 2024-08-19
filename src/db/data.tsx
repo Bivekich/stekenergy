@@ -96,12 +96,89 @@ export const products: Array<Param> = [
     fullDescription: "",
     descriptionImg: "",
   },
+  {
+    id: 6,
+    mainImg: "/PG.webp",
+    name: "Дизельный генератор Perkins",
+    shortDescription: "",
+    qrCode: "",
+    fullDescription: "",
+    descriptionImg: "",
+  },
+  {
+    id: 7,
+    mainImg: "/INNIO.webp",
+    name: "Газовый генератор Jenbacher",
+    shortDescription: "",
+    qrCode: "",
+    fullDescription: "",
+    descriptionImg: "",
+  },
+  {
+    id: 13,
+    mainImg: "/bismain.webp",
+    name: "2,5-Бис(трет-бутилперокси)-2,5-диметилгексан",
+    shortDescription:
+      "Chemical Name: 2,5-Bis(tert-butylperoxy)-2,5-dimethylhexane 2,5-Bis(tert-butylperoxy)-2,5-dimethylhexane is a low volatile, light yellow transparent liquid, is a dialkyl organic peroxide. Used for crosslinking of polymers (such as silicone rubber, EPDM, polyethylene, etc.) and degradation of polypropylene.",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription:
+      "Химическое название: 2,5-Бис(трет-бутилперокси)-2,5-диметилгексан 2,5-Бис(трет-бутилперокси)-2,5-диметилгексан — это низколетучая, светло-желтая прозрачная жидкость, являющаяся диалкилорганическим пероксидом. Используется для сшивания полимеров (таких как силиконовая резина, EPDM, полиэтилен и др.) и деградации полипропилена.",
+    descriptionImg: "/bis.webp",
+  },
+  {
+    id: 8,
+    mainImg: "/SG.webp",
+    name: "Бесшумный генератор/Контейнерный генератор",
+    shortDescription: "",
+    qrCode: "",
+    fullDescription: "",
+    descriptionImg: "",
+  },
+  {
+    id: 9,
+    mainImg: "/SG.webp",
+    name: "Бесшумный генератор/Контейнерный генератор",
+    shortDescription: "",
+    qrCode: "",
+    fullDescription: "",
+    descriptionImg: "",
+  },
+  {
+    id: 10,
+    mainImg: "/SG.webp",
+    name: "Бесшумный генератор/Контейнерный генератор",
+    shortDescription: "",
+    qrCode: "",
+    fullDescription: "",
+    descriptionImg: "",
+  },
+  {
+    id: 11,
+    mainImg: "/SG.webp",
+    name: "Бесшумный генератор/Контейнерный генератор",
+    shortDescription: "",
+    qrCode: "",
+    fullDescription: "",
+    descriptionImg: "",
+  },
+  {
+    id: 12,
+    mainImg: "/SG.webp",
+    name: "Бесшумный генератор/Контейнерный генератор",
+    shortDescription: "",
+    qrCode: "",
+    fullDescription: "",
+    descriptionImg: "",
+  },
 ];
 interface NewsDataParam {
   id: number;
   title: string;
   des: string;
   img: string;
+  isIndustry: boolean;
+  isCompany: boolean;
   date: Date;
 }
 export const NewsData: Array<NewsDataParam> = [
@@ -111,6 +188,8 @@ export const NewsData: Array<NewsDataParam> = [
       "Газогенератор для попутного нефтяного газа Jenbacher на месторождении Акондо, Габон",
     des: "3 установки газогенераторов Jenbacher JGS312GS-S.L для попутного нефтяного газа работают параллельно, с общей выходной мощностью 2 МВт. Генератор контейнерного типа, с низким уровнем шума, используется на нефтяном месторождении.",
     img: "/news1.webp",
+    isIndustry: false,
+    isCompany: true,
     date: new Date(2023, 6, 4),
   },
   {
@@ -119,6 +198,8 @@ export const NewsData: Array<NewsDataParam> = [
       "10-мегаваттный газовый генератор Jenbacher, установленный в Шаньси, Китай",
     des: "Местоположение проекта: Шаньси, Китай Размеры: 8xJGS420GS-S.L 8 генераторов по 1.25 МВт каждый Источник газа для проекта: газ низкой концентрации Форма выработки энергии: комбинированное производство тепла и электроэнергии (ТЭЦ) Основное оборудование: Газовая установка внутреннего сгорания Котел утилизатор тепла Оборудование SCR для денитрификации",
     img: "/news2.webp",
+    isIndustry: false,
+    isCompany: false,
     date: new Date(2022, 6, 24),
   },
   {
@@ -126,6 +207,17 @@ export const NewsData: Array<NewsDataParam> = [
     title: "33-мегаваттный газовый генератор Jenbacher в Шаньси, Китай",
     des: "Местоположение проекта: Шаньси, Китай Масштаб объекта: 9xJGS620GS-S.L9 комплектов генераторов Jenbacher по 3600 кВт каждый Источник газа для проекта: газ высокой концентрации Форма выработки энергии: парогазовый циклОновне оборудование:Газовая установка внутреннего сгорания Конденсационная паровая турбогенераторная установка Котел утилизатор тепла",
     img: "/news3.webp",
+    isIndustry: true,
+    isCompany: false,
+    date: new Date(2022, 9, 8),
+  },
+  {
+    id: 1,
+    title: "33-мегаваттный газовый генератор Jenbacher в Шаньси, Китай",
+    des: "Местоположение проекта: Шаньси, Китай Масштаб объекта: 9xJGS620GS-S.L9 комплектов генераторов Jenbacher по 3600 кВт каждый Источник газа для проекта: газ высокой концентрации Форма выработки энергии: парогазовый циклОновне оборудование:Газовая установка внутреннего сгорания Конденсационная паровая турбогенераторная установка Котел утилизатор тепла",
+    img: "/news3.webp",
+    isIndustry: true,
+    isCompany: false,
     date: new Date(2022, 9, 8),
   },
 ];
