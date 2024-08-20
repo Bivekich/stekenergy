@@ -36,6 +36,8 @@ interface Param {
   qrCode: string;
   fullDescription: string;
   descriptionImg: string;
+  category: string;
+  brand: string;
 }
 export const products: Array<Param> = [
   {
@@ -49,6 +51,8 @@ export const products: Array<Param> = [
     fullDescription:
       "Химическое название: 2,5-Бис(трет-бутилперокси)-2,5-диметилгексан 2,5-Бис(трет-бутилперокси)-2,5-диметилгексан — это низколетучая, светло-желтая прозрачная жидкость, являющаяся диалкилорганическим пероксидом. Используется для сшивания полимеров (таких как силиконовая резина, EPDM, полиэтилен и др.) и деградации полипропилена.",
     descriptionImg: "/bis.webp",
+    category: "Chemicals",
+    brand: "RubberAndPlasticAdditives",
   },
   {
     id: 2,
@@ -68,6 +72,8 @@ export const products: Array<Param> = [
       4. The fully functional alarm protection system + Internet of Things after-sales service system ensures stable and reliable quality of diesel generator sets.
       5. Spare parts are easy to get from worldwide market with much cheaper price.`,
     descriptionImg: "",
+    category: "DieselGenerator",
+    brand: "CumminsSeries",
   },
   {
     id: 3,
@@ -77,6 +83,8 @@ export const products: Array<Param> = [
     qrCode: "",
     fullDescription: "",
     descriptionImg: "",
+    category: "DieselGenerator",
+    brand: "PerkinsSeries",
   },
   {
     id: 4,
@@ -86,6 +94,8 @@ export const products: Array<Param> = [
     qrCode: "",
     fullDescription: "",
     descriptionImg: "",
+    category: "GasGenerator",
+    brand: "JenbacherSeries",
   },
   {
     id: 5,
@@ -95,81 +105,8 @@ export const products: Array<Param> = [
     qrCode: "",
     fullDescription: "",
     descriptionImg: "",
-  },
-  {
-    id: 6,
-    mainImg: "/PG.webp",
-    name: "Дизельный генератор Perkins",
-    shortDescription: "",
-    qrCode: "",
-    fullDescription: "",
-    descriptionImg: "",
-  },
-  {
-    id: 7,
-    mainImg: "/INNIO.webp",
-    name: "Газовый генератор Jenbacher",
-    shortDescription: "",
-    qrCode: "",
-    fullDescription: "",
-    descriptionImg: "",
-  },
-  {
-    id: 13,
-    mainImg: "/bismain.webp",
-    name: "2,5-Бис(трет-бутилперокси)-2,5-диметилгексан",
-    shortDescription:
-      "Chemical Name: 2,5-Bis(tert-butylperoxy)-2,5-dimethylhexane 2,5-Bis(tert-butylperoxy)-2,5-dimethylhexane is a low volatile, light yellow transparent liquid, is a dialkyl organic peroxide. Used for crosslinking of polymers (such as silicone rubber, EPDM, polyethylene, etc.) and degradation of polypropylene.",
-    qrCode:
-      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
-    fullDescription:
-      "Химическое название: 2,5-Бис(трет-бутилперокси)-2,5-диметилгексан 2,5-Бис(трет-бутилперокси)-2,5-диметилгексан — это низколетучая, светло-желтая прозрачная жидкость, являющаяся диалкилорганическим пероксидом. Используется для сшивания полимеров (таких как силиконовая резина, EPDM, полиэтилен и др.) и деградации полипропилена.",
-    descriptionImg: "/bis.webp",
-  },
-  {
-    id: 8,
-    mainImg: "/SG.webp",
-    name: "Бесшумный генератор/Контейнерный генератор",
-    shortDescription: "",
-    qrCode: "",
-    fullDescription: "",
-    descriptionImg: "",
-  },
-  {
-    id: 9,
-    mainImg: "/SG.webp",
-    name: "Бесшумный генератор/Контейнерный генератор",
-    shortDescription: "",
-    qrCode: "",
-    fullDescription: "",
-    descriptionImg: "",
-  },
-  {
-    id: 10,
-    mainImg: "/SG.webp",
-    name: "Бесшумный генератор/Контейнерный генератор",
-    shortDescription: "",
-    qrCode: "",
-    fullDescription: "",
-    descriptionImg: "",
-  },
-  {
-    id: 11,
-    mainImg: "/SG.webp",
-    name: "Бесшумный генератор/Контейнерный генератор",
-    shortDescription: "",
-    qrCode: "",
-    fullDescription: "",
-    descriptionImg: "",
-  },
-  {
-    id: 12,
-    mainImg: "/SG.webp",
-    name: "Бесшумный генератор/Контейнерный генератор",
-    shortDescription: "",
-    qrCode: "",
-    fullDescription: "",
-    descriptionImg: "",
+    category: "DieselGenerator",
+    brand: "SilentContainerzied",
   },
 ];
 interface NewsDataParam {

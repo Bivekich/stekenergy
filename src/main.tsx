@@ -10,6 +10,8 @@ import NewsPage from "./pages/News/NewsPage.tsx";
 import ContactsPage from "./pages/Contacts/Contacts.tsx";
 import VideoPage from "./pages/VideoPage/VideoPage.tsx";
 import GoodsPage from "./pages/GoodsPage/GoodsPage.tsx";
+import CategoryProductsPage from "./pages/CategoryProductsPage/CategoryProductsPage.tsx";
+import NewsMainPage from "./pages/NewsMainPage/NewsPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +45,14 @@ const router = createBrowserRouter([
   {
     path: "/ProductsPage/:article/:nameOfProduct",
     element: <GoodsPage></GoodsPage>,
+  },
+  {
+    path: "/ProductsPage/:article/:Category/:Brand",
+    element: <CategoryProductsPage></CategoryProductsPage>,
+  },
+  {
+    path: "News/:id/:Title",
+    element: <NewsMainPage></NewsMainPage>,
   },
 ]);
 

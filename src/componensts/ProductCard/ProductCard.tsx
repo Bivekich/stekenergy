@@ -2,16 +2,19 @@ import { IoMailOutline } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
 interface ProductProp {
   img: string;
+  link: string;
   name: string;
 }
-export default function ProductCard({ img, name }: ProductProp) {
+export default function ProductCard({ img, link, name }: ProductProp) {
   return (
     <div className="flex flex-col w-[47%] md:w-[30%] lg:w-96 h-[20rem] lg:h-[30rem] md:h-[20rem] items-center justify-center border-2 border-black bg-white mb-2 overflow-hidden p-4 sm:p-2 gap-4">
       <div>
-        <img
-          src={img}
-          className="object-center md:max-h-32 lg:max-h-56 max-h-32 max-w-full"
-        ></img>
+        <a href={link}>
+          <img
+            src={img}
+            className="object-center md:max-h-32 lg:max-h-56 max-h-32 max-w-full"
+          ></img>
+        </a>
       </div>
       <div className="mt-2 text-center">
         <span className="flex text-black text-xl sm:text-sm md:text-base mb-auto flex-wrap">

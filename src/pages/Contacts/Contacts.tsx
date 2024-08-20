@@ -20,12 +20,12 @@ export default function ContactsPage() {
     }
   };
   const data = [
-    "Building 24, Zhongjia International Plaza, Hailing District, Taihzhou City, Jiangsu Province",
+    "Здание 24, Zhongjia International Plaza, район Hailing, город Тайчжоу, провинция Цзянсу",
     "+86-523-86326170",
     "+86-523-86326170",
-    "+86-15850872118/+86-18012096599",
+    "+86-15850872118 / +86-18012096599",
     "414833725",
-    "admin@cnroyalpower.com/ansonhou@cnroyalpower.com",
+    "admin@cnroyalpower.com / ansonhou@cnroyalpower.com",
     "414833725@qq.com",
     "+8615850872118",
   ];
@@ -38,10 +38,15 @@ export default function ContactsPage() {
       <div className="flex justify-center items-center lg:h-20 h-1/3 overflow-hidden bg-white">
         <div className="flex lg:w-[50%] md:w-[95%] w-[93%] text-black font-bold text-2xl lg:justify-between flex-col lg:flex-row lg:items-end justify-end pb-5 border-b-2 ml-auto mr-auto">
           <div>
-            <span>Contacts</span>
+            <span>Контакты</span>
           </div>
           <div>
-            <span>Home - Contacts</span>
+            <span>
+              <a href="/" className="hover:text-blue-600">
+                Главная
+              </a>{" "}
+              - Контакты
+            </span>
           </div>
         </div>
       </div>
@@ -54,25 +59,25 @@ export default function ContactsPage() {
                 China Royal Power Machinery Co., Ltd
               </span>
               <span>
-                We look forward to establishing good cooperative relations with
-                you and seeking development together for a promising future!.
+                Мы с нетерпением ждем установления хороших партнерских отношений
+                с вами и совместного развития для светлого будущего!
               </span>
               <img src="/weibiaoti-990-516.webp"></img>
               <ul>
                 <li>
-                  <span>Address:</span>
+                  <span>Адрес:</span>
                   <span> {data[0]}</span>
                 </li>
                 <li>
-                  <span>Tel:</span>
+                  <span>Тел:</span>
                   <span> {data[1]}</span>
                 </li>
                 <li>
-                  <span>Fax:</span>
+                  <span>Факс:</span>
                   <span>{data[2]}</span>
                 </li>
                 <li>
-                  <span>Phone:</span>
+                  <span>Рабочий тел:</span>
                   <span> {data[3]}</span>
                 </li>
                 <li>
@@ -89,7 +94,7 @@ export default function ContactsPage() {
                 </li>
                 <li>
                   <span>Whatsapp:</span>
-                  <span> {data[7]}</span>
+                  <span>{data[7]}</span>
                 </li>
               </ul>
             </div>

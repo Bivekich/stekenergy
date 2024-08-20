@@ -12,17 +12,22 @@ export default function AboutUsPage() {
       <div className="flex justify-center items-center lg:h-20 h-1/3 overflow-hidden bg-white">
         <div className="flex lg:w-[50%] md:w-[90%] w-[90%] text-black font-bold text-2xl lg:justify-between flex-col lg:flex-row lg:items-end justify-end pb-5 border-b-2 ml-auto mr-auto">
           <div>
-            <span>About Us</span>
+            <span>О нас</span>
           </div>
           <div>
-            <span>Home - About Us</span>
+            <span>
+              <a href="/" className="hover:text-blue-600">
+                Главная
+              </a>{" "}
+              - О нас
+            </span>
           </div>
         </div>
       </div>
 
       <div className="w-full pt-10 bg-white">
         <div className="flex lg:w-1/2 m-auto flex-col gap-5 px-4">
-          <span className="text-3xl">About Our Company</span>
+          <span className="text-3xl">О нашей компании</span>
           <span className="flex flex-col gap-5 text-lg">
             <p>
               China Royal Power Machinery Co., Ltd, основанная в 2004 году,
@@ -101,15 +106,16 @@ export default function AboutUsPage() {
       <div className="flex w-full md:w-screen md:h-[50rem] text-white justify-center items-end flex-col md:flex-row mb-10">
         <div className="flex lg:w-2/4 md:w-screen  md:h-full md:justify-center md:items-center ml-auto mr-auto md:flex-row lg:flex-row flex-col gap-5 md:gap-0 mt-5 md:mt-0">
           <div className="lg:w-96 md:w-1/2 w-screen flex flex-col gap-10 px-4">
-            <div className="border-t-8 w-20"></div>
-            <span className="text-5xl font-semibold">Our Advantages</span>
+            <div className="border-t-8 w-20 border-blue-600"></div>
+            <span className="text-5xl font-semibold">Наши преимущества</span>
             <span className="w-96 md:w-fit">
-              We look forward to establishing good cooperative relations with
-              you and seeking development together for a promising future!
+              Мы с нетерпением ждем установления хороших партнерских отношений с
+              вами и совместного развития для перспективного будущего!
             </span>
-            <div className="border-l-2 border-blue-400 pl-5">
-              <div className="flex justify-center items-center bg-gray-400 w-44 h-14">
-                <a className="">CONTACT US</a>
+            <div className="border-l-2 border-blue-600 pl-5">
+              <div className="relative flex justify-center items-center bg-gray-400 w-44 h-14  transition-all duration-500 group">
+                <span className="w-0 h-full absolute inset-0 bg-blue-600 z-20 group-hover:w-full transition-all duration-500"></span>
+                <a className="z-30 select-none">СВЯЗАТЬСЯ</a>
               </div>
             </div>
           </div>
@@ -121,8 +127,8 @@ export default function AboutUsPage() {
                   01
                 </span>
                 <span className="w-64 flex justify-center items-center text-center text-xl">
-                  Our powerful professional team provides 24hour services
-                  regarding the order tracking
+                  Наша мощная профессиональная команда предоставляет
+                  круглосуточные услуги по отслеживанию заказов.
                 </span>
               </div>
               <div>
@@ -131,9 +137,9 @@ export default function AboutUsPage() {
                     02
                   </span>
                   <span className="w-64 flex justify-center items-center text-center text-xl">
-                    Design, production and shipment of diesel generator sets,
-                    gas generator sets, marine generators and diesel/gas
-                    power...
+                    Дизайн, производство и доставка дизельных генераторных
+                    установок, газовых генераторных установок, судовых
+                    генераторов и дизельных/газовых энергетических установок.
                   </span>
                 </div>
               </div>
@@ -145,8 +151,9 @@ export default function AboutUsPage() {
                   03
                 </span>
                 <span className="w-64 flex justify-center items-center text-center text-xl">
-                  We are forming five major business sectors of energy,
-                  refrigeration, aluminium extrusion, textile and...
+                  Мы формируем пять основных бизнес-секторов в области
+                  энергетики, холодильного оборудования, алюминиевого экструзии,
+                  текстиля и...
                 </span>
               </div>
               <div>
@@ -155,8 +162,8 @@ export default function AboutUsPage() {
                     04
                   </span>
                   <span className="w-64 flex justify-center items-center text-center text-xl">
-                    Including the united states, the european union, mid-east
-                    aisa, africa and south america​​​​​​​
+                    Включая Соединенные Штаты, Европейский Союз, Ближний Восток,
+                    Азию, Африку и Южную Америку.
                   </span>
                 </div>
               </div>

@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom";
 import Header from "../../componensts/Header/Header";
 import { Dropdown, DropdownItem } from "flowbite-react";
 import { useState } from "react";
@@ -6,7 +7,6 @@ import { FaBars } from "react-icons/fa";
 import ProductCard from "../../componensts/ProductCard/ProductCard";
 import Footer from "../../componensts/Footer/Footer";
 import { products } from "../../db/data";
-
 const numberOfPages: number = Math.ceil(products.length / 6);
 const ProductTipe = [
   {
@@ -57,8 +57,11 @@ const ProductTipe = [
     products: ["Cummins", "Mitsu", "MTU"],
   },
 ];
-
-export default function ProductsPage() {
+export default function CategoryProductsPage() {
+  const Param = useParams();
+  const Category = Param.Category?.replaceAll(" ", "");
+  const Brand = Param.Brand?.replaceAll(" ", "");
+  console.log(Brand);
   const [currentPage, setCurrentPage] = useState(1);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleMenuToggle = () => {
@@ -121,14 +124,16 @@ export default function ProductsPage() {
                         </DropdownItem>
                         {item.products.map((el, index) => {
                           return (
-                            <DropdownItem
-                              key={index}
-                              as={"a"}
-                              href={`/ProductsPage/:${index}/:${el}`}
-                              className="flex justify-center w-full static"
-                            >
-                              {el}
-                            </DropdownItem>
+                            <div>
+                              <DropdownItem
+                                key={index}
+                                as={"a"}
+                                href={item.href + `${el}`}
+                                className="w-[20rem]"
+                              >
+                                {el}
+                              </DropdownItem>
+                            </div>
                           );
                         })}
                       </Dropdown>
@@ -169,16 +174,14 @@ export default function ProductsPage() {
                     </DropdownItem>
                     {item.products.map((el, index) => {
                       return (
-                        <div>
-                          <DropdownItem
-                            key={index}
-                            as={"a"}
-                            href={item.href + `${el}`}
-                            className="w-[20rem]"
-                          >
-                            {el}
-                          </DropdownItem>
-                        </div>
+                        <DropdownItem
+                          key={index}
+                          as={"a"}
+                          href={item.href + `${el}`}
+                          className="w-[20rem]"
+                        >
+                          {el}
+                        </DropdownItem>
                       );
                     })}
                   </Dropdown>
@@ -189,8 +192,11 @@ export default function ProductsPage() {
           <div className="flex min-h-96 w-[80rem] gap-5 justify-normal flex-wrap">
             {products.map((item, index) => {
               if (
-                index >= currentPage * 6 - 6 &&
-                index <= currentPage * 6 - 1
+                (index >= currentPage * 6 - 6 &&
+                  index <= currentPage * 6 - 1 &&
+                  item.category === Category &&
+                  item.brand === Brand) ||
+                (item.category === Category && Brand === "all")
               ) {
                 return (
                   <ProductCard
@@ -200,6 +206,8 @@ export default function ProductsPage() {
                     name={item.name}
                   ></ProductCard>
                 );
+              } else {
+                return "";
               }
             })}
           </div>

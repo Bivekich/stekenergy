@@ -13,10 +13,15 @@ export default function NewsPage() {
       <div className="flex justify-center items-center lg:h-20 h-1/3 overflow-hidden bg-white">
         <div className="flex lg:w-[65%] md:w-[90%] w-[90%] text-black font-bold text-2xl lg:justify-between flex-col lg:flex-row lg:items-end justify-end pb-5 border-b-2 ml-auto mr-auto">
           <div>
-            <span>News</span>
+            <span>Новости</span>
           </div>
           <div>
-            <span>Home - News</span>
+            <span>
+              <a href="/" className="hover:text-blue-600">
+                Главная
+              </a>{" "}
+              - Новости
+            </span>
           </div>
         </div>
       </div>
@@ -27,6 +32,7 @@ export default function NewsPage() {
             return (
               <NewsPageCard
                 key={index}
+                id={item.id}
                 isIndustry={item.isIndustry}
                 isCompany={item.isCompany}
                 title={item.title}
