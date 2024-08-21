@@ -16,9 +16,9 @@ export default function NewsPageCard({
 }: NewsPageCardProps) {
   return (
     <div className="lg:w-1/3 md:w-2/6 w-full h-fit mb-5">
-      <div>
-        <a href={`News/${id}/${title}`}>
-          <img src={img} className="w-5/6 object-contain"></img>
+      <div className="flex md:justify-normal md:items-start justify-center items-center flex-col">
+        <a href={`News/${id}/${title}`} className="w-full">
+          <img src={img} className="w-full md:w-5/6 object-cover"></img>
         </a>
         {isCompany ? <span>[Company news]</span> : ""}
         {isIndustry ? <span>[Industry knowledge]</span> : ""}

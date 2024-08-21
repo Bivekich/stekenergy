@@ -80,7 +80,7 @@ export default function ProductsPage() {
             <span>
               <a href="/" className="hover:text-blue-600">
                 Главная
-              </a>{" "}
+              </a>
               - Продукты
             </span>
           </div>
@@ -115,7 +115,7 @@ export default function ProductsPage() {
                           key={index}
                           as={"a"}
                           href={item.href + "all"}
-                          className="flex w-full static"
+                          className="flex justify-center w-full static"
                         >
                           Все
                         </DropdownItem>
@@ -124,7 +124,7 @@ export default function ProductsPage() {
                             <DropdownItem
                               key={index}
                               as={"a"}
-                              href={`/ProductsPage/:${index}/:${el}`}
+                              href={item.href + `${el}`}
                               className="flex justify-center w-full static"
                             >
                               {el}
@@ -186,7 +186,7 @@ export default function ProductsPage() {
               );
             })}
           </div>
-          <div className="flex min-h-96 w-[80rem] gap-5 justify-normal flex-wrap">
+          <div className="flex min-h-96 w-[25.6rem] md:w-[80rem] md:gap-5 gap-1 justify-center md:justify-start md:items-start items-center px-4 md:px-0 flex-wrap">
             {products.map((item, index) => {
               if (
                 index >= currentPage * 6 - 6 &&
@@ -195,7 +195,8 @@ export default function ProductsPage() {
                 return (
                   <ProductCard
                     key={index}
-                    link={`/ProductsPage/${index}/${item.name}`}
+                    id={item.id}
+                    link={`/ProductsPage/${item.id}/${item.name}`}
                     img={item.mainImg}
                     name={item.name}
                   ></ProductCard>

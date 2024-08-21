@@ -12,7 +12,10 @@ import VideoPage from "./pages/VideoPage/VideoPage.tsx";
 import GoodsPage from "./pages/GoodsPage/GoodsPage.tsx";
 import CategoryProductsPage from "./pages/CategoryProductsPage/CategoryProductsPage.tsx";
 import NewsMainPage from "./pages/NewsMainPage/NewsPage.tsx";
-
+import { CartProvider } from "./context/cartContext.tsx";
+import InqueryPage from "./pages/InqueryPage/InqueryPage.tsx";
+import CartInqueryPage from "./pages/InqueryPage/CartInqueryPage.tsx";
+import PrivacyPage from "./pages/PrivacePage/PrivacyPage.tsx";
 const router = createBrowserRouter([
   {
     path: "",
@@ -50,14 +53,29 @@ const router = createBrowserRouter([
     path: "/ProductsPage/:article/:Category/:Brand",
     element: <CategoryProductsPage></CategoryProductsPage>,
   },
+
   {
-    path: "News/:id/:Title",
+    path: "/News/:id/:Title",
     element: <NewsMainPage></NewsMainPage>,
+  },
+  {
+    path: "/Inquire/:id/prod",
+    element: <InqueryPage></InqueryPage>,
+  },
+  {
+    path: "/Indquire/cart/prod",
+    element: <CartInqueryPage></CartInqueryPage>,
+  },
+  {
+    path: "/Privacy",
+    element: <PrivacyPage></PrivacyPage>,
   },
 ]);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
   </StrictMode>
 );

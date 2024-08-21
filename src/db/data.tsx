@@ -100,7 +100,7 @@ export const products: Array<Param> = [
   {
     id: 5,
     mainImg: "/SG.webp",
-    name: "Бесшумный генератор/Контейнерный генератор",
+    name: "Бесшумный генераторКонтейнерный генератор",
     shortDescription: "",
     qrCode: "",
     fullDescription: "",

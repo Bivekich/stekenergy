@@ -13,26 +13,66 @@ export default function Footer() {
       setEmailRequired(true);
     }
   };
-  /*            */
   const productCategory = [
-    "Дизельный генератор",
-    "Морской генератор",
-    "Газовый генератор",
-    "Оборудование для обработки металла",
-    "Холодильная камера",
-    "Дизельная насосная установка",
-    "Химические вещества",
+    {
+      title: "Дизельный генератор",
+      link: "/ProductsPage/type/DieselGenerator/all",
+    },
+    {
+      title: "Морской генератор",
+      link: "/ProductsPage/type/MarineGenerator/all",
+    },
+    {
+      title: "Газовый генератор",
+      link: "/ProductsPage/type/GasGenerator/all",
+    },
+    {
+      title: "Оборудование для обработки металла",
+      link: "/ProductsPage/type/MetalFormingEquipment/all",
+    },
+    {
+      title: "Холодильная камера",
+      link: "#",
+    },
+    {
+      title: "Дизельная насосная установка",
+      link: "/ProductsPage/type/DieselPumpSet/all",
+    },
+    {
+      title: "Химические вещества",
+      link: "/ProductsPage/type/Chemicals/all",
+    },
   ];
 
   const quickLinks = [
-    "Главная",
-    "Продукция",
-    "О нас",
-    "Новости",
-    "Свяжитесь с нами",
-    "Скачать",
-    "Часто задаваемые вопросы",
-    "Политика конфиденциальности",
+    {
+      title: "Главная",
+      link: "/",
+    },
+    {
+      title: "Продукция",
+      link: "/ProductsPage",
+    },
+    {
+      title: "О нас",
+      link: "/AboutUs",
+    },
+    {
+      title: "Новости",
+      link: "/News",
+    },
+    {
+      title: "Свяжитесь с нами",
+      link: "/Contacts",
+    },
+    {
+      title: "Часто задаваемые вопросы",
+      link: "/FAQ",
+    },
+    {
+      title: "Политика конфиденциальности",
+      link: "/Privacy",
+    },
   ];
 
   const handleMassageRequired = (e: React.FormEvent<HTMLTextAreaElement>) => {
@@ -46,29 +86,29 @@ export default function Footer() {
     <div className="flex w-full min-h-[50rem] flex-col bg-[#222222] text-white justify-center items-center">
       <div className="flex-grow flex min-w-3/4 nin-h-2/4 gap-x-24 flex-wrap flex-col md:flex-row justify-center">
         <div className="flex flex-col gap-5 mt-10">
-          <img src="/logo-1.webp" className="w-64"></img>
+          <img src="/Energylogo.png" className="w-52"></img>
           <span className="w-80">
             Мы с нетерпением ждем установления хороших партнерских отношений с
             вами и совместного развития для многообещающего будущего!
           </span>
           <ul className="flex gap-2">
             <li className="flex bg-[#ffffff] w-8 h-8 items-center justify-center rounded-full">
-              <a>
+              <a href="https://www.facebook.com/CNRoyalPower/">
                 <FaFacebookF fill="#0e6eb8" />
               </a>
             </li>
             <li className="flex bg-[#ffffff] w-8 h-8 items-center justify-center rounded-full">
-              <a>
+              <a href="https://twitter.com/ansonhy">
                 <FaXTwitter fill="#0e6eb8" />
               </a>
             </li>
             <li className="flex bg-[#ffffff] w-8 h-8 items-center justify-center rounded-full">
-              <a>
+              <a href="https://www.youtube.com/@royalpoweranson270">
                 <IoLogoYoutube fill="#0e6eb8" />
               </a>
             </li>
             <li className="flex bg-[#ffffff] w-8 h-8 items-center justify-center rounded-full">
-              <a>
+              <a href="https://www.instagram.com/cnroyalpower/">
                 <FaInstagram fill="#0e6eb8" />
               </a>
             </li>
@@ -81,8 +121,8 @@ export default function Footer() {
             {productCategory.map((item, index) => {
               return (
                 <li key={index}>
-                  <a href="#" className="hover:text-blue-400">
-                    {item}
+                  <a href={item.link} className="hover:text-blue-400">
+                    {item.title}
                   </a>
                 </li>
               );
@@ -96,8 +136,8 @@ export default function Footer() {
             {quickLinks.map((item, index) => {
               return (
                 <li key={index}>
-                  <a href="#" className="hover:text-blue-400">
-                    {item}
+                  <a href={item.link} className="hover:text-blue-400">
+                    {item.title}
                   </a>
                 </li>
               );
@@ -149,7 +189,13 @@ export default function Footer() {
           ></input>
         </form>
       </div>
-      <div className="w-full  min-h-10 bg-black "></div>
+      <div className="flex w-full min-h-10 bg-[#222222] justify-center items-center mt-5">
+        <span className="flex justify-center items-center w-full text-center">
+          {" "}
+          Copyrights © 2023 China Royal Power Machinery Co., Ltd.All rights
+          reserved. Sitemap
+        </span>
+      </div>
     </div>
   );
 }

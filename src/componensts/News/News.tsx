@@ -12,7 +12,7 @@ export default function News() {
 
       <div className="mb-5">
         <a
-          href="#"
+          href="/News"
           className="flex items-center justify-centergap-1 hover:text-blue-500"
         >
           БОЛЬШЕ НОВОСТЕЙ <FaArrowRightLong />
@@ -21,15 +21,18 @@ export default function News() {
 
       <div className="md:flex gap-20 hidden">
         {NewsData.map((item, index) => {
-          return (
-            <NewsCard
-              key={index}
-              img={item.img}
-              title={item.title}
-              des={item.des}
-              date={item.date}
-            ></NewsCard>
-          );
+          if (index < 3) {
+            return (
+              <NewsCard
+                key={index}
+                id={item.id}
+                img={item.img}
+                title={item.title}
+                des={item.des}
+                date={item.date}
+              ></NewsCard>
+            );
+          }
         })}
       </div>
 
@@ -42,9 +45,10 @@ export default function News() {
           {NewsData.map((item, index) => {
             return (
               <SwiperSlide className="flex justify-center items-center w-full h-full">
-                <div className="flex justify-center items-center w-full h-full pagi">
+                <div className="flex justify-center items-center w-full h-full">
                   <NewsCard
                     key={index}
+                    id={item.id}
                     img={item.img}
                     title={item.title}
                     des={item.des}

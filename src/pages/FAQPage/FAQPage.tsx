@@ -43,7 +43,7 @@ export default function FaqPage() {
         <Header></Header>
       </div>
 
-      <div className="flex justify-center items-center lg:h-20 h-1/3 overflow-hidden bg-white">
+      <div className="flex justify-center items-center overflow-hidden bg-white">
         <div className="flex lg:w-[50%] md:w-[90%] w-[90%] text-black font-bold text-2xl lg:justify-between flex-col lg:flex-row lg:items-end justify-end pb-5 border-b-2 ml-auto mr-auto">
           <div>
             <span>FAQ</span>
@@ -59,7 +59,7 @@ export default function FaqPage() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center w-full h-[80vh] mt-5">
+      <div className="flex justify-center items-center w-full mt-5 mb-10">
         <div className="flex lg:w-[55%] md:w-full w-screen items-center bg-white h-full flex-col gap-10">
           {questionAnswer.map((item, _) => {
             return (

@@ -25,9 +25,12 @@ export default function AboutComapny() {
               миллиардов юаней, общая прибыль — 40 миллионов юаней, а общий
               объем внешней торговли — 5 миллионов долларов США.
             </span>
-            <button className="place-self-start mt-7 border-none w-44 h-10 bg-[#0e6eb8] text-white">
+            <a
+              className="place-self-start mt-7 border-none w-44 h-10 bg-[#0e6eb8] text-white flex justify-center items-center"
+              href="/AboutUs"
+            >
               ПОДРОБНЕЕ
-            </button>
+            </a>
           </div>
 
           <div className="flex justify-center items-center w-full lg:w-2/4 pt-10 lg:pt-0">

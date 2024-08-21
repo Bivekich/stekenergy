@@ -1,20 +1,23 @@
 interface Props {
   img: string;
+  id: number;
   title: string;
   des: string;
   date: Date;
 }
-export default function NewsCard({ img, title, des, date }: Props) {
+export default function NewsCard({ img, title, des, date, id }: Props) {
   return (
     <div className="flex flex-col gap-5 bg-white w-96 h-[32rem] shadow-xl">
       <div className="flex w-full overflow-hidden h-60 ">
-        <img
-          src={img}
-          className="flexobject-fill w-full h-full box-border border-8 border-solid border-white transition-transform duration-300 ease-in-out transform hover:scale-105"
-        ></img>
+        <a className="w-full" href={`/News/${id}/${title}`}>
+          <img
+            src={img}
+            className="flexobject-fill w-full h-full box-border border-8 border-solid border-white transition-transform duration-300 ease-in-out transform hover:scale-105"
+          ></img>
+        </a>
       </div>
       <div className="ml-5 w-11/12 line-clamp-2 text-lg">
-        <a href="#" className="hover:text-blue-500">
+        <a href={`/News/${id}/${title}`} className="hover:text-blue-500">
           {title}
         </a>
       </div>

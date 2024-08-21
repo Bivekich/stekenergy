@@ -20,12 +20,30 @@ export default function MainProducts() {
   }, []);
 
   const product = [
-    { title: "Дизельный генератор", ref: "#" },
-    { title: "Азотурбинный двигатель", ref: "#" },
-    { title: "Морской генератор", ref: "#" },
-    { title: "Металлообрабатывающее оборудование", ref: "#" },
-    { title: "Дизельный насосный агрегат", ref: "#" },
-    { title: "Газовый генератор", ref: "#" },
+    {
+      title: "Дизельный генератор",
+      ref: "/ProductsPage/type/DieselGenerator/all",
+    },
+    {
+      title: "Азотурбинный двигатель",
+      ref: "/ProductsPage/type/GasGenerator/all",
+    },
+    {
+      title: "Морской генератор",
+      ref: "/ProductsPage/type/MarineGenerator/all",
+    },
+    {
+      title: "Металлообрабатывающее оборудование",
+      ref: "/ProductsPage/type/MetalFormingEquipment/all",
+    },
+    {
+      title: "Дизельный насосный агрегат",
+      ref: "/ProductsPage/type/DieselGenerator/all",
+    },
+    {
+      title: "Газовый генератор",
+      ref: "/ProductsPage/type/GasGenerator/all",
+    },
   ];
 
   return (
@@ -58,6 +76,7 @@ export default function MainProducts() {
                   key={index}
                   img={item.mainImg}
                   name={item.name}
+                  link={`ProductsPage/${item.id}/${item.name}`}
                 ></MainProductCard>
               );
             })}

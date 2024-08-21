@@ -85,6 +85,9 @@ export default function Header() {
             {isMenuOpen ? <FaTimes size="1.5rem" /> : <FaBars size="1.5rem" />}
           </button>
         </div>
+        <div className="hidden md:flex">
+          <img src="Energylogo.png" className="w-[4.5rem]" />
+        </div>
 
         <div className="m-auto hidden md:flex">
           <ul className="flex gap-7">
@@ -105,6 +108,10 @@ export default function Header() {
               );
             })}
           </ul>
+        </div>
+
+        <div className="block pl-[34%] md:hidden">
+          <img src="Energylogo.png" className="w-[4.5rem]" />
         </div>
 
         <div

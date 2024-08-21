@@ -14,7 +14,7 @@ export default function Products() {
       <div className="md:grid grid-cols-2 md:grid-cols-3 grid-rows-4 gap-0 h-full w-full flex flex-col">
         <div className="flex w-full h-full row-span-4 bg-[url('/factory.webp')] bg-no-repeat bg-cover justify-center items-center text-center text-white flex-col gap-20 pt-5 md:pt-0">
           <div>
-            <img src="/royal.webp"></img>
+            <img src="/Energylogo.png" className="lg:w-[30rem] w-[25rem]"></img>
           </div>
           <div>
             <span className="text-4xl text-bold">НАША ПРОДУКЦИЯ</span>
@@ -27,7 +27,11 @@ export default function Products() {
           </div>
           <div className="transition-colors duration-300 ease-in-out hover:bg-[#b4b4b5] hover:text-black md:mb-0 mb-4">
             <button className="w-48 h-14 border-t-2 border-b-2 text-lg">
-              <span className="flex items-center justify-center">БОЛЬШЕ +</span>
+              <a href="/ProductsPage">
+                <span className="flex items-center justify-center">
+                  БОЛЬШЕ +
+                </span>
+              </a>
             </button>
           </div>
         </div>
@@ -63,8 +67,9 @@ export default function Products() {
               <span className="ml-7 text-xl">
                 Оборудование для формовки металла
               </span>
-
-              <IoIosArrowDroprightCircle size={"3rem"} className="mr-5" />
+              <a href="/ProductsPage/type/MetalFormingEquipment/all">
+                <IoIosArrowDroprightCircle size={"3rem"} className="mr-5" />
+              </a>
             </div>
           </div>
         </div>
@@ -75,8 +80,9 @@ export default function Products() {
 
             <div className="flex absolute bottom-0 w-full h-24 items-center justify-between">
               <span className="ml-7 text-xl">Генераторы энергии</span>
-
-              <IoIosArrowDroprightCircle size={"3rem"} className="mr-5" />
+              <a href="/ProductsPage/type/DieselGenerator/all">
+                <IoIosArrowDroprightCircle size={"3rem"} className="mr-5" />
+              </a>
             </div>
           </div>
         </div>
@@ -87,8 +93,9 @@ export default function Products() {
 
             <div className="flex absolute bottom-0 w-full h-24 items-center justify-between">
               <span className="ml-7 text-xl">Холодильные хранилища</span>
-
-              <IoIosArrowDroprightCircle size={"3rem"} className="mr-5" />
+              <a>
+                <IoIosArrowDroprightCircle size={"3rem"} className="mr-5" />
+              </a>
             </div>
           </div>
         </div>
@@ -99,8 +106,9 @@ export default function Products() {
 
             <div className="flex absolute bottom-0 w-full h-24 items-center justify-between">
               <span className="ml-7 text-xl">Водяной насосы</span>
-
-              <IoIosArrowDroprightCircle size={"3rem"} className="mr-5" />
+              <a href="/ProductsPage/type/DieselPumpSet/all">
+                <IoIosArrowDroprightCircle size={"3rem"} className="mr-5" />
+              </a>
             </div>
           </div>
         </div>

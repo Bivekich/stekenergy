@@ -27,7 +27,7 @@ export default function NewsPage() {
       </div>
 
       <div className="flex w-full justify-center  px-2 md:px-2 lg:mt-0 mt-5">
-        <div className="flex lg:w-[65%] md:w-full w-full items-center flex-wrap flex-col md:flex-row  md:gap-0 gap-10">
+        <div className="flex lg:w-[65%] md:w-full w-full items-center justify-center md:justify-start flex-wrap flex-col md:flex-row md:gap-0 gap-10">
           {NewsData.map((item, index) => {
             return (
               <NewsPageCard

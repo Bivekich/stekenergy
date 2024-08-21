@@ -15,7 +15,9 @@ export default function Contact() {
           </span>
           <div className="w-full md:w-auto mt-4 md:mt-8 flex justify-center md:justify-start">
             <div className="flex items-center justify-center h-10 px-6 bg-[#0e6eb8] hover:bg-[#055084] transition-colors duration-200">
-              <a className="text-white text-lg cursor-pointer">Связаться</a>
+              <a className="text-white text-lg cursor-pointer" href="/Contacts">
+                Связаться
+              </a>
             </div>
           </div>
         </div>

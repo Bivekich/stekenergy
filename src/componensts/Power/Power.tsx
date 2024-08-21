@@ -50,7 +50,7 @@ export default function Power() {
           );
         })}
         <div className="flex bg-[#0e7fdf] w-full h-[4rem] items-center justify-center">
-          <a>
+          <a href="/ProductsPage">
             <span>CМОТРЕТЬ ЕЩЕ УСЛУГИ</span>
           </a>
         </div>
