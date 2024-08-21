@@ -10,7 +10,6 @@ import Footer from "./componensts/Footer/Footer";
 export default function App() {
   return (
     <div className="w-screen h-screen">
-      <div></div>
       <Header></Header>
       <Hero></Hero>
       <AboutComapny></AboutComapny>

@@ -4,10 +4,26 @@ import "swiper/swiper-bundle.css";
 import { Pagination } from "swiper/modules";
 export default function Products() {
   const products = [
-    { src: "/metalformingeq.webp", title: "Оборудование для формовки металла" },
-    { src: "/powergen.webp", title: "Генераторы энергии" },
-    { src: "/coldChain.webp", title: "Холодильные хранилища" },
-    { src: "/waterpump.webp", title: "Водяной насосы" },
+    {
+      src: "/metalformingeq.webp",
+      title: "Оборудование для формовки металла",
+      link: "/ProductsPage/type/MetalFormingEquipment/all",
+    },
+    {
+      src: "/powergen.webp",
+      title: "Генераторы энергии",
+      link: "/ProductsPage/type/DieselGenerator/all",
+    },
+    {
+      src: "/coldChain.webp",
+      title: "Холодильные хранилища",
+      link: "/ProductsPage/type/DieselGenerator/all",
+    },
+    {
+      src: "/waterpump.webp",
+      title: "Водяной насосы",
+      link: "/ProductsPage/type/DieselPumpSet/all",
+    },
   ];
   return (
     <div className="w-screen h-[60rem] md:h-full min-w-screen mb-5 md:mt-0 md:mb-0">
@@ -42,7 +58,7 @@ export default function Products() {
               return (
                 <div key={index}>
                   <SwiperSlide key={index} className="relative w-full h-96">
-                    <a href="#">
+                    <a href={item.link}>
                       <img
                         key={index}
                         src={item.src}

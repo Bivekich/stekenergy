@@ -2,9 +2,10 @@ import { useState } from "react";
 interface Props {
   img: string;
   title: string;
+  num: number;
 }
-export default function MobileRow({ img, title }: Props) {
-  const [numberItems, setNumberItems] = useState(1);
+export default function MobileRow({ img, title, num }: Props) {
+  const [numberItems, setNumberItems] = useState(num);
   return (
     <div className="border-t-2 bordet-b-2 mt-5 pt-2 flex">
       <div className="w-1/3 flex">

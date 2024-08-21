@@ -36,7 +36,10 @@ export default function InqueryPage() {
           </div>
           <div>
             <span>
-              <a href="/">Главная</a> - {product[0].name}
+              <a href="/" className="hover:text-blue-600">
+                Главная
+              </a>{" "}
+              - {product[0].name}
             </span>
           </div>
         </div>

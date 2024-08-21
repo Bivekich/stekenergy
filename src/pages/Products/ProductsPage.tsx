@@ -80,7 +80,7 @@ export default function ProductsPage() {
             <span>
               <a href="/" className="hover:text-blue-600">
                 Главная
-              </a>
+              </a>{" "}
               - Продукты
             </span>
           </div>
@@ -169,7 +169,7 @@ export default function ProductsPage() {
                     </DropdownItem>
                     {item.products.map((el, index) => {
                       return (
-                        <div>
+                        <div key={index}>
                           <DropdownItem
                             key={index}
                             as={"a"}
@@ -196,7 +196,7 @@ export default function ProductsPage() {
                   <ProductCard
                     key={index}
                     id={item.id}
-                    link={`/ProductsPage/${item.id}/${item.name}`}
+                    link={`/ProductsPage/${index}/${item.name}`}
                     img={item.mainImg}
                     name={item.name}
                   ></ProductCard>

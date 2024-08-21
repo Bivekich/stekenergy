@@ -86,7 +86,7 @@ export default function Header() {
           </button>
         </div>
         <div className="hidden md:flex">
-          <img src="Energylogo.png" className="w-[4.5rem]" />
+          <img src="/Energylogo.png" className="w-[4.5rem]" />
         </div>
 
         <div className="m-auto hidden md:flex">
@@ -111,7 +111,7 @@ export default function Header() {
         </div>
 
         <div className="block pl-[34%] md:hidden">
-          <img src="Energylogo.png" className="w-[4.5rem]" />
+          <img src="/Energylogo.png" className="w-[4.5rem]" />
         </div>
 
         <div

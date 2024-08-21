@@ -44,8 +44,14 @@ export default function News() {
         >
           {NewsData.map((item, index) => {
             return (
-              <SwiperSlide className="flex justify-center items-center w-full h-full">
-                <div className="flex justify-center items-center w-full h-full">
+              <SwiperSlide
+                key={index}
+                className="flex justify-center items-center w-full h-full"
+              >
+                <div
+                  key={index}
+                  className="flex justify-center items-center w-full h-full"
+                >
                   <NewsCard
                     key={index}
                     id={item.id}

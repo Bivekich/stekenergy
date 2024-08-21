@@ -61,7 +61,6 @@ export default function CategoryProductsPage() {
   const Param = useParams();
   const Category = Param.Category?.replaceAll(" ", "");
   const Brand = Param.Brand?.replaceAll(" ", "");
-  console.log(Brand);
   const [currentPage, setCurrentPage] = useState(1);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleMenuToggle = () => {
@@ -189,7 +188,7 @@ export default function CategoryProductsPage() {
               );
             })}
           </div>
-          <div className="flex min-h-96 w-[80rem] gap-5 justify-normal flex-wrap">
+          <div className="flex min-h-96 w-[25.6rem] md:w-[80rem] md:gap-5 gap-1 justify-center md:justify-start md:items-start items-center px-4 md:px-0 flex-wrap">
             {products.map((item, index) => {
               if (
                 (index >= currentPage * 6 - 6 &&

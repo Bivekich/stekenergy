@@ -47,7 +47,7 @@ export default function MainProducts() {
   ];
 
   return (
-    <div className="flex w-screen min-h-full mb-20">
+    <div className="flex w-screen  mb-20 md:mt-0 mt-[20rem]">
       <div className="flex mt-10 w-full text-white flex-col justify-center items-center">
         <div className="flex w-full h-fit justify-center mb-14">
           <span className="text-5xl text-bold text-[#333333]">ПРОДУКЦИЯ</span>
@@ -70,13 +70,12 @@ export default function MainProducts() {
         <div className="flex justify-center w-full md:w-11/12 mt-20 m-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {images.map((item, index) => {
-              console.log(item);
               return (
                 <MainProductCard
                   key={index}
                   img={item.mainImg}
                   name={item.name}
-                  link={`ProductsPage/${item.id}/${item.name}`}
+                  link={`ProductsPage/${index}/${item.name}`}
                 ></MainProductCard>
               );
             })}

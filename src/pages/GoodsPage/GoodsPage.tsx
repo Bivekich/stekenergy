@@ -40,7 +40,10 @@ export default function GoodsPage() {
           </div>
           <div>
             <span>
-              <a href="/">Главная</a> - {ProductName.nameOfProduct}
+              <a href="/" className="hover:text-blue-600">
+                Главная
+              </a>{" "}
+              - {ProductName.nameOfProduct}
             </span>
           </div>
         </div>
@@ -51,8 +54,10 @@ export default function GoodsPage() {
           <img src={item.mainImg} className="w-1/3 h-fit"></img>
           <div className="flex-1"></div>
           <div className="lg:ml-10 md:px-3 lg:px-0">
-            <span className="flex w-96 flex-col">{item.shortDescription}</span>
-            <div className="flex gap-3 mt-5 mb-5">
+            <span className="flex w-96 flex-col px-4 md:px-0">
+              {item.shortDescription}
+            </span>
+            <div className="flex gap-3 mt-5 mb-5 px-4 md:px-0">
               <span>Колличество:</span>
               <div className="flex gap-3">
                 <button
@@ -72,7 +77,7 @@ export default function GoodsPage() {
                 </button>
               </div>
             </div>
-            <div className="flex flex-col w-72 gap-3">
+            <div className="flex flex-col w-72 gap-3 px-4 md:px-0">
               <a
                 className="border-2 rounded-full h-10 flex items-center justify-center"
                 href={`/Inquire/${payload.id}/prod`}

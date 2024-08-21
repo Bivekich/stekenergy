@@ -115,15 +115,15 @@ export default function ContactsPage() {
                 <input
                   className="bg-gray-400 w-full h-20 placeholder-black"
                   type="text"
-                  placeholder="Name"
+                  placeholder="Имя"
                 />
               </div>
 
               <div>
                 <input
                   className="bg-gray-400 w-full h-20 placeholder-black"
-                  type="text"
-                  placeholder="Tel"
+                  type="tel"
+                  placeholder="Tел"
                 />
               </div>
 

@@ -36,7 +36,10 @@ export default function CartInqueryPage() {
           </div>
           <div>
             <span>
-              <a href="/">Главная</a> - Запросить Товар
+              <a href="/" className="hover:text-blue-600">
+                Главная
+              </a>{" "}
+              - Запросить Товар
             </span>
           </div>
         </div>
@@ -72,6 +75,7 @@ export default function CartInqueryPage() {
               key={index}
               img={item.mainImg}
               title={item.title}
+              num={item.numberOfItems}
             ></MobileRow>
           );
         })}

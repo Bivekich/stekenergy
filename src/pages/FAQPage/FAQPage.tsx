@@ -61,9 +61,10 @@ export default function FaqPage() {
 
       <div className="flex justify-center items-center w-full mt-5 mb-10">
         <div className="flex lg:w-[55%] md:w-full w-screen items-center bg-white h-full flex-col gap-10">
-          {questionAnswer.map((item, _) => {
+          {questionAnswer.map((item, index) => {
             return (
               <QuestionCard
+                key={index}
                 quesion={item.question}
                 answer={item.answer}
               ></QuestionCard>

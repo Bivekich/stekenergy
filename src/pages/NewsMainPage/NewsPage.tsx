@@ -13,13 +13,16 @@ export default function NewsMainPage() {
         <Header></Header>
       </div>
       <div className="flex justify-center items-center h-1/3 overflow-hidden bg-white">
-        <div className="flex lg:w-1/2 md:w-[90%] w-[90%] text-black font-bold text-2xl lg:justify-between flex-col lg:flex-row lg:items-end justify-end pb-5 border-b-2 ml-auto mr-auto">
+        <div className="flex lg:w-1/2 md:w-[90%] w-[80%] text-black font-bold text-2xl lg:justify-between flex-col lg:flex-row lg:items-end justify-end pb-5 border-b-2 ml-auto mr-auto">
           <div className="lg:w-1/2">
             <span className="w-full">{newsTitle}</span>
           </div>
           <div>
             <span>
-              <a href="/">Главная</a> - Новости
+              <a href="/" className="hover:text-blue-600">
+                Главная
+              </a>{" "}
+              - Новости
             </span>
           </div>
         </div>
@@ -30,7 +33,7 @@ export default function NewsMainPage() {
           <span className="text-xl">{news.title}</span>
         </div>
         <div>
-          <ul className="flex gap-5">
+          <ul className="flex gap-5 justify-center flex-col md:flex-row">
             <li>Просмотрено:</li>
             <li>Автор:</li>
             {

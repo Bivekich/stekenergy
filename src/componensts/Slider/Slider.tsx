@@ -86,7 +86,7 @@ export default function Slider() {
                 : "translate-x-full"
             }`}
           >
-            <a href="#">
+            <a href="/ProductsPage">
               <div
                 style={{ backgroundImage: `url(${slide})` }}
                 className="w-full md:h-full h-5/6 bg-no-repeat bg-cover md:bg-cover bg-center"
