@@ -201,6 +201,7 @@ export default function CategoryProductsPage() {
                 return (
                   <ProductCard
                     key={index}
+                    id={item.id}
                     link={`/ProductsPage/${index}/${item.name}`}
                     img={item.mainImg}
                     name={item.name}
