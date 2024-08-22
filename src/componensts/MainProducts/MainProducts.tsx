@@ -47,12 +47,12 @@ export default function MainProducts() {
   ];
 
   return (
-    <div className="flex w-screen  mb-20 md:mt-0 mt-[20rem]">
+    <div className="flex w-screen mb-20 lg:mt-0 mt-[15rem] md:mt-[30rem] ">
       <div className="flex mt-10 w-full text-white flex-col justify-center items-center">
         <div className="flex w-full h-fit justify-center mb-14">
           <span className="text-5xl text-bold text-[#333333]">ПРОДУКЦИЯ</span>
         </div>
-        <ul className="flex md:flex-row flex-col gap-5 justify-center items-center">
+        <ul className="flex md:flex-row flex-col gap-5 justify-center items-center flex-wrap">
           {product.map((item, index) => {
             return (
               <li

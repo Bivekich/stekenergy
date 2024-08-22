@@ -19,10 +19,12 @@ type Action =
 const cartReducer = (state: CartItem[], action: Action): CartItem[] => {
   switch (action.type) {
     case "add":
-      const existingItem = state.find((item) => item.id === action.item.id);
-      if (existingItem) {
-        return state.map((item) =>
-          item.id === action.item.id ? { ...item } : item
+      const existingItem = state.findIndex(
+        (item) => item.id === action.item.id
+      );
+      if (existingItem !== -1) {
+        return state.map((item, index) =>
+          index === existingItem ? { ...action.item } : item
         );
       }
       return [...state, action.item];

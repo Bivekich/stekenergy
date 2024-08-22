@@ -26,9 +26,9 @@ export default function Products() {
     },
   ];
   return (
-    <div className="w-screen h-[60rem] md:h-full min-w-screen mb-5 md:mt-0 md:mb-0">
-      <div className="md:grid grid-cols-2 md:grid-cols-3 grid-rows-4 gap-0 h-full w-full flex flex-col">
-        <div className="flex w-full h-full row-span-4 bg-[url('/factory.webp')] bg-no-repeat bg-cover justify-center items-center text-center text-white flex-col gap-20 pt-5 md:pt-0">
+    <div className="w-screen h-[90rem] md:h-full min-w-screen mb-5 md:mt-0 md:mb-0">
+      <div className="lg:grid grid-cols-2 md:grid-cols-3 grid-rows-4 gap-0 h-full w-full flex flex-col">
+        <div className="flex w-full h-full row-span-4 bg-[url('/factory.webp')] bg-no-repeat bg-cover justify-center items-center text-center text-white flex-col gap-20 md:gap-15 pt-5 md:pt-1 md:pb-10">
           <div>
             <img src="/Energylogo.png" className="lg:w-[30rem] w-[25rem]"></img>
           </div>
@@ -52,31 +52,37 @@ export default function Products() {
           </div>
         </div>
 
-        <div className="w-screen h-full md:hidden">
-          <Swiper pagination={true} modules={[Pagination]}>
-            {products.map((item, index) => {
-              return (
-                <div key={index}>
-                  <SwiperSlide key={index} className="relative w-full h-96">
-                    <a href={item.link}>
-                      <img
-                        key={index}
-                        src={item.src}
-                        className="w-full h-full"
-                      ></img>
-                    </a>
+        <div className="w-screen lg:hidden">
+          <div>
+            <Swiper
+              pagination={true}
+              modules={[Pagination]}
+              className="w-full flex"
+            >
+              {products.map((item, index) => {
+                return (
+                  <div key={index} className="flex">
+                    <SwiperSlide key={index} className="w-full">
+                      <a href={item.link}>
+                        <img
+                          key={index}
+                          src={item.src}
+                          className="w-full h-full mb-50"
+                        ></img>
+                      </a>
 
-                    <div className="flex w-full absolute text-center mt-2 bottom-0 justify-center items-center mb-8">
-                      {item.title}
-                    </div>
-                  </SwiperSlide>
-                </div>
-              );
-            })}
-          </Swiper>
+                      <div className="flex w-full absolute text-center mt-2 bottom-0 justify-center items-center mb-8">
+                        {item.title}
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                );
+              })}
+            </Swiper>
+          </div>
         </div>
 
-        <div className="row-span-2 h-full object-cover md:flex hidden">
+        <div className="row-span-2 h-full object-cover lg:flex hidden">
           <div className="relative w-full h-full">
             <div className="w-full h-full bg-[url('/metalformingeq.webp')] bg-no-repeat bg-cover bg-center"></div>
             <div className="flex absolute bottom-0 w-full h-24 items-center justify-between">
@@ -90,7 +96,7 @@ export default function Products() {
           </div>
         </div>
 
-        <div className="row-span-2 col-start-1 md:col-start-2 row-start-3 md:flex hidden">
+        <div className="row-span-2 col-start-1 md:col-start-2 row-start-3 lg:flex hidden">
           <div className="relative w-full h-full">
             <div className="w-full h-full bg-[url('/powergen.webp')] bg-no-repeat bg-cover bg-center"></div>
 
@@ -103,7 +109,7 @@ export default function Products() {
           </div>
         </div>
 
-        <div className="row-span-2 col-start-2 md:col-start-3 row-start-1 md:flex hidden">
+        <div className="row-span-2 col-start-2 md:col-start-3 row-start-1 lg:flex hidden">
           <div className="relative w-full h-full">
             <div className="w-full h-full bg-[url('/coldChain.webp')] bg-no-repeat bg-cover bg-center"></div>
 
@@ -116,7 +122,7 @@ export default function Products() {
           </div>
         </div>
 
-        <div className="row-span-2 col-start-2 md:col-start-3 row-start-3 md:flex hidden">
+        <div className="row-span-2 col-start-2 md:col-start-3 row-start-3 lg:flex hidden">
           <div className="relative w-full h-full">
             <div className="w-full h-full bg-[url('/waterpump.webp')] bg-no-repeat bg-cover bg-center"></div>
 

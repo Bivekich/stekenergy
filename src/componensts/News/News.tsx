@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 export default function News() {
   return (
-    <div className="flex w-full min-h-3/5 md:text-start mb-20 mt-20 items-center flex-col">
+    <div className="flex w-full  md:text-start mb-20 mt-20 items-center flex-col">
       <div className="mb-14 md:text-start text-center">
         <span className="text-5xl">Последние новости</span>
       </div>
@@ -19,7 +19,7 @@ export default function News() {
         </a>
       </div>
 
-      <div className="md:flex gap-20 hidden">
+      <div className="md:flex gap-20 hidden flex-wrap px-1 justify-center items-center">
         {NewsData.map((item, index) => {
           if (index < 3) {
             return (
