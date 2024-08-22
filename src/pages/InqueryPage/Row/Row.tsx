@@ -3,10 +3,25 @@ import { useState } from "react";
 interface Props {
   img: string;
   title: string;
+  numberOfItems: number;
+  id: number;
+  handleProducts: (id: number) => void;
 }
-export default function Row({ img, title }: Props) {
-  const [number, setNumber] = useState(1);
+export default function Row({
+  img,
+  title,
+  numberOfItems,
+  id,
+  handleProducts,
+}: Props) {
+  console.log(numberOfItems);
+  let number = numberOfItems;
+  const [num, setNumber] = useState(number);
   const [isHide, setIsHide] = useState(true);
+  const handleHide = () => {
+    handleProducts(id);
+    setIsHide(false);
+  };
   return (
     <>
       {isHide && (
@@ -22,18 +37,18 @@ export default function Row({ img, title }: Props) {
           <td className="border-2">
             <div className="flex w-full h-full justify-center">
               <input
-                type="number"
+                type="text"
                 min={1}
-                defaultValue={number}
+                value={num}
                 step={1}
-                onChange={() => setNumber}
+                onChange={(e) => setNumber(Number(e.target.value))}
               ></input>
             </div>
           </td>
           <td className="border-2 ">
             <div
               className="w-full h-full flex justify-center cursor-pointer hover:text-red-600"
-              onClick={() => setIsHide(false)}
+              onClick={handleHide}
             >
               <span>Удалить</span>
             </div>

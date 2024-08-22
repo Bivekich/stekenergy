@@ -28,9 +28,12 @@ export default function Products() {
   return (
     <div className="w-screen h-[90rem] md:h-full min-w-screen mb-5 md:mt-0 md:mb-0">
       <div className="lg:grid grid-cols-2 md:grid-cols-3 grid-rows-4 gap-0 h-full w-full flex flex-col">
-        <div className="flex w-full h-full row-span-4 bg-[url('/factory.webp')] bg-no-repeat bg-cover justify-center items-center text-center text-white flex-col gap-20 md:gap-15 pt-5 md:pt-1 md:pb-10">
-          <div>
-            <img src="/Energylogo.png" className="lg:w-[30rem] w-[25rem]"></img>
+        <div className="relative flex w-full h-full row-span-4 bg-[url('/factory.webp')] bg-no-repeat bg-cover justify-center items-center text-center text-white flex-col gap-20 md:gap-15 pt-5 md:pt-1 md:pb-10">
+          <div className="md:w-[30rem] md:h-[30rem] relative md:flex justify-center items-center">
+            <img
+              src="/Energylogo.png"
+              className="md:w-2/3 md:h-2/3 w-[25rem] "
+            ></img>
           </div>
           <div>
             <span className="text-4xl text-bold">НАША ПРОДУКЦИЯ</span>

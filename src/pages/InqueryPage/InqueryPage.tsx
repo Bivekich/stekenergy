@@ -3,12 +3,25 @@ import Header from "../../componensts/Header/Header";
 import { products } from "../../db/data";
 import Footer from "../../componensts/Footer/Footer";
 import { useState } from "react";
+import { sendMessage } from "../../chat";
 export default function InqueryPage() {
   const param = useParams();
+  console.log(param);
   const product = products.filter((item) => item.id === Number(param.id));
-  const [numberItems, setNumberItems] = useState(1);
+  const [emailData, setEmailData] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+  const [tel, setTel] = useState<string>("");
+  const [name, setName] = useState<string>("");
+  const [numberItems, setNumberItems] = useState(Number(param.numberOfItems));
   const [emailRequired, setEmailRequired] = useState(false);
   const [messageRequired, setMassageRequired] = useState(false);
+
+  const sendData = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const data = `Новая заявка на контакт:\nФИО: ${name}\nemail: ${emailData}\nТел: ${tel}\nСообщение: ${message}\nПродукты:${product[0].name}\nШт:${numberItems}`;
+    sendMessage(data);
+  };
   const handleEmailRequired = (e: React.FormEvent<HTMLInputElement>) => {
     if (e.currentTarget.value !== "") {
       setEmailRequired(false);
@@ -68,7 +81,12 @@ export default function InqueryPage() {
                 </td>
                 <td className="border-2">
                   <div className="flex w-full h-full justify-center">
-                    <input type="number" value={1}></input>
+                    <input
+                      type="number"
+                      defaultValue={numberItems}
+                      step={1}
+                      onChange={(e) => setNumberItems(Number(e.target.value))}
+                    ></input>
                   </div>
                 </td>
               </tr>
@@ -104,7 +122,10 @@ export default function InqueryPage() {
           </span>
         </div>
       </div>
-      <form className="flex flex-col mt-10 gap-y-2 mb-10 w-full justify-center items-center">
+      <form
+        className="flex flex-col mt-10 gap-y-2 mb-10 w-full justify-center items-center"
+        onSubmit={(e) => sendData(e)}
+      >
         <span className="text-2xl w-72"></span>
         <div className="flex gap-y-2 flex-col justify-center w-full items-center ">
           <div className="flex gap-3 text-black justify-center flex-col w-full px-4 lg:px-0 lg:w-1/2">
@@ -115,6 +136,7 @@ export default function InqueryPage() {
                 placeholder="*Email"
                 onBlur={handleEmailRequired}
                 onFocus={handleEmailRequired}
+                onChange={(e) => setEmailData(e.target.value)}
               />
               {emailRequired && <p className="text-red-500">Необходимо!</p>}
             </div>
@@ -123,11 +145,13 @@ export default function InqueryPage() {
               className="bg-gray-400 w-full h-8 placeholder-black"
               type="text"
               placeholder="Имя"
+              onChange={(e) => setName(e.target.value)}
             />
             <input
               className="bg-gray-400 w-full h-8 placeholder-black"
               type="tel"
               placeholder="Тел"
+              onChange={(e) => setTel(e.target.value)}
             />
           </div>
 
@@ -139,6 +163,7 @@ export default function InqueryPage() {
                 className="bg-gray-400 placeholder-black required w-full lg:w-full h-32"
                 onBlur={handleMassageRequired}
                 onFocus={handleMassageRequired}
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
               {messageRequired && <p className="text-red-500">Необходимо!</p>}
             </div>

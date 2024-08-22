@@ -3,9 +3,21 @@ import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
 import { useState } from "react";
+import { sendMessage } from "../../chat";
 export default function Footer() {
   const [emailRequired, setEmailRequired] = useState(false);
   const [messageRequired, setMassageRequired] = useState(false);
+  const [emailData, setEmailData] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+  const [tel, setTel] = useState<string>("");
+  const [name, setName] = useState<string>("");
+
+  const sendDate = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const data = `Новая заявка на контакт:\nФИО: ${name}\nemail: ${emailData}\nТел: ${tel}\nСообщение: ${message}`;
+    sendMessage(data);
+  };
+
   const handleEmailRequired = (e: React.FormEvent<HTMLInputElement>) => {
     if (e.currentTarget.value !== "") {
       setEmailRequired(false);
@@ -145,7 +157,10 @@ export default function Footer() {
           </ul>
         </div>
 
-        <form className="flex flex-col mt-10 gap-y-2">
+        <form
+          className="flex flex-col mt-10 gap-y-2"
+          onSubmit={(e) => sendDate(e)}
+        >
           <span className="text-2xl w-72">Обратная связь</span>
           <div className="flex gap-y-2 flex-col">
             <div className="flex gap-3 text-black">
@@ -154,8 +169,10 @@ export default function Footer() {
                   className="bg-gray-400 w-24 h-8 placeholder-black"
                   type="email"
                   placeholder="*Email"
+                  value={emailData}
                   onBlur={handleEmailRequired}
                   onFocus={handleEmailRequired}
+                  onChange={(e) => setEmailData(e.target.value)}
                 />
                 {emailRequired && <p className="text-red-500">Необходимо!</p>}
               </div>
@@ -164,11 +181,15 @@ export default function Footer() {
                 className="bg-gray-400 w-24 h-8 placeholder-black"
                 type="text"
                 placeholder="Имя"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
               <input
                 className="bg-gray-400 w-24 h-8 placeholder-black"
                 type="tel"
                 placeholder="Тел"
+                value={tel}
+                onChange={(e) => setTel(e.target.value)}
               />
             </div>
 
@@ -178,6 +199,8 @@ export default function Footer() {
                 className="bg-gray-400 placeholder-black required w-full h-32"
                 onBlur={handleMassageRequired}
                 onFocus={handleMassageRequired}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
               {messageRequired && <p className="text-red-500">Необходимо!</p>}
             </div>

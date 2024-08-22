@@ -2,13 +2,34 @@ import Header from "../../componensts/Header/Header";
 import Footer from "../../componensts/Footer/Footer";
 import { useState } from "react";
 import { useCart } from "../../context/cartContext";
+import { sendMessage } from "../../chat";
 import Row from "./Row/Row";
 import MobileRow from "./Row/MobileRow";
 export default function CartInqueryPage() {
   const cart = useCart();
-
+  const [emailData, setEmailData] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+  const [tel, setTel] = useState<string>("");
+  const [name, setName] = useState<string>("");
   const [emailRequired, setEmailRequired] = useState(false);
   const [messageRequired, setMassageRequired] = useState(false);
+  const [products, setProducts] = useState(cart);
+
+  const handleProducts = (id: number) => {
+    setProducts((prevProducts) =>
+      prevProducts.filter((product) => product.id !== id)
+    );
+  };
+  const sendData = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    let pro = products.map((item, _) => {
+      return `Название: ${item.title}, шт:${item.numberOfItems} `;
+    });
+    const data = `Новая заявка на контакт:\nФИО: ${name}\nemail: ${emailData}\nТел: ${tel}\nСообщение: ${message}\nПродукты:${pro.join(
+      "\n"
+    )}`;
+    sendMessage(data);
+  };
   const handleEmailRequired = (e: React.FormEvent<HTMLInputElement>) => {
     if (e.currentTarget.value !== "") {
       setEmailRequired(false);
@@ -58,7 +79,14 @@ export default function CartInqueryPage() {
               </tr>
               {cart.map((item, index) => {
                 return (
-                  <Row key={index} img={item.mainImg} title={item.title}></Row>
+                  <Row
+                    key={index}
+                    img={item.mainImg}
+                    title={item.title}
+                    numberOfItems={item.numberOfItems}
+                    id={item.id}
+                    handleProducts={handleProducts}
+                  ></Row>
                 );
               })}
             </thead>
@@ -80,7 +108,10 @@ export default function CartInqueryPage() {
           );
         })}
       </div>
-      <form className="flex flex-col mt-10 gap-y-2 mb-10 w-full justify-center items-center">
+      <form
+        className="flex flex-col mt-10 gap-y-2 mb-10 w-full justify-center items-center"
+        onSubmit={(e) => sendData(e)}
+      >
         <span className="text-2xl w-72"></span>
         <div className="flex gap-y-2 flex-col justify-center w-full items-center ">
           <div className="flex gap-3 text-black justify-center flex-col w-full px-4 lg:px-0 lg:w-1/2">
@@ -91,6 +122,7 @@ export default function CartInqueryPage() {
                 placeholder="*Email"
                 onBlur={handleEmailRequired}
                 onFocus={handleEmailRequired}
+                onChange={(e) => setEmailData(e.target.value)}
               />
               {emailRequired && <p className="text-red-500">Необходимо!</p>}
             </div>
@@ -99,11 +131,13 @@ export default function CartInqueryPage() {
               className="bg-gray-400 w-full h-8 placeholder-black"
               type="text"
               placeholder="Имя"
+              onChange={(e) => setName(e.target.value)}
             />
             <input
               className="bg-gray-400 w-full h-8 placeholder-black"
               type="tel"
               placeholder="Тел"
+              onChange={(e) => setTel(e.target.value)}
             />
           </div>
 
@@ -115,6 +149,7 @@ export default function CartInqueryPage() {
                 className="bg-gray-400 placeholder-black required w-full lg:w-full h-32"
                 onBlur={handleMassageRequired}
                 onFocus={handleMassageRequired}
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
               {messageRequired && <p className="text-red-500">Необходимо!</p>}
             </div>

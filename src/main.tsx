@@ -59,7 +59,7 @@ const router = createBrowserRouter([
     element: <NewsMainPage></NewsMainPage>,
   },
   {
-    path: "/Inquire/:id/prod",
+    path: "/Inquire/:id/prod/:numberOfItems/inq",
     element: <InqueryPage></InqueryPage>,
   },
   {

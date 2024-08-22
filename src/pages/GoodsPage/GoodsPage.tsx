@@ -80,7 +80,7 @@ export default function GoodsPage() {
             <div className="flex flex-col w-72 gap-3 px-4 md:px-0">
               <a
                 className="border-2 rounded-full h-10 flex items-center justify-center"
-                href={`/Inquire/${payload.id}/prod`}
+                href={`/Inquire/${payload.id}/prod/${payload.numberOfItems}/inq`}
               >
                 Запросить
               </a>
