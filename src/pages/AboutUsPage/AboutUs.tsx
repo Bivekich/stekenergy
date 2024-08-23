@@ -30,12 +30,11 @@ export default function AboutUsPage() {
           <span className="text-3xl">О нашей компании</span>
           <span className="flex flex-col gap-5 text-lg">
             <p>
-              China Royal Power Machinery Co., Ltd, основанная в 2004 году,
-              является предприятием по торговле и производству машинного
-              оборудования, которое объединяет проектирование, производство и
-              поставку дизельных генераторов, газовых генераторов, морских
-              генераторов и дизельных/газовых электростанций, формируя полную
-              производственную цепочку.
+              Stekenergy, основанная в 2004 году, является предприятием по
+              торговле и производству машинного оборудования, которое объединяет
+              проектирование, производство и поставку дизельных генераторов,
+              газовых генераторов, морских генераторов и дизельных/газовых
+              электростанций, формируя полную производственную цепочку.
             </p>
             <p>
               За последние 18 лет компания стабильно развивалась и сейчас
@@ -64,10 +63,10 @@ export default function AboutUsPage() {
               потребителей.
             </p>
             <p>
-              Royal Power Machinery Co., Ltd несет ответственность за
-              предоставление ценных услуг иностранным и отечественным клиентам.
-              Мы с нетерпением ждем установления хороших партнерских отношений с
-              вами и совместного развития ради светлого будущего!
+              Stekenergy.ru несет ответственность за предоставление ценных услуг
+              иностранным и отечественным клиентам. Мы с нетерпением ждем
+              установления хороших партнерских отношений с вами и совместного
+              развития ради светлого будущего!
             </p>
           </span>
           <div className="w-full lg:h-[35rem] h-auto lg:mb-0 mb-10">
@@ -123,7 +122,7 @@ export default function AboutUsPage() {
           <div className="flex md:w-9/12 w-screen ml-auto flex-col gap-10 px-4">
             <div className="w-full h-fit flex justify-between md:flex-col lg:flex-row gap-5 flex-col">
               <div className="flex gap-3 c">
-                <span className="flex justify-center items-center w-36 text-5xl border-r-2">
+                <span className="flex justify-center items-center w-36 text-5xl border-r-2 lg:h-52">
                   01
                 </span>
                 <span className="w-64 flex justify-center items-center text-center text-xl">
@@ -133,7 +132,7 @@ export default function AboutUsPage() {
               </div>
               <div>
                 <div className="flex gap-3">
-                  <span className="flex justify-center items-center w-36 text-5xl border-r-2">
+                  <span className="flex justify-center items-center w-36 text-5xl border-r-2 lg:h-52">
                     02
                   </span>
                   <span className="w-64 flex justify-center items-center text-center text-xl">
@@ -147,7 +146,7 @@ export default function AboutUsPage() {
 
             <div className="w-full h-fit flex justify-between md:flex-col gap-5 lg:flex-row flex-col">
               <div className="flex gap-3">
-                <span className="flex justify-center items-center w-36 text-5xl border-r-2 flex-c">
+                <span className="flex justify-center items-center w-36 text-5xl border-r-2 flex-c lg:h-52">
                   03
                 </span>
                 <span className="w-64 flex justify-center items-center text-center text-xl">
@@ -158,7 +157,7 @@ export default function AboutUsPage() {
               </div>
               <div>
                 <div className="flex gap-3">
-                  <span className="flex justify-center items-center w-36 text-5xl border-r-2">
+                  <span className="flex justify-center items-center w-36 text-5xl border-r-2 lg:h-52">
                     04
                   </span>
                   <span className="w-64 flex justify-center items-center text-center text-xl">

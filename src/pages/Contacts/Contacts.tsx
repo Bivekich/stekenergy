@@ -44,14 +44,15 @@ export default function ContactsPage() {
     }
   };
   const data = [
-    "Здание 24, Zhongjia International Plaza, район Hailing, город Тайчжоу, провинция Цзянсу",
+    "Город Москва, Спартаковский пер, д. 26 стр. 2 АДРЕС склада :105082, город Москва, УЛ. 2-хуторская 38а стр 1 БЦ башилов двор ",
     "+86-523-86326170",
     "+86-523-86326170",
     "+86-15850872118 / +86-18012096599",
     "414833725",
-    "admin@cnroyalpower.com / ansonhou@cnroyalpower.com",
+    "info@stekenergy.ru",
     "414833725@qq.com",
     "+8615850872118",
+    "Здание 24, Zhongjia International Plaza, город Тайчжоу, провинция Цзянсу, Китай",
   ];
   return (
     <div className="flex flex-col w-screen">
@@ -79,9 +80,7 @@ export default function ContactsPage() {
         <div className="w-screen lg:w-1/2">
           <div className="w-full flex flex-col lg:flex-row">
             <div className="lg:w-1/2 md:w-full flex flex-col gap-2 px-4 lg:px-0">
-              <span className="text-2xl font-bold">
-                China Royal Power Machinery Co., Ltd
-              </span>
+              <span className="text-2xl font-bold">Stekenergy</span>
               <span>
                 Мы с нетерпением ждем установления хороших партнерских отношений
                 с вами и совместного развития для светлого будущего!
@@ -120,13 +119,21 @@ export default function ContactsPage() {
                   <span>Whatsapp:</span>
                   <span>{data[7]}</span>
                 </li>
+                <li>
+                  <span>Адрес производства:</span>
+                  <span>{data[8]}</span>
+                </li>
+                <li>
+                  <span>Телефон производства:</span>
+                  <span>+86-523-86326170</span>
+                </li>
               </ul>
             </div>
             <form
               className="flex flex-col gap-2 lg:w-[45%] md:w-full mt-14 text-black ml-0 lg:ml-auto px-4 lg:px-0 mb-5 lg:mb-0"
               onSubmit={(e) => sendEmail(e)}
             >
-              <span className="text-2xl font-bold">Contact Us</span>
+              <span className="text-2xl font-bold">Связаться</span>
               <div>
                 <input
                   className="bg-gray-400 w-full h-24 placeholder-black"

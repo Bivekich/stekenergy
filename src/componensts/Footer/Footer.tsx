@@ -227,8 +227,7 @@ export default function Footer() {
       <div className="flex w-full min-h-10 bg-[#5e5c5c] justify-center items-center mt-5">
         <span className="flex justify-center items-center w-full text-center">
           {" "}
-          Copyrights © 2023 China Royal Power Machinery Co., Ltd.All rights
-          reserved. Sitemap
+          Copyrights © 2024 Stekenergy, Ltd.All rights reserved. Sitemap
         </span>
       </div>
     </div>
