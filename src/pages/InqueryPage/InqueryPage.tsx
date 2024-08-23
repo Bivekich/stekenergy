@@ -3,7 +3,7 @@ import Header from "../../componensts/Header/Header";
 import { products } from "../../db/data";
 import Footer from "../../componensts/Footer/Footer";
 import { useState } from "react";
-import { sendMessage } from "../../chat";
+import emailjs from "@emailjs/browser";
 export default function InqueryPage() {
   const param = useParams();
   console.log(param);
@@ -16,11 +16,22 @@ export default function InqueryPage() {
   const [emailRequired, setEmailRequired] = useState(false);
   const [messageRequired, setMassageRequired] = useState(false);
 
-  const sendData = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const data = `Новая заявка на контакт:\nФИО: ${name}\nemail: ${emailData}\nТел: ${tel}\nСообщение: ${message}\nПродукты:${product[0].name}\nШт:${numberItems}`;
-    sendMessage(data);
+    const param = {
+      email: emailData,
+      name: name,
+      tel: tel,
+      message: message,
+      productsName: `Меня интересуют следующие товары:\n Имя продукта:${product[0].name} ШТ:${numberItems}`,
+    };
+    emailjs.send(
+      "service_byjyg8r",
+      "template_0uxe2he",
+      param,
+      "EjXlyNE41-sign7QK"
+    );
   };
   const handleEmailRequired = (e: React.FormEvent<HTMLInputElement>) => {
     if (e.currentTarget.value !== "") {
@@ -124,7 +135,7 @@ export default function InqueryPage() {
       </div>
       <form
         className="flex flex-col mt-10 gap-y-2 mb-10 w-full justify-center items-center"
-        onSubmit={(e) => sendData(e)}
+        onSubmit={(e) => sendEmail(e)}
       >
         <span className="text-2xl w-72"></span>
         <div className="flex gap-y-2 flex-col justify-center w-full items-center ">

@@ -3,7 +3,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
 import { useState } from "react";
-import { sendMessage } from "../../chat";
+import emailjs from "@emailjs/browser";
 export default function Footer() {
   const [emailRequired, setEmailRequired] = useState(false);
   const [messageRequired, setMassageRequired] = useState(false);
@@ -12,10 +12,22 @@ export default function Footer() {
   const [tel, setTel] = useState<string>("");
   const [name, setName] = useState<string>("");
 
-  const sendDate = async (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const data = `Новая заявка на контакт:\nФИО: ${name}\nemail: ${emailData}\nТел: ${tel}\nСообщение: ${message}`;
-    sendMessage(data);
+    const param = {
+      email: emailData,
+      name: name,
+      tel: tel,
+      message: message,
+    };
+    //const data = `Новая заявка на контакт:\nФИО: ${name}\nemail: ${emailData}\nТел: ${tel}\nСообщение: ${message}`;
+    emailjs.send(
+      "service_byjyg8r",
+      "template_w2hum88",
+      param,
+      "EjXlyNE41-sign7QK"
+    );
+    //sendMessage(data);
   };
 
   const handleEmailRequired = (e: React.FormEvent<HTMLInputElement>) => {
@@ -95,7 +107,7 @@ export default function Footer() {
     }
   };
   return (
-    <div className="flex w-full min-h-[50rem] flex-col bg-[#222222] text-white justify-center items-center">
+    <div className="flex w-full min-h-[50rem] flex-col bg-[#5e5c5c] text-white justify-center items-center">
       <div className="flex-grow flex min-w-3/4 nin-h-2/4 gap-x-24 flex-wrap flex-col md:flex-row justify-center">
         <div className="flex flex-col gap-5 mt-10">
           <img src="/Energylogo.png" className="w-52"></img>
@@ -159,7 +171,7 @@ export default function Footer() {
 
         <form
           className="flex flex-col mt-10 gap-y-2"
-          onSubmit={(e) => sendDate(e)}
+          onSubmit={(e) => sendEmail(e)}
         >
           <span className="text-2xl w-72">Обратная связь</span>
           <div className="flex gap-y-2 flex-col">
@@ -196,7 +208,7 @@ export default function Footer() {
             <div>
               <textarea
                 placeholder="*Сообщение"
-                className="bg-gray-400 placeholder-black required w-full h-32"
+                className="bg-gray-400 placeholder-black required w-full h-32 text-black"
                 onBlur={handleMassageRequired}
                 onFocus={handleMassageRequired}
                 value={message}
@@ -212,7 +224,7 @@ export default function Footer() {
           ></input>
         </form>
       </div>
-      <div className="flex w-full min-h-10 bg-[#222222] justify-center items-center mt-5">
+      <div className="flex w-full min-h-10 bg-[#5e5c5c] justify-center items-center mt-5">
         <span className="flex justify-center items-center w-full text-center">
           {" "}
           Copyrights © 2023 China Royal Power Machinery Co., Ltd.All rights

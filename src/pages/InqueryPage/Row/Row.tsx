@@ -36,13 +36,7 @@ export default function Row({
           </td>
           <td className="border-2">
             <div className="flex w-full h-full justify-center">
-              <input
-                type="text"
-                min={1}
-                value={num}
-                step={1}
-                onChange={(e) => setNumber(Number(e.target.value))}
-              ></input>
+              <input type="text" min={1} value={num} step={1}></input>
             </div>
           </td>
           <td className="border-2 ">

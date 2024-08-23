@@ -1,15 +1,39 @@
 import Footer from "../../componensts/Footer/Footer";
 import Header from "../../componensts/Header/Header";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 export default function ContactsPage() {
   const [emailRequired, setEmailRequired] = useState(false);
   const [messageRequired, setMassageRequired] = useState(false);
+  const [emailData, setEmailData] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+  const [tel, setTel] = useState<string>("");
+  const [name, setName] = useState<string>("");
+
   const handleEmailRequired = (e: React.FormEvent<HTMLInputElement>) => {
     if (e.currentTarget.value !== "") {
       setEmailRequired(false);
     } else {
       setEmailRequired(true);
     }
+  };
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const param = {
+      email: emailData,
+      name: name,
+      tel: tel,
+      message: message,
+    };
+    //const data = `Новая заявка на контакт:\nФИО: ${name}\nemail: ${emailData}\nТел: ${tel}\nСообщение: ${message}`;
+    emailjs.send(
+      "service_byjyg8r",
+      "template_w2hum88",
+      param,
+      "EjXlyNE41-sign7QK"
+    );
+    //sendMessage(data);
   };
 
   const handleMassageRequired = (e: React.FormEvent<HTMLTextAreaElement>) => {
@@ -98,7 +122,10 @@ export default function ContactsPage() {
                 </li>
               </ul>
             </div>
-            <form className="flex flex-col gap-2 lg:w-[45%] md:w-full mt-14 text-white ml-0 lg:ml-auto px-4 lg:px-0 mb-5 lg:mb-0">
+            <form
+              className="flex flex-col gap-2 lg:w-[45%] md:w-full mt-14 text-black ml-0 lg:ml-auto px-4 lg:px-0 mb-5 lg:mb-0"
+              onSubmit={(e) => sendEmail(e)}
+            >
               <span className="text-2xl font-bold">Contact Us</span>
               <div>
                 <input
@@ -107,6 +134,7 @@ export default function ContactsPage() {
                   placeholder="*Email"
                   onBlur={handleEmailRequired}
                   onFocus={handleEmailRequired}
+                  onChange={(e) => setEmailData(e.target.value)}
                 />
                 {emailRequired && <p className="text-red-500">Необходимо!</p>}
               </div>
@@ -116,6 +144,7 @@ export default function ContactsPage() {
                   className="bg-gray-400 w-full h-20 placeholder-black"
                   type="text"
                   placeholder="Имя"
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
 
@@ -124,6 +153,7 @@ export default function ContactsPage() {
                   className="bg-gray-400 w-full h-20 placeholder-black"
                   type="tel"
                   placeholder="Tел"
+                  onChange={(e) => setTel(e.target.value)}
                 />
               </div>
 
@@ -133,6 +163,7 @@ export default function ContactsPage() {
                   className="bg-gray-400 placeholder-black required w-full h-32"
                   onBlur={handleMassageRequired}
                   onFocus={handleMassageRequired}
+                  onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
                 {messageRequired && <p className="text-red-500">Необходимо!</p>}
               </div>

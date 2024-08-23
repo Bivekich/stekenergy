@@ -69,7 +69,7 @@ export default function Header() {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-screen bg-[#222222] text-white z-40 ${
+      className={`fixed top-0 left-0 w-screen bg-[#5e5c5c] text-white z-40 ${
         isScrolled ? `duration-500 ease-out bg-opacity-70` : `bg-opacity-100`
       }`}
     >
