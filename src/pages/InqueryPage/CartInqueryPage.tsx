@@ -14,12 +14,7 @@ export default function CartInqueryPage() {
   const [emailRequired, setEmailRequired] = useState(false);
   const [messageRequired, setMassageRequired] = useState(false);
   const [products, setProducts] = useState(cart);
-
-  console.log(
-    products.map(
-      (item) => `Имя продукта: ${item.title} ШТ: ${item.numberOfItems}`
-    )
-  );
+  const [color, setColor] = useState("red-500");
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const product = products
@@ -40,6 +35,7 @@ export default function CartInqueryPage() {
       param,
       "EjXlyNE41-sign7QK"
     );
+    setColor("green-500");
     //sendMessage(data);
   };
 
@@ -178,7 +174,7 @@ export default function CartInqueryPage() {
           <input
             type="submit"
             value={"отправить"}
-            className="bg-red-500 h-8 lg:h-10 w-full md:w-1/4"
+            className={`bg-${color} h-8 lg:h-10 w-full md:w-1/4`}
           ></input>
         </div>
       </form>

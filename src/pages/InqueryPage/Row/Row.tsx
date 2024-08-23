@@ -14,7 +14,6 @@ export default function Row({
   id,
   handleProducts,
 }: Props) {
-  console.log(numberOfItems);
   let number = numberOfItems;
   const [isHide, setIsHide] = useState(true);
   const handleHide = () => {
@@ -35,7 +34,7 @@ export default function Row({
           </td>
           <td className="border-2">
             <div className="flex w-full h-full justify-center">
-              <input type="text" min={1} value={number} step={1}></input>
+              <input type="text" min={1} defaultValue={number}></input>
             </div>
           </td>
           <td className="border-2 ">

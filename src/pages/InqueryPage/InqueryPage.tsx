@@ -6,7 +6,6 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 export default function InqueryPage() {
   const param = useParams();
-  console.log(param);
   const product = products.filter((item) => item.id === Number(param.id));
   const [emailData, setEmailData] = useState<string>("");
   const [message, setMessage] = useState<string>("");
@@ -15,7 +14,7 @@ export default function InqueryPage() {
   const [numberItems, setNumberItems] = useState(Number(param.numberOfItems));
   const [emailRequired, setEmailRequired] = useState(false);
   const [messageRequired, setMassageRequired] = useState(false);
-
+  const [color, setColor] = useState("red-500");
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -32,6 +31,7 @@ export default function InqueryPage() {
       param,
       "EjXlyNE41-sign7QK"
     );
+    setColor("green-500");
   };
   const handleEmailRequired = (e: React.FormEvent<HTMLInputElement>) => {
     if (e.currentTarget.value !== "") {
@@ -94,7 +94,7 @@ export default function InqueryPage() {
                   <div className="flex w-full h-full justify-center">
                     <input
                       type="number"
-                      defaultValue={numberItems}
+                      value={numberItems}
                       step={1}
                       onChange={(e) => setNumberItems(Number(e.target.value))}
                     ></input>
@@ -184,7 +184,7 @@ export default function InqueryPage() {
           <input
             type="submit"
             value={"отправить"}
-            className="bg-red-500 h-8 lg:h-10 w-full md:w-1/4"
+            className={`bg-${color} h-8 lg:h-10 w-full md:w-1/4`}
           ></input>
         </div>
       </form>
