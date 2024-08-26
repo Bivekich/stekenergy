@@ -28,7 +28,7 @@ export default function GoodsPage() {
     dispatch({ type: "add", item: product });
   };
   return (
-    <div className="w-screen flex flex-col">
+    <div className="w-screen flex flex-col flex-wrap">
       <div className="h-32 bg-white">
         <Header></Header>
       </div>
@@ -94,7 +94,7 @@ export default function GoodsPage() {
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-center mb-5">
+      <div className="w-full flex justify-center flex-wrap mb-5">
         <div className="flex lg:w-1/2 md:w-full md:px-4 lg:px-0 flex-col">
           <div className="flex flex-col">
             <div className="flex gap-5 px-4 border-t-2 pt-3 pb-3">
@@ -102,7 +102,7 @@ export default function GoodsPage() {
               <span>Бренд: {item.brand}</span>
             </div>
 
-            <div className="w-full flex-col px-4 border-2">
+            <div className="w-screen md:w-full flex-col px-4 border-2 cla">
               <div className="w-full">
                 <span className="">Описание</span>
               </div>
