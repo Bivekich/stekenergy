@@ -46,7 +46,7 @@ const ProductTipe = [
       "Jenbacher Series",
       "Weichai Series",
       "Jichai Series",
-      "Gas Turbine Engine",
+      "Газотурбинный двигатель",
     ],
   },
 
