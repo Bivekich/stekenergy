@@ -97,6 +97,21 @@ export default function AboutUsPage() {
               <SwiperSlide className="md:w-full md:h-full w-11/12">
                 <img src="/a5-990-516.webp"></img>
               </SwiperSlide>
+              <SwiperSlide className="md:w-full md:h-full w-11/12">
+                <img src="/a11.jpg"></img>
+              </SwiperSlide>
+              <SwiperSlide className="md:w-full md:h-full w-11/12">
+                <img src="/a12.jpg"></img>
+              </SwiperSlide>
+              <SwiperSlide className="md:w-full md:h-full w-11/12">
+                <img src="/a13.jpg"></img>
+              </SwiperSlide>
+              <SwiperSlide className="md:w-full md:h-full w-11/12">
+                <img src="/a14.jpg"></img>
+              </SwiperSlide>
+              <SwiperSlide className="md:w-full md:h-full w-11/12">
+                <img src="/a15.jpg"></img>
+              </SwiperSlide>
             </Swiper>
           </div>
         </div>

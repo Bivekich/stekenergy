@@ -134,7 +134,7 @@ export const products: Array<Param> = [
                     </p>
                     <p>
                       <span>
-                        <strong>Genset Model</strong>
+                        <strong>Вес генераторной установки</strong>
                       </span>
                     </p>
                   </td>{" "}
@@ -172,7 +172,7 @@ export const products: Array<Param> = [
                   <td className="border border-gray-400">
                     <p>
                       <span>
-                        <strong>Weight</strong>
+                        <strong>Вес</strong>
                       </span>
                     </p>
                     <p>
@@ -201,7 +201,7 @@ export const products: Array<Param> = [
                   <td className="border border-gray-400">
                     <p>
                       <span>
-                        <strong>Model</strong>
+                        <strong>Вес</strong>
                       </span>
                     </p>
                   </td>{" "}
@@ -2358,7 +2358,7 @@ export const products: Array<Param> = [
                 <td className="border border-grey-400">
                   <p>
                     <span>
-                      <strong>Model</strong>
+                      <strong>Вес</strong>
                     </span>
                   </p>
                 </td>{" "}
@@ -2409,7 +2409,7 @@ export const products: Array<Param> = [
                 <td width="27.333333333333332">
                   <p>
                     <span>
-                      <strong>Weight</strong>
+                      <strong>Вес</strong>
                     </span>
                   </p>
                   <p>
@@ -4909,7 +4909,7 @@ export const products: Array<Param> = [
     ),
     descriptionImg: "",
     category: "DieselGenerator",
-    brand: "CumminsSeries",
+    brand: "Cummins Series",
   },
   {
     id: 2,
@@ -5060,8 +5060,8 @@ export const products: Array<Param> = [
           </p>
         </p>
         <div>
-          <div>
-            <table className="border border-grey-400 flex overflow-scroll">
+          <div className=" flex overflow-scroll">
+            <table className="border border-grey-400">
               {" "}
               <tbody>
                 {" "}
@@ -5094,7 +5094,7 @@ export const products: Array<Param> = [
                       <strong>Модель агрегата</strong>
                     </p>
                     <p>
-                      <strong>Genset Model</strong>
+                      <strong>Genset Вес</strong>
                     </p>
                   </td>{" "}
                   <td className="border border-grey-400">
@@ -5132,7 +5132,7 @@ export const products: Array<Param> = [
                       <strong>Вес</strong>
                     </p>
                     <p>
-                      <strong>Weight</strong>
+                      <strong>Вес</strong>
                     </p>
                     <p>
                       <strong>( k g )</strong>
@@ -5162,7 +5162,7 @@ export const products: Array<Param> = [
                       <strong>Модель</strong>
                     </p>
                     <p>
-                      <strong>Model</strong>
+                      <strong>Вес</strong>
                     </p>
                   </td>{" "}
                   <td className="border border-grey-400">
@@ -5507,7 +5507,7 @@ export const products: Array<Param> = [
     ),
     descriptionImg: "",
     category: "DieselGenerator",
-    brand: "MitsubishiSeries",
+    brand: "Mitsubishi Series",
   },
   {
     id: 3,
@@ -5657,7 +5657,7 @@ export const products: Array<Param> = [
         </p>
 
         <div>
-          <div>
+          <div className="flex overflow-scroll">
             <table className="border border-grey-400">
               {" "}
               <tbody>
@@ -5685,7 +5685,7 @@ export const products: Array<Param> = [
                   {" "}
                   <td className="border border-grey-400">
                     <p>
-                      <strong>Genset Model</strong>
+                      <strong>Genset Вес</strong>
                     </p>
                   </td>{" "}
                   <td className="border border-grey-400">
@@ -5711,7 +5711,7 @@ export const products: Array<Param> = [
                   </td>{" "}
                   <td className="border border-grey-400">
                     <p>
-                      <strong>Weight</strong>
+                      <strong>Вес</strong>
                     </p>
                     <p>
                       <strong>( k g )</strong>
@@ -5732,7 +5732,7 @@ export const products: Array<Param> = [
                   </td>{" "}
                   <td className="border border-grey-400">
                     <p>
-                      <strong>Model</strong>
+                      <strong>Вес</strong>
                     </p>
                   </td>{" "}
                   <td className="border border-grey-400">
@@ -7021,7 +7021,7 @@ export const products: Array<Param> = [
     ),
     descriptionImg: "",
     category: "DieselGenerator",
-    brand: "WeichaiSeries",
+    brand: "Weichai Series",
   },
   {
     id: 4,
@@ -7046,12 +7046,12 @@ export const products: Array<Param> = [
           Открытого типа Yuchai - частота 50 Гц, выбросы T2
         </span>
         <div>
-          <div>
+          <div className=" flex overflow-scroll">
             <table className="border border-grey-400">
               <tbody>
                 <tr className="border border-grey-400">
                   <td className="border border-grey-400">
-                    <p>Model</p>
+                    <p>Вес</p>
                   </td>
                   <td className="border border-grey-400">
                     <p>Prime &nbsp; Power</p>
@@ -7069,7 +7069,7 @@ export const products: Array<Param> = [
                     <p>（MM)</p>
                   </td>
                   <td className="border border-grey-400">
-                    <p>Weight</p>
+                    <p>Вес</p>
                     <p>(KG)</p>
                   </td>
                 </tr>
@@ -7602,12 +7602,12 @@ export const products: Array<Param> = [
         </div>
         <span>Открытого типа Yuchai - частота 50 Гц, выбросы T3</span>
         <div className="mb-10 mt-10">
-          <div>
+          <div className=" flex overflow-scroll">
             <table className="border border-grey-400">
               <tbody>
                 <tr className="border border-grey-400">
                   <td className="border border-grey-400">
-                    <p>Model</p>
+                    <p>Вес</p>
                   </td>
                   <td className="border border-grey-400">
                     <p>Prime &nbsp; Power</p>
@@ -7625,7 +7625,7 @@ export const products: Array<Param> = [
                     <p>（MM)</p>
                   </td>
                   <td className="border border-grey-400">
-                    <p>Weight</p>
+                    <p>Вес</p>
                     <p>(KG)</p>
                   </td>
                 </tr>
@@ -8339,19 +8339,19 @@ export const products: Array<Param> = [
           </span>
         </div>
         <span>Yuchai open type -60Hz T3 Emission</span>
-        <div>
-          <div>
+        <div className="">
+          <div className=" flex overflow-scroll">
             <table className="border border-grey-400 mb-10">
               <tbody>
-                <tr>
+                <tr className="border border-grey-400">
                   <td className="border border-grey-400">
-                    <p>Model</p>
+                    <p>Вес</p>
                   </td>
-                  <td>
+                  <td className="border border-grey-400">
                     <p>Prime &nbsp; Power</p>
                     <p>(KVA/KW)</p>
                   </td>
-                  <td>
+                  <td className="border border-grey-400">
                     <p>Standby &nbsp; Power</p>
                     <p>(KVA/KW)</p>
                   </td>
@@ -8363,7 +8363,7 @@ export const products: Array<Param> = [
                     <p>（MM)</p>
                   </td>
                   <td className="border border-grey-400">
-                    <p>Weight</p>
+                    <p>Вес</p>
                     <p>(KG)</p>
                   </td>
                 </tr>
@@ -8864,6 +8864,1136 @@ export const products: Array<Param> = [
               </tbody>
             </table>
           </div>
+        </div>
+      </div>
+    ),
+    descriptionImg: "",
+    category: "DieselGenerator",
+    brand: "Yuchai Series",
+  },
+  {
+    id: 5,
+    mainImg: "/12.webp",
+    name: "Cummins Gas Generator",
+    shortDescription:
+      "Газовый генератор Cummins Генераторные установки являются сердцем любой системы электропитания на месте. Газовые генераторы с искровым зажиганием (стехиометрические и с низким уровнем сгорания) на природном газе от компании Cummins доступны в диапазоне мощностей от 55 кВт до 2000 кВт. Они подходят для применения в тех случаях, когда хранение топлива на месте ограничено, имеется постоянный доступ к природному газу, и/или существуют местные экологические соображения, которые делают предпочтительными газопотребляющие устройства.",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div>
+        <span>
+          Генераторные установки являются сердцем любой системы электроснабжения
+          на месте. Газовые генераторы с искровым зажиганием (стехиометрические
+          и с низким уровнем выбросов) на природном газе от компании Cummins
+          доступны в диапазоне мощности от 55 кВт до 2000 кВт. Они подходят для
+          использования в случаях, когда хранение топлива на месте ограничено,
+          имеется постоянный доступ к природному газу, и/или существуют местные
+          экологические требования, которые делают предпочтительным
+          использование газового оборудования.
+        </span>
+        <img src="/12.webp"></img>
+        <p>
+          Газовые генераторные установки Cummins оснащены двигателями на
+          природном газе или с двумя видами топлива, альтернаторами и системами
+          управления PowerCommand™. Наши генераторные установки являются
+          результатом интегрированного проектирования и производства,
+          нацеленного на соответствие вашим требованиям по надежности, качеству
+          электроэнергии, номинальной производительности и эффективности работы.
+        </p>
+        <p>
+          Генераторные установки Cummins с искровым зажиганием предназначены как
+          для резервного, так и для основного использования на рынках с частотой
+          50 и 60 Гц. Мы также предлагаем полный ассортимент аксессуаров, чтобы
+          адаптировать наши продукты в соответствии с вашими точными
+          требованиями.
+        </p>
+        <p className="text-xl mt-10">ЛЮБОЙ ПОТРЕБНОСТИ</p>
+        <img src="/13.JPG" className="mb-10"></img>
+        <p>
+          Наши продукты для энергетических систем включают в себя генераторные
+          установки на дизельном и газовом топливе мощностью от 15 до 3750 кВА,
+          альтернаторы, дизельные двигатели мощностью от 49 до 5500 л.с.,
+          двигатели для привода генераторов, системы хранения энергии в батареях
+          и интегрированные энергосистемы, которые объединяют генераторные
+          установки, системы параллельного управления и технологии
+          распределительных устройств, все это соединено с нашими передовыми
+          цифровыми решениями для полного управления энергосистемой.
+        </p>
+        <p>
+          Все аспекты проектирования, производства и обслуживания генераторных
+          установок объединены в одной компании. Все основные компоненты -
+          двигатель, альтернатор, системы управления и контейнеры - производятся
+          и изготавливаются компанией Cummins. Такой интегрированный подход
+          означает, что каждый элемент генераторной установки изначально
+          согласован для работы в гармонии.
+        </p>
+        <p>
+          Независимо от архитектуры энергосистемы, необходимой для
+          удовлетворения ваших рыночных или эксплуатационных потребностей,
+          Cummins предлагает превосходное сочетание экспертных знаний в области
+          проектирования решений, интегрированного оборудования и программного
+          обеспечения для связи, а также постоянные услуги по эксплуатации и
+          обслуживанию генераторов, чтобы помочь вам поддерживать устойчивую
+          работу на вашем объекте.
+        </p>
+        <p>
+          <p>Генераторы по типу топлива</p>
+          <p>-Дизельные генераторы</p>
+          <p>-Генераторы на природном газе</p>
+          <p>-Газовые генераторы</p>
+          <p>-Пропановые генераторы</p>
+        </p>
+        <p>
+          <p>Решения для генераторов по отраслям</p>
+          <p>-Генераторы для жилых автофургонов(RV)</p>
+          <p>-Судовые генераторные установки</p>
+          <p>-Генераторы для здравоохранения</p>
+          <p>-Резервное питание для центров обработки данных</p>
+        </p>
+        <p className="mt-10">ГЛОБАЛЬНОЕ ПОКРЫТИЕ. ЛОКАЛЬНАЯ ПОДДЕРЖКА.</p>
+        <img src="/14.jpg"></img>
+        <p>
+          <p>
+            Знания экспертов Cummins проявляются не только в превосходном
+            дизайне продукции, но и в их сотрудничестве на всех этапах
+            реализации, а также в постоянном обслуживании и поддержке клиентов.
+          </p>
+          <p className="mb-10">
+            С 500 собственными и независимыми дистрибьюторскими центрами, более
+            чем 9000 дилерскими точками в 190 странах и на 6 континентах, мы
+            предлагаем глобальные возможности и местную поддержку, где и когда
+            бы вы ни нуждались в нас.
+          </p>
+        </p>
+      </div>
+    ),
+    descriptionImg: "",
+    category: "GasGenerator",
+    brand: "Cummins Series",
+  },
+  {
+    id: 6,
+    mainImg: "/15.webp",
+    name: "Газовый генератор Weichai Baudouin",
+    shortDescription:
+      "Газовый генератор Weichai Baudouin Газовые двигатели Weichai включают модели WP4.1NG, WP5NG, WP7NG, WP10NG, WP12NG, WP13NG (производственные мощности от 74 кВт до 480 кВт), которые соответствуют требованиям пятого и шестого экологических стандартов Китая. Они широко применяются во многих отраслях, таких как автобусы длиной от 6 до 18 метров, различные грузовики, строительная техника, специальные транспортные средства, судовые силовые установки и другие индустрии, отличаясь высокой надежностью, мощностью, энергосбережением и экологичностью.",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div>
+        <ul>
+          Параметры продукта:
+          <li>- Продукты M33/M55</li>
+          <li>- Диапазон мощности: 1650 кВА ~ 2500 кВА</li>
+          <li>- Номинальная скорость: 1500 об/мин</li>
+          <li>- Регулятор скорости: ECU</li>
+          <li>- Количество цилиндров: 12/16</li>
+          <li>- Рабочий объем: 52,3/65,65 л</li>
+          <li>
+            - Метод охлаждения: Закрытое охлаждение вентилятором-радиатором
+          </li>
+          <li>- Расход топлива: 195 г/кВт.ч</li>
+        </ul>
+        <ul className="mt-10">
+          Характеристики продукта:
+          <li>- Французский бренд, военное качество</li>
+          <li>
+            - Высокопроизводительные дизельные генераторные установки,
+            лидирующие в отрасли
+          </li>
+          <li>
+            - Собственная разработка ключевой технологии ECU, гарантирующая
+            безопасность информации
+          </li>
+          <li>
+            - Высокая надежность, сверхдлительный межремонтный период в 32000
+            часов, превосходные пусковые характеристики
+          </li>
+          <li>
+            - Профессиональные возможности применения и интеграции для
+            генераторных установок, удовлетворяющие потребности высококлассных
+            пользователей, таких как центры обработки данных - Различные
+            сертификаты на продукцию для внутреннего рынка
+          </li>
+          <li>
+            - Благодаря использованию технологии электронного управления выбросы
+            соответствуют национальному стандарту выбросов III
+          </li>
+        </ul>
+        <img src="/16.webp" className="w-full"></img>
+        <img src="/17.webp" className="w-full"></img>
+        <img src="/18.webp" className="w-full mb-5"></img>
+        <div className="mb-10">
+          <div>
+            <table className="border border-grey-400 w-full flex overflow-scroll">
+              {" "}
+              <tbody>
+                {" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <strong>Модель генераторной установки </strong>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <strong>Номинальная мощность(кВт)</strong>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <strong>Резервная мощность (кВА)</strong>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <strong>Двигатель E</strong>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <strong>Модель двигателя </strong>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <strong>Номинальная мощность </strong>
+                    <strong>(кВт)）</strong>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <strong>Резервная мощность </strong>
+                    <strong>(кВт)</strong>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <strong>Количество цилиндров</strong>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">WPG1650B73</td>{" "}
+                  <td className="border border-grey-400">1200</td>{" "}
+                  <td className="border border-grey-400">1650</td>{" "}
+                  <td className="border border-grey-400">16M33D1530E310</td>{" "}
+                  <td className="border border-grey-400">1390</td>{" "}
+                  <td className="border border-grey-400">1530</td>{" "}
+                  <td className="border border-grey-400">16</td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">WPG1650B53</td>{" "}
+                  <td className="border border-grey-400">1200</td>{" "}
+                  <td className="border border-grey-400">1650</td>{" "}
+                  <td className="border border-grey-400">12WH17D1528-5</td>{" "}
+                  <td className="border border-grey-400">1390</td>{" "}
+                  <td className="border border-grey-400">1528</td>{" "}
+                  <td className="border border-grey-400">12</td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">WPG1700B53</td>{" "}
+                  <td className="border border-grey-400">/</td>{" "}
+                  <td className="border border-grey-400">1650</td>{" "}
+                  <td className="border border-grey-400">12WH17D1528-5</td>{" "}
+                  <td className="border border-grey-400">1390</td>{" "}
+                  <td className="border border-grey-400">1528</td>{" "}
+                  <td className="border border-grey-400">12</td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">WPG1815B73</td>{" "}
+                  <td className="border border-grey-400">1320</td>{" "}
+                  <td className="border border-grey-400">1815</td>{" "}
+                  <td className="border border-grey-400">16M33D1580E310</td>{" "}
+                  <td className="border border-grey-400">1436</td>{" "}
+                  <td className="border border-grey-400">1580</td>{" "}
+                  <td className="border border-grey-400">16</td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">WPG1925B73</td>{" "}
+                  <td className="border border-grey-400">1400</td>{" "}
+                  <td className="border border-grey-400">1925</td>{" "}
+                  <td className="border border-grey-400">16M33D1680E310</td>{" "}
+                  <td className="border border-grey-400">1527</td>{" "}
+                  <td className="border border-grey-400">1680</td>{" "}
+                  <td className="border border-grey-400">16</td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">WPG2000B73</td>{" "}
+                  <td className="border border-grey-400">/</td>{" "}
+                  <td className="border border-grey-400">2000</td>{" "}
+                  <td className="border border-grey-400">16M33D1680E310</td>{" "}
+                  <td className="border border-grey-400">1527</td>{" "}
+                  <td className="border border-grey-400">1680</td>{" "}
+                  <td className="border border-grey-400">16</td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">WPG2062B73</td>{" "}
+                  <td className="border border-grey-400">1500</td>{" "}
+                  <td className="border border-grey-400">2062</td>{" "}
+                  <td className="border border-grey-400">16M33D1800E310</td>{" "}
+                  <td className="border border-grey-400">1630</td>{" "}
+                  <td className="border border-grey-400">1800</td>{" "}
+                  <td className="border border-grey-400">16</td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">WPG2100B73</td>{" "}
+                  <td className="border border-grey-400">/</td>{" "}
+                  <td className="border border-grey-400">2100</td>{" "}
+                  <td className="border border-grey-400">16M33D1800E310</td>{" "}
+                  <td className="border border-grey-400">1630</td>{" "}
+                  <td className="border border-grey-400">1800</td>{" "}
+                  <td className="border border-grey-400">16</td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">WPG2200B73</td>{" "}
+                  <td className="border border-grey-400">1600</td>{" "}
+                  <td className="border border-grey-400">2200</td>{" "}
+                  <td className="border border-grey-400">12M55D2000E310</td>{" "}
+                  <td className="border border-grey-400">1830</td>{" "}
+                  <td className="border border-grey-400">2000</td>{" "}
+                  <td className="border border-grey-400">12</td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">WPG2475B73</td>{" "}
+                  <td className="border border-grey-400">1800</td>{" "}
+                  <td className="border border-grey-400">2475</td>{" "}
+                  <td className="border border-grey-400">12M55D2200E310</td>{" "}
+                  <td className="border border-grey-400">2000</td>{" "}
+                  <td className="border border-grey-400">2200</td>{" "}
+                  <td className="border border-grey-400">12</td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">WPG2500B73</td>{" "}
+                  <td className="border border-grey-400">/</td>{" "}
+                  <td className="border border-grey-400">2500</td>{" "}
+                  <td className="border border-grey-400">12M55D2200E310</td>{" "}
+                  <td className="border border-grey-400">2000</td>{" "}
+                  <td className="border border-grey-400">2200</td>{" "}
+                  <td className="border border-grey-400">12</td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">WPG2750B73</td>{" "}
+                  <td className="border border-grey-400">2000</td>{" "}
+                  <td className="border border-grey-400">2750</td>{" "}
+                  <td className="border border-grey-400">12M55D2400E310</td>{" "}
+                  <td className="border border-grey-400">2200</td>{" "}
+                  <td className="border border-grey-400">2400</td>{" "}
+                  <td className="border border-grey-400">12</td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">WPG2800B73</td>{" "}
+                  <td className="border border-grey-400">/</td>{" "}
+                  <td className="border border-grey-400">2800</td>{" "}
+                  <td className="border border-grey-400">12M55D2400E310</td>{" "}
+                  <td className="border border-grey-400">2200</td>{" "}
+                  <td className="border border-grey-400">2400</td>{" "}
+                  <td className="border border-grey-400">12</td>{" "}
+                </tr>{" "}
+              </tbody>{" "}
+            </table>
+          </div>
+        </div>
+        <p>
+          Примечание: Параметры и изображения продукта предназначены только для
+          справки; изменения возможны без предварительного уведомления.
+        </p>
+        <ul>
+          Параметры продукта:
+          <li>- Продукты M33/M55</li>
+          <li>- Диапазон мощности: 1650 кВА ~ 2500 кВА</li>
+          <li>- Номинальная скорость: 1500 об/мин</li>
+          <li>- Регулятор скорости: ECU</li>
+          <li>- Количество цилиндров: 12/16</li>
+          <li>- Рабочий объем: 52,3/65,65 л</li>
+          <li>
+            - Метод охлаждения: Закрытое охлаждение вентилятором-радиатором
+          </li>
+          <li>- Расход топлива: 195 г/кВт.ч</li>
+        </ul>
+        <ul className="mt-10 mb-10">
+          Характеристики продукта:
+          <li>- Французский бренд, военное качество</li>
+          <li>
+            - Высокопроизводительные дизельные генераторные установки,
+            лидирующие в отрасли
+          </li>
+          <li>
+            - Собственная разработка ключевой технологии ECU, гарантирующая
+            безопасность информации
+          </li>
+          <li>
+            - Высокая надежность, сверхдлительный межремонтный период в 32000
+            часов, превосходные пусковые характеристики
+          </li>
+          <li>
+            - Профессиональные возможности применения и интеграции для
+            генераторных установок, удовлетворяющие потребности высококлассных
+            пользователей, таких как центры обработки данных - Различные
+            сертификаты на продукцию для внутреннего рынка
+          </li>
+          <li>
+            - Благодаря использованию технологии электронного управления выбросы
+            соответствуют национальному стандарту выбросов III
+          </li>
+        </ul>
+      </div>
+    ),
+    descriptionImg: "",
+    category: "GasGenerator",
+    brand: "Weichai Series",
+  },
+  {
+    id: 7,
+    mainImg: "/20.webp",
+    name: "Морской генератор Cummins",
+    shortDescription:
+      "Морской генератор Cummin Генераторные установки для морских судов с двигателями совместного производства Cummins - Мощные, надежные и высококачественные силовые установки- Полностью испытаны под нагрузкой и проверены в соответствии со стандартными процедурами - Возможности для дополнительной настройки в соответствии с конкретными потребностями в электроэнергии",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div>
+        <p>
+          Наша линейка морских генераторных установок включает генераторы
+          Cummins Onan и C Power для обслуживания судов и аварийного
+          электропитания, а также для дизель-электрического привода.
+        </p>
+        <p>
+          С более чем 80-летним опытом в морской отрасли, полученным благодаря
+          поставкам генераторов для коммерческих, развлекательных и
+          государственных морских приложений по всему миру, морские генераторы
+          Cummins предлагают такую же надежность и долговечность, которую
+          операторы привыкли ожидать от Cummins.
+        </p>
+        <p>
+          Каждый основной компонент наших морских генераторных установок,
+          включая двигатель, альтернатор и систему управления, либо
+          спроектирован и изготовлен, либо интегрирован подразделениями
+          семейства Cummins. Это означает, что все элементы генераторной
+          установки разработаны для работы в полной системной гармонии,
+          обеспечивая оптимальную производительность и максимальную
+          эффективность. И самое лучшее — это знать, что ваш генератор
+          поддерживается полной мощью Cummins — поддержкой и обслуживанием от
+          крупнейшей в мире сети дистрибьюторов/дилеров в отрасли и обширной
+          глобальной гарантией.
+        </p>
+        <img src="/21.webp"></img>
+        <img src="/22.webp" className="mb-10"></img>
+        <ul className="border border-grey-400 flex flex-col mb-10">
+          <li className="border border-grey-400">Royal Power/Cummins Series</li>
+          <li className="border border-grey-400">
+            50 Гц cosØ=0.8 (запаздывание) 3-фазное и 4-проводное соединение типа
+            “Y”
+          </li>
+        </ul>
+        <div className="flex overflow-scroll">
+          <div>
+            <table className="border border-grey-400">
+              {" "}
+              <tbody>
+                {" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>Спецификация генератора</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Спецификация двигателя</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Габариты</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Вес</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>Модель</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Номинальная мощность</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p> Частота/напряжение</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Модель двигателя</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Мощность/скорость</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>kW/RPM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>L×W×H(mm)</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>(kg)</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>kW</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>kVA</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Hz/ V</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ40Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>40</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4BTA3.9-GM47</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>47/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1810*760*1280</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1000</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ64Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>64</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>80</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6BT5.9-GM83</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>83/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2090*800*1280</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1100</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ75Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>75</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>93.8</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6BTAA5.9-GM115</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>115/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2200*800*1300</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1450</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ100Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>100</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>125</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6BTAA5.9-GM115</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>115/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2200*800*1300</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1550</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ120Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>120</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>150</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6CTA8.3-GM155</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>155/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2480*850*1300</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1780</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ150Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>150</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>187.5</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6LTAA8.9-GM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>200/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2600*950*1350</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1960</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ200Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>200</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>250</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>NTA855-DM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>240/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2950*1100*1750</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2750</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ250Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>250</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>312.5</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>NTA855-DM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>284/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>3020*1100*1750</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2850</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ300Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>300</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>375</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>K19-DM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>358/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>3550*1300*2350</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>3100</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ350Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>350</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>437.5</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>K19-DM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>410/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>3550*1300*2350</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>3600</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ400Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>K19-DM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>448/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>3550*1300*2350</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>3800</p>
+                  </td>{" "}
+                </tr>{" "}
+              </tbody>{" "}
+            </table>
+          </div>
+        </div>
+        <ul className="border border-grey-400 mt-5 mb-5">
+          <li className="border border-grey-400">Серия Royal Power/Cummins</li>
+          <li className="border border-grey-400">
+            60 Гц cosØ=0.8 (запаздывание) 3-фазное и 4-проводное соединение типа
+            “Y”
+          </li>
+        </ul>
+        <div className="flex overflow-scroll mb-5">
+          <div>
+            <table className="border border-grey-400">
+              {" "}
+              <tbody>
+                {" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>Generator spec.</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Engine Spec.</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Dimensions</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Weight</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>Model</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Rated power</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Frenquency/voltage</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Engine model</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Power/Speed</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>kW/RPM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>L×W×H(mm)</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>(kg)</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>kW</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>kVA</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Hz/ V</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ40Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>40</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4BTA3.9-GM65</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>65/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1810*760*1280</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1000</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ50Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>62.5</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4BTA3.9-GM65</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>65/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1810*760*1280</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1100</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ64Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>64</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>80</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6BT5.9-GM100</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>100/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2020*800*1300</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1400</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ75Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>75</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>93.8</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6BT5.9-GM100</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>100/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2320*800*1300</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1450</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ90Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>90</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>112.5</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6BTA5.9-GM120</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>120/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2380*800*1300</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1500</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ100Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>100</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>125</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6BTA5.9-GM120</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>120/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2420*800*1300</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1550</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ120Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>120</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>150</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6CTA8.3-GM175</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>175/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2480*850*1300</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1780</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ150Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>150</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>187.5</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6CTA8.3-GM175</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>175/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2480*850*1300</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1830</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ200Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>200</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>250</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>NTA855-DM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>287/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2950*1100*1750</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2350</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ250Y-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>250</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>312.5</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>NTA855-DM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>287/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>3020*1100*1750</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2500</p>
+                  </td>{" "}
+                </tr>{" "}
+              </tbody>{" "}
+            </table>
+          </div>
           <span>
             <i></i>
           </span>
@@ -8871,8 +10001,8429 @@ export const products: Array<Param> = [
       </div>
     ),
     descriptionImg: "",
+    category: "MarineGenerator",
+    brand: "Cummins Series",
+  },
+  {
+    id: 8,
+    mainImg: "/23.webp",
+    name: "Морской генератор Weichai",
+    shortDescription: "Weichai Marine Generator ",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div>
+        <p className="text-xl mb-5">Атрибуты продукта:</p>
+        <ul>
+          <li>- Бренд: Weichai</li>
+          <li>- Гарантийный срок: 3 месяца - 1 год</li>
+          <li>- Страна происхождения: Китай</li>
+          <li>- Частота: 50 Гц/60 Гц</li>
+          <li>- Напряжение: 230/400 В (может быть отрегулировано)</li>
+          <li>- Режим возбуждения: Аксиальный вращающийся возбудитель</li>
+          <li>- Сертификаты инспекции судна: CCS, BV, ABS или по требованию</li>
+          <li>
+            - Бренд альтернатора: Stamford, Marathon, Faraday, Evotec и др.
+          </li>
+          <li>
+            - Система охлаждения: охлаждение путем теплообмена с морской водой
+          </li>
+          <li>- Фаза и провод: 3p3w</li>
+          <li>- Тип альтернатора: безщеточный, с самовозбуждением, AVR</li>
+          <li>- Класс защиты: IP23</li>
+          <li>- Класс изоляции: H</li>
+        </ul>
+        <p className="text-xl mb-5">
+          Способность поставки и дополнительная информация:
+        </p>
+        <ul>
+          <li>- Упаковка: стандартная морская упаковка</li>
+          <li>- Производительность: 100 комплектов в месяц</li>
+          <li>- Транспортировка: морем</li>
+          <li>- Страна происхождения: Китай</li>
+          <li>- Возможность поставки: 100 комплектов в месяц</li>
+          <li>- Сертификат: ISO</li>
+          <li>- Код ТН ВЭД: 8502120000</li>
+          <li>- Способы оплаты: L/C, T/T</li>
+          <li>- Инкотермы: FOB, CIF, EXW</li>
+        </ul>
+        <p className="text-xl mb-5">Упаковка и доставка:</p>
+        <ul>
+          <li>- Единицы продажи: Комплект/Комплекты</li>
+          <li>- Тип упаковки: стандартная морская упаковка</li>
+        </ul>
+        <p className="text-xl mb-5">Описание:</p>
+        <span>
+          Weichai является первым предприятием в Китае, которое стало
+          разрабатывать и производить генераторные установки, и обладает более
+          чем 60-летней историей производства. Мощностной диапазон морских
+          генераторных установок Weichai составляет 10-1500 кВт. Установки
+          используют двигатели, самостоятельно разработанные и произведенные
+          группой Weichai, в комплекте с генераторами и контроллерами известных
+          брендов.
+        </span>
+        <p className="text-xl mb-5">Основные характеристики:</p>
+        <ul className="mb-10">
+          <li>
+            1. Оригинальный двигатель Weichai наследует французское военное
+            качество, долговечен и требует долгого времени до капитального
+            ремонта.
+          </li>
+          <li>
+            2. Надежная работа, непрерывная работа с номинальной мощностью
+            каждые 12 часов, допускается превышение номинальной мощности до 110%
+            в течение 1 часа.
+          </li>
+          <li>
+            3. Компактная структура, красивый внешний вид, малое занимаемое
+            пространство, что способствует расположению в машинном отсеке.
+          </li>
+          <li>
+            4. Отличные показатели производительности, низкий расход топлива и
+            высокая адаптивность к окружающей среде.
+          </li>
+          <li>
+            5. Общая рама изготовлена из высококачественных стальных пластин
+            толщиной 8-10 мм, с высокой прочностью и низкой вибрацией.
+          </li>
+          <li>
+            6. Использование композитного хромированного амортизатора
+            обеспечивает низкие вибрации и шум генераторной установки.
+          </li>
+          <li>
+            7. Применение корабельного плоского масляного картера с цельным
+            штампованным дизайном, с рациональным расположением ребер жесткости
+            для повышения жесткости, без сварных швов на поверхности и
+            одноразовое формирование для предотвращения утечек и повышения
+            надежности.
+          </li>
+          <li>
+            8. Все вращающиеся части генераторной установки оборудованы
+            защитными кожухами, что обеспечивает безопасность и надежность
+            эксплуатации.
+          </li>
+          <li>
+            9. Судовая панель приборов оснащена интеллектуальными модулями, а
+            интерфейс взаимодействия человек-компьютер прост и дружелюбен.
+          </li>
+          <li>
+            10. Важные части и компоненты панели приборов импортированы или
+            являются совместными брендами с надежной производительностью.
+          </li>
+          <li>
+            11. Генераторная установка может настраивать панель приборов с
+            автоматическими функциями в соответствии с потребностями клиента.
+          </li>
+          <li>
+            12. Выбросы генераторной установки могут соответствовать требованиям
+            IMO Фазы II.
+          </li>
+          <li>
+            13. Сеть обслуживания охватывает весь мир, более 40 внутренних
+            офисов, 4000 вертикальных сервисных центров с средним интервалом
+            сервиса в 50 километров, и более 10 зарубежных офисов.
+          </li>
+        </ul>
+        <p>Морской тип Weichai 50 Гц/1500 об/мин</p>
+        <div className="mb-10 flex overflow-scroll">
+          <div>
+            <table className="border border-grey-400">
+              <tbody>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Generator spec.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Engine Spec.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Genset Data</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Model</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Rated Power</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Frequency/</p>
+                    <p>Voltage</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Engine Model</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Power/Speed</p>
+                    <p>kW/RPM</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Cylinder No.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Dimensions</p>
+                    <p>L×W×H(mm)</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Weight</p>
+                    <p>(kg)</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>KW</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>KVA</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Hz/ V</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ10J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>10</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP2.1CD18E1</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>17.5/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1240*700*1115</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>467</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ12J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>15</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP2.1CD18E1</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>17.5/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1240*700*1115</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>467</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ16J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>16</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>20</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP2.5CD22E1</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>22/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1240*700*1115</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>467</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ20J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>20</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>25</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP3.9CD33E1</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>33/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1314*700*1165</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>480</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ24J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>24</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>30</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP3.9CD33E1</p>
+                    <p>D226B-3CD</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>33/1500</p>
+                    <p>36/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                    <p>3</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1500*1080*1180</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1130</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ30J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>30</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>37.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP3.9CD38E1</p>
+                    <p>TD226B-3CD</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>38/1500</p>
+                    <p>40/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                    <p>3</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1510*1080*1180</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1150</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ50J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>62.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP4CD66E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1695*1250*1180</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1250</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ75J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>75</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>93.8</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP4CD100E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>90/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1695*1250*1210</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1350</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ100J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>100</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>125</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP6CD132E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>120/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2125*1250*1170</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1640</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ120J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>120</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>150</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP6CD152E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>138/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2180*1250*1170</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1650</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ150J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>150</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>187.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP10CD200E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>182/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2520*1250*1530</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1950</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ180J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>180</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>225</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP10CD238E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>216/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2520*1250*1550</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1980</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ200J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>250</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP10CD264E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>240/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2620*1250*1620</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2100</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ250J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>250</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>312.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP12CD317E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>288/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2650*1250*1660</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2180</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ300J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>300</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>375</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP13CD385E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>350/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2650*1250*1660</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2300</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ320J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>320</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP13CD385E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>350/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2650*1250*1660</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2300</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ360J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>360</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>450</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6M26CD447E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>406/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3010*1040*1600</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3844</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ400J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6M26CD506E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>460/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3030*1040*1600</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3874</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ450J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>450</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>562.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6M33CD550E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>500/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3140*1040*1600</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3896</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ500J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>625</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12M26CD748E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>680/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3524*1521*1927</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6263</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ600J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>600</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>750</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12M26CD748E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>680/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3596*1521*1927</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6413</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ700J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>700</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>875</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12M26CD902E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>820/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3820*1521*1927</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6841</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ800J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1000</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12M26CD1012E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>920/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3895*1521*1927</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>7060</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ900J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>900</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1125</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12M33CD1100E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1000/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3914*1521*1927</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>7267</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <span>Морской тип Weichai 60 Гц/1800 об/мин</span>
+        <div className="flex overflow-scroll">
+          <div>
+            <table className="border border-grey-400">
+              <tbody>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Generator spec.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Engine Spec.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Genset Data</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Model</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Rated Power</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Frequency/</p>
+                    <p>Voltage</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Engine Model</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Power/Speed</p>
+                    <p>kW/RPM</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Cylinder No.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Dimensions</p>
+                    <p>L×W×H(mm)</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Weight</p>
+                    <p>(kg)</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>KW</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>KVA</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Hz/ V</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ10J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>10</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP2.1CD18E1</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>17.5/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1240*700*1115</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>467</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ12J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>15</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP2.1CD18E1</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>17.5/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1240*700*1115</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>467</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ16J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>16</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>20</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP2.5CD22E1</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>22/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1240*700*1115</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>467</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ20J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>20</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>25</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP3.9CD33E1</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>33/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1314*700*1165</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>480</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ24J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>24</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>30</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP3.9CD33E1</p>
+                    <p>D226B-3CD</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>33/1500</p>
+                    <p>36/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                    <p>3</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1500*1080*1180</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1130</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ30J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>30</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>37.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP3.9CD38E1</p>
+                    <p>TD226B-3CD</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>38/1500</p>
+                    <p>40/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                    <p>3</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1510*1080*1180</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1150</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ50J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>62.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP4CD66E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1695*1250*1180</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1250</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ75J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>75</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>93.8</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP4CD100E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>90/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1695*1250*1210</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1350</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ100J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>100</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>125</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP6CD132E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>120/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2125*1250*1170</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1640</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ120J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>120</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>150</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP6CD152E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>138/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2180*1250*1170</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1650</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ150J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>150</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>187.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP10CD200E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>182/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2520*1250*1530</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1950</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ180J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>180</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>225</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP10CD238E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>216/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2520*1250*1550</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1980</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ200J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>250</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP10CD264E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>240/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2620*1250*1620</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2100</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ250J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>250</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>312.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP12CD317E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>288/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2650*1250*1660</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2180</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ300J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>300</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>375</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP13CD385E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>350/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2650*1250*1660</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2300</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ320J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>320</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>WP13CD385E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>350/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2650*1250*1660</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2300</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ360J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>360</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>450</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6M26CD447E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>406/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3010*1040*1600</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3844</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ400J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6M26CD506E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>460/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3030*1040*1600</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3874</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ450J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>450</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>562.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6M33CD550E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>500/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3140*1040*1600</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3896</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ500J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>625</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12M26CD748E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>680/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3524*1521*1927</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6263</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ600J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>600</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>750</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12M26CD748E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>680/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3596*1521*1927</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6413</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ700J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>700</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>875</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12M26CD902E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>820/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3820*1521*1927</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6841</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ800J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1000</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12M26CD1012E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>920/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3895*1521*1927</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>7060</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ900J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>900</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1125</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12M33CD1100E200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1000/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3914*1521*1927</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>7267</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="mt-10 mb-10">
+          {" "}
+          <span>
+            Ищете идеального производителя и поставщика дизельного генератора
+            мощностью 350 кВт MPS? У нас есть широкий выбор по хорошим ценам,
+            чтобы помочь вам реализовать ваши идеи. Все дизельные генераторы
+            мощностью 300 кВт гарантированно качественные. Мы являемся китайской
+            фабрикой, производящей дизельные генераторы мощностью 275 кВт. Если
+            у вас есть вопросы, пожалуйста, не стесняйтесь обращаться к нам.
+          </span>
+        </div>
+      </div>
+    ),
+    descriptionImg: "",
+    category: "MarineGenerator",
+    brand: "Weichai Series",
+  },
+  {
+    id: 9,
+    mainImg: "/24.webp",
+    name: "Морской генератор Yuchai",
+    shortDescription:
+      "Морской генератор Yuchai Морской двигатель Yuchai выбирает цельнокованый стальной коленчатый вал, сплавной чугунный блок и головку цилиндра. Морской генератор отличается небольшими размерами, малым весом и высокой надежностью. Межремонтный период составляет более 12 000 часов, его особенности включают низкие выбросы и отличные экологические показатели.",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div>
+        <span>
+          Дизельный генератор Yuchai для морских судов Морской двигатель Yuchai
+          оснащен цельнокованым стальным коленчатым валом, корпусом из сплавного
+          чугуна и головкой цилиндра. Генератор отличается компактными
+          размерами, легким весом и высокой надежностью. Межремонтный период
+          превышает 12 000 часов. Генератор характеризуется низкими выбросами и
+          отличной экологической производительностью. Компания Yuchai обладает
+          профессиональным опытом в области морских силовых установок, что
+          позволяет удовлетворять индивидуальные требования клиентов. Выбросы
+          всех серий продукции соответствуют национальным стандартам выбросов
+          выше уровня 3. Yuchai является компанией с богатым и полным спектром
+          продукции в дизельной промышленности Китая. Дизельные генераторы
+          обладают характеристиками высокой мощности, низкой вибрации, низким
+          расходом топлива, низкими выбросами, низким уровнем шума, высоким
+          соотношением цены и качества, высокой надежностью, легкостью в
+          приобретении запасных частей и длительным сроком службы. Они подходят
+          для малых и средних рыболовных судов, буксиров, пассажирских судов,
+          грузовых судов, круизных лайнеров, паромов и других типов судов.
+        </span>
+        <span className="text-xl">Основные характеристики</span>
+        <div>
+          <p>
+            1. Выбор высоконапорного топливного насоса обеспечивает высокое
+            давление впрыска топлива, а показатели расхода топлива значительно
+            превосходят показатели отечественных продуктов с аналогичным
+            диапазоном мощности.
+          </p>
+          <p>
+            2. Использование запатентованной технологии уплотнения поршневых
+            колец YUCHAI снижает расход смазки на более чем 50% по сравнению с
+            отечественными продуктами с аналогичной мощностью.
+          </p>
+          <p>
+            3. Полное электронное управление и система “общая топливная рампа”
+            позволяют гибко контролировать впрыск топлива и привод выпускного
+            клапана, эффективно снижая эксплуатационные расходы и соответствуя
+            требованиям различных этапов экологических нормативов.
+          </p>
+          <p>
+            4. Компактный конструктивный дизайн, высокая выходная мощность и
+            отличные экологические характеристики при одинаковом рабочем объеме,
+            безопасная и надежная работа, высокая эффективность и
+            энергосбережение.
+          </p>
+          <p>
+            5. Корпус и головка цилиндра изготовлены из сплавного чугуна,
+            обладающего высокой степенью прочности. Используется общий
+            коленчатый вал и скользящие подшипники, которые отличаются
+            небольшими размерами, малым весом и высокой надежностью. Период
+            межремонтной работы двигателя при нормальных условиях эксплуатации и
+            обслуживания может превышать 10 000 часов.
+          </p>
+          <p>
+            6. Оптимизированная мощность и скорость находят широкое применение
+            на различных размерах и типах балкеров, контейнеровозов, танкеров и
+            инженерных судов и т.д.
+          </p>
+          <p>
+            7. Дизельный двигатель использует запатентованную технологию
+            цельного картера и задней камеры передач, и уровень шума ниже по
+            сравнению с аналогичными продуктами.
+          </p>
+          <p>
+            8. Выбор высококлассного насоса типа P, инжектора типа P с низкой
+            инерцией и узким каналом и нового типа высокоэффективного усилителя.
+            Показатели расхода топлива значительно лучше, чем у отечественных
+            продуктов.
+          </p>
+        </div>
+        <span className="text-xl mb-5">
+          Морской тип Yuchai 50 Гц/1500 об/мин
+        </span>
+        <div>
+          <div className="flex overflow-scroll">
+            <table className="mb-10 border border-grey-400">
+              <tbody>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Generator &nbsp; spec.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Engine &nbsp; Spec.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Genset &nbsp; Data</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Model</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Rated &nbsp; Power</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Frequency/</p>
+                    <p>Voltage</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Engine &nbsp; Model</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Power/Speed</p>
+                    <p>kW/RPM</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Cylinder &nbsp; No.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Dimensions</p>
+                    <p>L×W×H(mm)</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Weight</p>
+                    <p>(kg)</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>KW</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>KVA</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Hz/ V</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ30J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>30</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>37.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC4108C</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>40/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1780*780*1035</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>750</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ40J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>40</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC4108ZC</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1850*780*1035</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>785</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ50J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>62.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6108CA</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>63/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1900*820*1080</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1130</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ64J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>64</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>80</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6108ZC</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>80/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2100*8201080</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1260</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ90J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>90</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>113</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6108ZLCB</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>112/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2300*850*1280</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1400</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ100J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>100</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>125</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6B165L-C22</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>120/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2300*850*1280</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1355</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ120J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>120</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>150</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6A200L-C20</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>145/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2365*960*1420</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1450</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ150J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>150</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>188</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6MK240L-C22</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>176/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2700*1100*1700</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2230</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ160J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>160</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6MK260L-C22</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>192/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2700*1100*1700</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2230</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ180J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>180</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>225</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6MK300L-C22</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>220/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2750*1100*1700</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2550</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ200J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>250</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6MK330C</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>240/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2750*1100*1700</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2550</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ220J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>220</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>275</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6K365L-C20</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>268/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2550*1050*1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2550</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ250J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>250</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>313</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6MJ400L-C22</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>295/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2830*1110*1750</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2750</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ250J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>250</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>313</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6T400C</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>295/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3000*1100*2160</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3290</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ280J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>260</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>350</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6K420L-C20</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>309/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2650*1050*1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2700</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ280J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>280</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>350</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6T450C</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>330/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3000*1100*2160</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3290</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ300J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>300</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>375</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6T490C</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>360/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3100*1100*2160</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3420</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ360J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>350</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>437.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6TD600L-C20</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>441/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3300*1050*1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3750</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ400J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6TD655L-C20</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4801500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3300*1050*1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3940</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ480J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>480</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>600</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6C760L-C20</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>560/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4500*1400*2100</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6950</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ500J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>625</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6C820L-C21</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>600/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4500*1400*2100</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>7100</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ600J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>600</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>750</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6C980L-C20</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>720/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4500*1400*2100</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>7300</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ960J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>960</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC12VC1512L-C21</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1120/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>5160*1644*2218</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12800</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ1436J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1436</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1795</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC12VC2430L-C21</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1800/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>5160*1644*2218</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>13500</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ1500-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1875</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC16VC2700L-C21</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2000/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>16</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>5945*1644*2218</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>15800</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ1750-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1750</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2188</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC16VC2970L-C21</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2200/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>16</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>5945*1644*2218</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>16300</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <span className="text-xl">Морской тип Yuchai 60 Гц/1800 об/мин</span>
+        <div>
+          <div className="flex overflow-scroll mb-10">
+            <table className="border border-grey-400">
+              <tbody>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Generator &nbsp; spec.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Engine &nbsp; Spec.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Genset &nbsp; Data</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Model</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Rated &nbsp; Power</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Frequency/</p>
+                    <p>Voltage</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Engine &nbsp; Model</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Power/Speed</p>
+                    <p>kW/RPM</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Cylinder &nbsp; No.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Dimensions</p>
+                    <p>L×W×H(mm)</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Weight</p>
+                    <p>(kg)</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>KW</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>KVA</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Hz/ V</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ40J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>40</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC4D75C</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>55/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1780*750*1065</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>790</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ64J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>64</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>80</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6B100-C20</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>74/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400"></td>
+                  <td className="border border-grey-400"></td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ90J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>90</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>113</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6B150C</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>110/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1940*750*1125</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1285</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ100J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>100</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>125</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6B150C</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>110/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1900*750*1000</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1300</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ120J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>120</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>150</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6A190C</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>140/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1900*860*1000</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1900</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ150J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>150</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>187.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6MK240L-C23</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>176/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2285*1122*1420</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1960</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ180J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>180</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>225</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6MK300L-C20</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>219/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2465*1122*1420</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2050</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ200J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>200</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>250</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6T390C</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>287/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2930*1150*1850</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2950</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ220J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>216</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>270</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6T390C</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>287/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2930*1150*1850</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3040</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ250J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>250</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>313</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6T390C</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>287/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2930*1150*1850</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3050</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ270J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>280</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>350</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6T420C</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3091800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2850*1150*1850</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3200</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ300J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>300</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>375</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6T480C</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>352/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2850*1150*1850</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3280</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ320J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>320</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6T510C</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>375/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2850*1150*1850</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3300</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ350J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>350</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>437.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6T540C</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>396/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3085*1150*1850</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3500</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ400J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6TD650L-C20</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>478/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3100*1250*1960</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3700</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ450J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>450</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>562.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>YC6TD700L-C20</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>515/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3100*1250*1960</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3750</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    ),
+    descriptionImg: "",
+    category: "MarineGenerator",
+    brand: "Yuchai Series",
+  },
+  {
+    id: 10,
+    mainImg: "/35.webp",
+    name: "Дизельный генератор MTU",
+    shortDescription:
+      "Дизельный генератор MTU Подразделение Power Systems компании Rolls-Royce сосредоточено на создании устойчивых, климатически нейтральных решений для привода, движения и генерации энергии. Мы вносим значительный вклад в энергетический переход с помощью экологически чистых технологий от нашего бренда продукции и решений mtu. Будучи лидерами в области резервного питания для критически важных объектов и интегрированных приводных систем для судов и тяжелой наземной техники, наши клиенты знают, что могут на нас положиться, и делают это уже более 110 лет. Высокая производительность, надежный дизайн и оптимальный расход топлива. Шесть различных мощностей для гибкой децентрализованной энергетики. Клиенты по всему миру доверяют нам обеспечение надежного электроснабжения для широкого спектра приложений, таких как здравоохранение, центры обработки данных, аэропорты, очистные сооружения, производственные предприятия и независимые электростанции. Наш портфель продукции охватывает дизельные генераторные установки мощностью до 3250 кВт (60 Гц) и до 4000 кВА (50 Гц).",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div className="flex overflow-scroll flex-col">
+        <div>
+          <table className="border border-grey-400">
+            {" "}
+            <tbody>
+              {" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>ROYALPOWER /</strong>
+                    <strong> MTU</strong>
+                    <strong> SERIES</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>
+                      50Hz &nbsp; &nbsp;400V &nbsp;cosØ=0.8(Lag) 3 phase and 4
+                      wire "Y" type connection
+                    </strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong> </strong>
+                  </p>
+                  <p>
+                    <strong>Genset Model</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>output power</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>Diesel Engine</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>Dimension</strong>
+                  </p>
+                  <p>
+                    <strong>L × W × H</strong>
+                  </p>
+                  <p>
+                    <strong>( m m )</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>Weight</strong>
+                  </p>
+                  <p>
+                    <strong>( k g )</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>Standby Power</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>Prime Power</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>Model</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>Power</strong>
+                  </p>
+                  <p>
+                    <strong>( KW )</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>KW</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>KW</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM450P</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>400</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>360</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>10V1600G10F</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>448</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>3100×1650×2050</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>3800</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM500P</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>440</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>400</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>10V1600G20F</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>493</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>3100×1650×2050</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>3800</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM563P</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>500</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>450</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>12V1600G10F</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>576</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>3400×1650×2150</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>4500</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM625P</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>550</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>500</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>12V1600G20F</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>634</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>3650×1650×2150</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>4500</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM800P</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>700 </strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>640</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>12V2000G65</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>765</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>4000×1750×2160</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>6200</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM910P</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>800 </strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>728 </strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>16V2000G25</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>891</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>4350×1750×2300</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>7100</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM1000P</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>880</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>800 </strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>16V2000G65</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>979</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>4350×1750×2300</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>7250</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM1125P</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1000 </strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>900</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>18V2000G65</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1100</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>4550×1850×2500</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>8000</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM1250P</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1100</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1000</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>18V2000G26F</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1258</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>4850×1850×2500</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>9300</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM1250P*</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1100</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1000</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>12V4000G14RF</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1325</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>5770×2100×2500</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>11700</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM1550P</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1320</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1240</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>12V4000G23</strong>
+                  </p>
+                  <p>
+                    <strong>12V4000G14F</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1420</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>5770×2100×2500</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>12250</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM1775P</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1600</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1420</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>12V4000G63</strong>
+                  </p>
+                  <p>
+                    <strong>12V4000G24F</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1733</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>5770×2100×2500</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>12450</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM2050P</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1800</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1640</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>16V4000G23</strong>
+                  </p>
+                  <p>
+                    <strong>16V4000G14F</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1978</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>6320×2600×2650</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>14400</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM2250P</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>2000</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>1800</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>16V4000G63</strong>
+                  </p>
+                  <p>
+                    <strong>16V4000G24F</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>2162</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>6600×2600×2650</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>14950</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM2500P</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>2200</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>2000</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>20V4000G23</strong>
+                  </p>
+                  <p>
+                    <strong>20V4000G14F</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>2420</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>7950×2600×2700</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>17420</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM2800P</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>2400</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>2240</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>20V4000G63</strong>
+                  </p>
+                  <p>
+                    <strong>20V4000G24F</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>2670</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>7950×2600×2700</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>176000</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM3000P</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>2600</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>2400</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>20V4000G63L</strong>
+                  </p>
+                  <p>
+                    <strong>20V4000G34F</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>2850</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>8000×3100×3100</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>182000</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>RYLM3250P</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>2800</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>2600</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>20V4000G44F</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>2850</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>8000×3100×3100</strong>
+                  </p>
+                </td>{" "}
+                <td className="border border-grey-400">
+                  <p>
+                    <strong>182000</strong>
+                  </p>
+                </td>{" "}
+              </tr>{" "}
+              <tr className="border border-grey-400">
+                {" "}
+                <td className="border border-grey-400"></td>{" "}
+                <td className="border border-grey-400"></td>{" "}
+                <td className="border border-grey-400"></td>{" "}
+                <td className="border border-grey-400"></td>{" "}
+                <td className="border border-grey-400"></td>{" "}
+                <td className="border border-grey-400"></td>{" "}
+                <td className="border border-grey-400"></td>{" "}
+              </tr>{" "}
+            </tbody>{" "}
+          </table>
+        </div>
+        <img src="/36.webp"></img>
+        <img src="/37.webp"></img>
+        <div className="mb-20"></div>
+      </div>
+    ),
+    descriptionImg: "",
     category: "DieselGenerator",
-    brand: "YuchaiSeries",
+    brand: "MTU Series",
+  },
+  {
+    id: 11,
+    mainImg: "/SG.webp",
+    name: "Тихий генератор Контейнеризированный генератор",
+    shortDescription:
+      "Тихий генератор/Контейнеризированный генератор В 2021 году мы стали авторизованным экспортным агентом и подрядчиком зарубежных проектов группы Jereh и работаем в соответствии с такими стандартами, как IEC 34-1, GB1105, GB/T 2820, CSH 22-2, VDE 0530 и YD/T502-2000 “Технические требования к дизельным генераторным установкам для связи”. Jereh также является авторизованным поставщиком Siemens для аэродеривационной газовой турбины SGT-A05 (Industrial 501-K), золотым сертифицированным интегратором Jenbacher и Waukesha. Siemens, как один из ведущих мировых поставщиков газотурбинного оборудования, предлагает аэродеривационные газовые турбины серии SGT-A05 с проверенными технологиями, передовыми материалами и техническими решениями. Эти продукты отличаются эффективностью, гибкостью и надежностью, подходящими для различных приложений генерации энергии, таких как когенерация, морские платформы и аварийные источники питания. Газовый генератор Jenbacher является мировым лидером в области двигателей с возвратно-поступательным движением, работающих на горючем газе, полных комплектов генераторных установок и когенерационных систем. Это один из немногих производителей в мире, посвятивших себя развитию технологии газовых двигателей. Мощностной диапазон газовых генераторных установок Jenbacher составляет от 0,2 МВт до 10,4 МВт. Они обладают высокой адаптивностью к различным видам газа и соответствуют наиболее строгим стандартам выбросов. Производительность этих продуктов эффективна, долговечна и надежна, что позволяет удовлетворять разнообразные потребности пользователей в охлаждении, тепле и электроэнергии. Они широко используются в коммерческих, промышленных и муниципальных приложениях.",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div>
+        <p className="text-xl">Контейнерная генераторная установка:</p>
+        <p>
+          Генераторные установки Royal Power производятся в соответствии с
+          стандартным размером ISO/TC104, имеют рациональную конструкцию, что
+          обеспечивает защиту генераторной установки от повреждений из-за
+          высокого давления при транспортировке и делают ее пригодной для
+          перевозки на судне. Мы можем предоставить контейнеры длиной 20 футов,
+          40 футов, а также расширенные или увеличенные контейнеры. Они делятся
+          на обычные и тихие типы. Генераторные установки этой серии могут быть
+          легко перемещены в нужное место и способны работать в самых сложных
+          условиях. Эти генераторы оснащены высококачественным и надежным
+          дизельным двигателем в качестве источника привода, а также с
+          международным качеством бесщеточного синхронного генератора.
+        </p>
+        <p className="text-xl">Характеристики производительности:</p>
+        <ul>
+          <li>
+            - Соответствие международным стандартным размерам контейнера,
+            легкость транспортировки.
+          </li>
+          <li>
+            - Сохранение основной структуры стандартного контейнера, прочность и
+            устойчивость к износу.
+          </li>
+          <li>
+            - Высокая степень защиты, подходит для использования в
+            неблагоприятной среде.
+          </li>
+          <li>
+            - Более разумный дизайн выхлопной системы, чтобы обеспечить
+            непрерывное питание генераторной установки.
+          </li>
+        </ul>
+        <img src="/SG.webp" className="lg:w-1/2 w-full"></img>
+        <img src="/40.webp"></img>
+        <img src="/41.webp"></img>
+      </div>
+    ),
+    descriptionImg: "",
+    category: "DieselGenerator",
+    brand: "Тихий Контейнеризированный",
+  },
+  {
+    id: 12,
+    mainImg: "/42.webp",
+    name: "Дизельный генератор Perkins",
+    shortDescription:
+      "Дизельный генератор Perkins Дизельные генераторы Perkins обладают мощностью от 7 кВт до 1800 кВт. Это двигатель британской марки, который может быть сопряжен с альтернаторами Stamford, Leroy Somer, Marathon и Mecc Alte.",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div>
+        <span className="text-xl">О дизельных генераторах серии PERKINS</span>
+        <span>
+          Дизельные генераторы серии ROYAL PERKINS оснащены двигателями PERKINS,
+          которые отличаются высокой стабильностью, надежностью, долговечностью
+          и долгим сроком службы, а также широким диапазоном выходной мощности.
+          Компания Royal сотрудничает с производителями двигателей PERKINS в
+          течение нескольких лет и получила высокие отзывы клиентов по всему
+          миру, например, в сферах связи, промышленности, проектов, добычи
+          полезных ископаемых, спасательных работ, военных и других отраслях.
+        </span>
+        <ul>
+          Преимущества дизельных генераторов PERKINS:
+          <li>1. Маленький размер</li>
+          <li>2. Отличная производительность</li>
+          <li>3. Обслуживание в течение 24 часов</li>
+          <li>4. Экологичность</li>
+          <li>5. Международная гарантия</li>
+          <li>6. Европейский стандарт выбросов</li>
+          <li>
+            7. Запасные части легко доступны на мировом рынке по
+            конкурентоспособной цене.
+          </li>
+        </ul>
+        <span>Стандартная комплектация открытого типа Perkins:</span>
+        <ul>
+          <li>1. Двигатель Perkins</li>
+          <li>2. Альтернатор Stamford/Marathon/Kaihua</li>
+          <li>3. Система управления DSE6020, Smartgen</li>
+          <li>4. Опционально топливный бак на базе</li>
+          <li>5. Автоматический выключатель ABB, Schneider, Chint</li>
+          <li>6. Аккумулятор и выключатель аккумулятора</li>
+          <li>7. Промышленный глушитель и гибкий выхлопной шланг</li>
+        </ul>
+        <div>
+          <div className="flex overflow-scroll mb-10">
+            <table className="border border-grey-400">
+              <tbody>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>ROYALPOWER/PERKINS &nbsp; SERIES</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>
+                        50Hz &nbsp;400V &nbsp;cosØ=0.8(Lag) 3 phase and 4 &nbsp;
+                        wire "Y" type connection
+                      </strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong> </strong>
+                    </p>
+                    <p>
+                      <strong>Genset Model</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>output power </strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>Diesel Engine</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>Dimension</strong>
+                    </p>
+                    <p>
+                      <strong>L × W × H</strong>
+                    </p>
+                    <p>
+                      <strong>( m m )</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>Weight</strong>
+                    </p>
+                    <p>
+                      <strong>( k g )</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>Standby Power</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>Prime Power</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>Model</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>Power</strong>
+                    </p>
+                    <p>
+                      <strong>( KW )</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>KW</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>KW</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP9P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>8</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>7</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>403D-11G</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>9.2</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1350×500×1090</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>335</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP12P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>12</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>10</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>403A-15G1</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>13.5</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1450×500×1150</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>400</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP15P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>13</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>12</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>403A-15G2</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>15</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1450×500×1150</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>415</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP20P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>18</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>16</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>404A-22G1</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>20.6</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1600×560×1200</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>530</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP30P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>26</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>24</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1103A-33G</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>30</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1850×700×1280</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>860</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP45P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>40</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>36</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1103A-33TG1</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>46.5</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1950×700×1340</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>870</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP60P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>52</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>48</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1104D-44TG2</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>64</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2050×700×1350</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>970</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP65P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>56</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>52</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1104A-44TG1</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>65.5</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2200×700×1350</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1050</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP80P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong> 70</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>64</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1104A-44TG2</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>80.7</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2200×700×1350</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1080</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP100P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>88</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>80</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1104C-44TAG2</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>103</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2280×700×1380</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1250</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP135P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>120</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>108</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1106A-70TAG1</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>135.8</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2550×850×1430</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1550</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP150P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>132</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>120</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1106A-70TAG2</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>153.6</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2750×850×1350</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1580</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP180P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>160</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>144</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1106A-70TAG3</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>175.8</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2850×850×1350</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1600</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP200P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>176</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>160</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1106A-70TAG4</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>199</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2850×1050×1850</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1700</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP230P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>200</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>184</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1206A-E70TTAG2</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>223</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>3000×1050×1700</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2350</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP250P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>220</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>200</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1206A-E70TTAG3</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>248</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>3000×1050×1700</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2350</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP300P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>264</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>240</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1506A-E88TAG5</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>293</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>3080×1090×1700</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2550</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP475P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>308</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>280</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2206C-E13TAG2</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>368</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>3460×1150×2050</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>3000</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP400P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>360</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>320</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2206C-E13TAG3</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>413</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>3460×1150×2030</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>3150</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP450P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>400</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>360</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2506C-E15TAG1</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>451</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>3780×1280×2020</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>3750</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP500P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>440</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>400</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2506C-E15TAG2</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>495</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>3780×1280×2020</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>3880</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP563P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>500</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>450</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2806C-E18TAG1</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>593</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>3780×1550×2200</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4560</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP625P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>550</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>500</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2806A-E18TAG2</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>609</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>3780×1550×2200</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4650</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP750P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>660</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>600</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4006-23TAG2A</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>695</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4250×1700×2150</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>6450</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP800P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>700</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>640</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4006-23TAG3A</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>760</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4250×1700×2150</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>6500</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP900P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>800</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>720</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4008TAG1A</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>844</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4750×2270×2250</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>7400</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP1000P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>880</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>800</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4008TAG2A</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>947</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4750×2270×2250</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>7500</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP1125P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1000</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>900</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4008-30TAG3</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1055</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4750×2270×2250</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>8500</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP1250P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1100</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1000</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4012-46TWG2A</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1166</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4800×2100×2300</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>9050</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP1400P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1200</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1120</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4012-46TWG3A</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1263</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4800×2100×2300</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>9050</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP1550P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1320</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1240</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4012-46TAG2A</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1395</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4800×2100×2300</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>9150</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP1650P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1440</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1320</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4012-46TAG3A</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1583</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4900×2100×2300</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>9750</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP1775P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1640</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1420</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4016TAG1A</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1690</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>5050×2600×2150</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>10500</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP2050P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1800</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1640</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4016TAG2A</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1715</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>5300×2600×2150</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>10300</strong>
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>RYLP2250P</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2000</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>1800</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>4016-61TRG3</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>2083</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>5300×2600×2150</strong>
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      <strong>11000</strong>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    ),
+    descriptionImg: "",
+    category: "DieselGenerator",
+    brand: "Perkins Series",
+  },
+  {
+    id: 13,
+    mainImg: "/43.webp",
+    name: "Дизельный генератор VOLVO PENTA",
+    shortDescription:
+      "Дизельный генератор VOLVO PENTA дежные генераторные двигатели Volvo Penta для основного электропитания созданы для работы в сложных условиях. Благодаря непревзойденной способности принимать нагрузку, низкому расходу топлива и простоте установки, вы получаете надежное и экономичное решение для основного электропитания, которое обеспечит максимальное время работы без простоев.",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div>
+        <p>Дизельные генераторы Volvo Penta</p>
+        <p>
+          Надежные генераторные двигатели Volvo Penta для основного
+          электропитания созданы для работы в сложных условиях. Благодаря
+          непревзойденной способности принимать нагрузку, низкому расходу
+          топлива и простоте установки, вы получаете надежное и экономичное
+          решение для основного электропитания, гарантирующее максимальное время
+          безотказной работы.
+        </p>
+        <p>Топливная эффективность</p>
+        <p>Решения для основного электропитания с низким расходом топлива</p>
+        <p>
+          Генераторы для основного электропитания Volvo Penta разработаны с
+          использованием крайне эффективной стратегии сгорания, включая систему
+          “общая топливная рампа”, которая минимизирует расход топлива. Мы также
+          добавили эффективную систему последующей обработки для двигателей
+          уровня Tier IV Final и Stage V, что увеличивает экономию топлива.
+        </p>
+        <p>Общая стоимость владения</p>
+        <p>Контроль общей стоимости владения</p>
+        <p>
+          Топливная эффективность генераторов для основного электропитания Volvo
+          Penta способствует снижению общей стоимости владения. Интервалы
+          технического обслуживания и замены масла увеличены, низкое тепловое
+          воздействие, удобное обслуживание и взаимозаменяемость запчастей также
+          способствуют снижению затрат.
+        </p>
+        <p>Высокая мощность</p>
+        <p>Оптимизированные операции</p>
+        <p>
+          Генераторы для основного электропитания с высокой плотностью мощности
+        </p>
+        <p>
+          Генераторы основного электропитания Volvo Penta обеспечивают высокую
+          плотность мощности для повышения эффективности вашей работы.
+          Компактный дизайн снижает затраты на хранение, а небольшой вес и
+          простая установка облегчают транспортировку и обслуживание.
+        </p>
+        <p>Преимущества сходства</p>
+        <p>Технологии снижения выбросов и гибкие установки</p>
+        <p>
+          Наши двигатели генераторов для основного электропитания соответствуют
+          региональным требованиям от Stage II до Stage V и построены на
+          одинаковой платформе. Это дает преимущество в виде взаимозаменяемости
+          запчастей и единообразия установки по всему миру. Поставка двигателя в
+          собранном виде упрощает установку, и она поддерживается нашими
+          инженерами-приложениями.
+        </p>
+        <p>Выгоды для промышленности</p>
+        <p>Служба действий Volvo Penta</p>
+        <p>Глобальная поддержка</p>
+        <p>
+          С 900 дилерами в 130 странах вы можете воспользоваться глобальной
+          дилерской сетью с местными специалистами. Вместе с нашей сетью
+          распространения запчастей и службой действий Volvo Penta, предлагающей
+          поддержку 24/7, у вас всегда будет кто-то, готовый помочь.
+        </p>
+        <span>Серия ROYALPOWER / VOLVO PENTA</span>
+        <div>
+          <img src="/44.png"></img>
+        </div>
+      </div>
+    ),
+    descriptionImg: "",
+    category: "DieselGenerator",
+    brand: "Volvo Series",
+  },
+  {
+    id: 14,
+    mainImg: "/45.webp",
+    name: "Морской генератор Perkins",
+    shortDescription:
+      "Морской генератор Perkins Морские дизельные генераторные установки Royal Perkins используют оригинальные немецкие дизельные двигатели Perkins, обеспечивая сборку с передовой технологией. Эти установки отличаются небольшими размерами, низким расходом топлива, малым весом, высокой надежностью и долговечностью, низкими вибрациями, низким уровнем шума, а также удобством в использовании и обслуживании. Они широко применяются на быстроходных катерах, пассажирских судах, рыболовных лодках, балкерах, океанских рыболовных судах, служебных и инженерных судах.",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div>
+        <p>
+          Опираясь на британские технологии, дизельный двигатель Perkins
+          сочетает в себе компактную конструкцию, высокую мощность,
+          экономичность, сильную адаптивность к окружающей среде и высокую
+          надежность, что позволяет пользователям постоянно наслаждаться
+          множеством убедительных характеристик и завоевало доверие большинства
+          пользователей.
+        </p>
+        <p>
+          Морские дизельные генераторные установки Royal Perkins используют
+          оригинальные немецкие дизельные двигатели Perkins, обеспечивая сборку
+          с передовой технологией. Эти установки отличаются небольшими
+          размерами, низким расходом топлива, малым весом, высокой надежностью и
+          долговечностью, низкими вибрациями, низким уровнем шума, а также
+          удобством в использовании и обслуживании. Они широко применяются на
+          быстроходных катерах, пассажирских судах, рыболовных лодках, балкерах,
+          океанских рыболовных судах, служебных и инженерных судах.
+        </p>
+        <img src="/46.webp"></img>
+        <span className="text-xl">Main features </span>
+        <img src="/47.webp"></img>
+        <ul>
+          <li>
+            1. Полная серия продуктов, широкий охват мощности, отличная
+            стабильность и срок службы, что позволяет удовлетворить потребности
+            различных клиентов.
+          </li>
+          <li>
+            2. Легкий вес, высокая мощность, что приносит огромную выгоду для
+            энергосбережения и защиты окружающей среды.
+          </li>
+          <li>
+            3. Независимая система впрыска топлива, низкое загрязнение
+            выхлопными газами (двигатель EFI соответствует стандарту Euro III),
+            более соответствует экономическим и экологическим тенденциям.
+          </li>
+          <li>
+            4. Встроенный демпфер для борьбы с вибрацией в воздухоохлаждаемом
+            морском двигателе.
+          </li>
+          <li>
+            5. Двигатель использует новейшие европейские и американские
+            технологии и высокопрочные, износостойкие материалы для обеспечения
+            первоклассного качества.
+          </li>
+          <li>
+            6. Широкий выбор фланцевых адаптеров и муфт с одинарными
+            подшипниками.
+          </li>
+          <li>
+            7. Небольшой размер, компактная конструкция, красивый внешний вид,
+            стабильная работа, низкий расход топлива, удобство установки и
+            простота технического обслуживания.
+          </li>
+          <li>
+            8. Оптимальный дизайн системы снижения вибрации на основе
+            компьютерного динамического моделирования.
+          </li>
+          <li>
+            9. Стратегия управления полной системой мониторинга на основе
+            надежностного проектирования.
+          </li>
+          <li>
+            10. Простая установка и техническое обслуживание, легкий доступ к
+            клеммам и вращающимся диодам.
+          </li>
+          <li>
+            11. Отличная производительность, стабильная работа, низкие вибрации,
+            долгий срок эксплуатации и длительное время до капитального ремонта.
+          </li>
+          <li>
+            12. Индивидуально настроенная система глушителей выхлопа для каждого
+            агрегата.
+          </li>
+          <li>
+            13. Достаточное количество запасных частей и более 4000 точек
+            технической поддержки по всему миру.
+          </li>
+          <li>
+            14. Оптимизированные мощность и скорость широко применимы к
+            различным размерам и типам балкеров, контейнеровозов, танкеров и
+            инженерных судов.
+          </li>
+        </ul>
+        <span className="text-xl">Морской тип Perkins 50 Гц/1500 об/мин</span>
+        <div>
+          <div className="flex overflow-scroll mb-10">
+            <table className="border border-grey-400">
+              {" "}
+              <tbody>
+                {" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>Generator &nbsp; spec.</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Engine &nbsp; Spec.</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Genset &nbsp; Data</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>Model</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Rated &nbsp; Power</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Frequency/</p>
+                    <p>Voltage</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Engine &nbsp; Model</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Power/Speed</p>
+                    <p>kW/RPM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Cylinder &nbsp; No.</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Dimensions</p>
+                    <p>L×W×H(mm)</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Weight</p>
+                    <p>(kg)</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>kW</p>
+                  </td>{" "}
+                  <td width="5">
+                    <p>kVA</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Hz/ V</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ10J-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>10</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>13</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>415 GM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>12.3/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>3</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1076*520*700</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>409</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ16J-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>16</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>20</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>422 GM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>18.4/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1258*500*780</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>512</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ20J-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>20</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>25</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>422 TGM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>25.2/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1312*560*800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>545</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ24J-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>24</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>30</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4.4 GM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>42.7/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1490*700*920</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>762</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ38J-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>38</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>48</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4.4 GM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>42.71500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1644*700*920</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>859</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ50J-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>63</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4.4 TGM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>56.4/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1644*700*980</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>965</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ65J-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>64</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>80</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4.4 TWGM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>75/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1644*760*1340</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1058</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ80J-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>80</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>100</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4.4TW2GM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>93.6/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1644*760*1340</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1078</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ100J-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>100</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>125</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>E70TAG1M</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>109/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2013*1000*1350</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1868</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ115J-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>115</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>144</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>E70TAG2M</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>129/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2013*1000*1350</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1912</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ128J-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>128</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>160</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>E70TAG3M</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>164/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2063*1000*1350</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1960</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>CCFJ150J-WTP</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>150</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>188</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>E70TAG3M</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>164/1500</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2162*1000*1350</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2130</p>
+                  </td>{" "}
+                </tr>{" "}
+              </tbody>{" "}
+            </table>
+          </div>
+        </div>
+        <span className="text-xl">Морской тип Perkins 60 Гц/1800 об/мин</span>
+        <div>
+          <div className="flex overflow-scroll">
+            <table className="border border-grey-400">
+              {" "}
+              <tbody>
+                {" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>Generator &nbsp; spec.</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Engine &nbsp; Spec.</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Genset &nbsp; Data</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td className="border border-grey-400">
+                    <p>Model</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Rated &nbsp; Power</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Frequency/</p>
+                    <p>Voltage</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Engine &nbsp; Model</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Power/Speed</p>
+                    <p>kW/RPM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Cylinder &nbsp; No.</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Dimensions</p>
+                    <p>L×W×H(mm)</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Weight</p>
+                    <p>(kg)</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td width="27">
+                    <p>kW</p>
+                  </td>{" "}
+                  <td width="15">
+                    <p>kVA</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>Hz/ V</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td width="27">
+                    <p>CCFJ12J-WTP</p>
+                  </td>{" "}
+                  <td width="5">
+                    <p>12.5</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>16</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>415 GM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>14.7/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>3</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1076*520*700</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>409</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td width="27">
+                    <p>CCFJ20J-WTP</p>
+                  </td>{" "}
+                  <td width="5">
+                    <p>20</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>25</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>422 GM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>22/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1258*500*780</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>512</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td width="111">
+                    <p>CCFJ27J-WTP</p>
+                  </td>{" "}
+                  <td width="5">
+                    <p>27</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>34</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>422 TGM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>30.3/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1338*560*800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>558</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td width="27">
+                    <p>CCFJ36J-WTP</p>
+                  </td>{" "}
+                  <td width="5">
+                    <p>36</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>45</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4.4 GM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>49.1/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1535*700*920</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>780</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td width="27">
+                    <p>CCFJ42J-WTP</p>
+                  </td>{" "}
+                  <td width="5">
+                    <p>42</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>52.5</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4.4 GM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>49.1/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1554*700*920</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>840</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td width="27">
+                    <p>CCFJ55J-WTP</p>
+                  </td>{" "}
+                  <td width="5">
+                    <p>55</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>69</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4.4 TGM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>63.6/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1644*700*980</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>960</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td width="27">
+                    <p>CCFJ70J-WTP</p>
+                  </td>{" "}
+                  <td width="5">
+                    <p>70</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>87.5</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4.4 TWGM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>82.7/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1689*760*1340</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1020</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td width="27">
+                    <p>CCFJ90J-WTP</p>
+                  </td>{" "}
+                  <td width="5">
+                    <p>90</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>112.5</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4.4TW2GM</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>106.8/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>4</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1644*760*1340</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1080</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td width="27">
+                    <p>CCFJ110J-WTP</p>
+                  </td>{" "}
+                  <td width="5">
+                    <p>110</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>137.5</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>E70TAG1M</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>129/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2013*1000*1350</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1860</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td width="27">
+                    <p>CCFJ150J-WTP</p>
+                  </td>{" "}
+                  <td width="5">
+                    <p>150</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>187.5</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>E70TAG2M</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>164/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2063*1000*1350</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>1960</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td width="27">
+                    <p>CCFJ175J-WTP</p>
+                  </td>{" "}
+                  <td width="5">
+                    <p>175</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>219</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>E70TAG3M</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>191/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2103*1000*1350</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2020</p>
+                  </td>{" "}
+                </tr>{" "}
+                <tr className="border border-grey-400">
+                  {" "}
+                  <td width="27">
+                    <p>CCFJ200J-WTP</p>
+                  </td>{" "}
+                  <td width="5">
+                    <p>200</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>250</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>E70TAG4M</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>218/1800</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2162*1000*1350</p>
+                  </td>{" "}
+                  <td className="border border-grey-400">
+                    <p>2130</p>
+                  </td>{" "}
+                </tr>{" "}
+              </tbody>{" "}
+            </table>
+          </div>
+        </div>
+      </div>
+    ),
+    descriptionImg: "",
+    category: "MarineGenerator",
+    brand: "Perkins Series",
+  },
+  {
+    id: 15,
+    mainImg: "/45.webp",
+    name: "Морской генератор Doosan",
+    shortDescription:
+      "Морской генератор Doosan Двигатели Doosan Infracore для генерации энергии разработаны для обеспечения максимальной выходной мощности и долговечности. Эти двигатели устанавливаются в основных и резервных генераторах по всему миру. Генераторы Doosan, произведенные в Корее, отличаются низким расходом топлива и эффективной работой в широком диапазоне мощностей от 165 кВА до 825 кВА. Двигатели Doosan имеют рабочий объем от 3,4 до 22 литров и являются экологически безопасными. Doosan Infracore поставляет высококачественные дизельные двигатели для использования в широком спектре промышленных приложений, строительной техники и генерации энергии.",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div>
+        <span>
+          {" "}
+          Морские дизельные генераторы Doosan, производимые нашей компанией,
+          изготавливаются строго в соответствии со стандартами основных
+          международных классификационных обществ и комплектуются альтернаторами
+          таких брендов, как Marathon, Stamford, Siemens. Эти генераторы
+          обладают широким диапазоном мощностей и сертифицированы такими
+          классификационными обществами, как CCS, ZY, RS, BV, ABS и другие.
+          Продукция хорошо продается как на внутреннем, так и на зарубежных
+          рынках.
+        </span>
+        <ul>
+          Основные характеристики
+          <li>
+            1. Высококачественные компоненты от ведущих международных
+            производителей, обеспечивающие высокую надежность и превосходную
+            производительность.
+          </li>
+          <li>
+            2. Разработан для жестких условий морских применений с превосходной
+            долговечностью и высоким временем безотказной работы.
+          </li>
+          <li>
+            3. Интегрированные системы сигнализации могут быть настроены для
+            цифровой связи с центральной системой обработки данных и
+            сигнализации судна.
+          </li>
+          <li>
+            4. Низкие затраты на обслуживание и длительный ремонтный цикл.
+          </li>
+          <li>
+            5. Все элементы генераторной установки разработаны для работы в
+            полной системной гармонии, обеспечивая оптимальную
+            производительность и максимальную эффективность.
+          </li>
+          <li>
+            6. Оснащен электронным регулированием для оптимального принятия
+            ступенчатых нагрузок.
+          </li>
+          <li>7. Быстрый холодный запуск и встроенный набор характеристик.</li>
+          <li>
+            8. Высокая надежность и низкие затраты в течение жизненного цикла.
+          </li>
+          <li>
+            9. Оборудованная интеллектуальная система управления может
+            автоматически обнаруживать рабочее состояние установки, запускать и
+            останавливать установку, быстро и надежно запускаться, чтобы
+            гарантировать безопасность и эффективность работы.
+          </li>
+        </ul>
+        <p>Морской тип Doosan 50 Гц/1500 об/мин</p>
+        <div>
+          <div className="flex overflow-scroll">
+            <table className="border border-grey-400">
+              <tbody>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Generator spec.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Engine Spec.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Genset Data</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Model</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Rated Power</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Frequency/</p>
+                    <p>Voltage</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Engine Model</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Power/Speed</p>
+                    <p>kW/RPM</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Cylinder No.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Dimensions</p>
+                    <p>L×W×H(mm)</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Weight</p>
+                    <p>(kg)</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>kW</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>kVA</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Hz/ V</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ80J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>80</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>100</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD066TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>96/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1841*800*1090</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1040</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ64J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>64</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>80</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD136</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>77/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1981*770*1125</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1220</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ90J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>90</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>112.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD136T</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>107/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1992*770*1125</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1270</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ100J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>100</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>125</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD136TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>115/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2096*825*1125</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1330</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ128J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>128</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>160</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD086TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>151/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2146*825*1162</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1490</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ150J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>150</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>187.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD196TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>173/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2152*854*1272</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1800</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ180J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>180</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>225</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD126TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>206/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2256*854*1272</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1950</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ250J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>250</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>312.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD158TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>302/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>8</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2209*1222*1274</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2440</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ320J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>320</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD180TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>357/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>10</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2532*1222*1369</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3000</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ400J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD222TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>446/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2704*1222*1400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3180</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ280J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>280</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>350</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4AD158TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>325/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>8</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2467*1237*1317</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2860</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ440J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>550</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50/400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4AD222TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>491/1500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2858*1243*1436</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3600</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p className="mt-10">Морской тип Doosan 60 Гц/1800 об/мин</p>
+        <div>
+          <div className="flex overflow-scroll">
+            <table className="border border-grey-400">
+              <tbody>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Generator spec.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Engine Spec.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Genset Data</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Model</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Rated Power</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Frequency/</p>
+                    <p>Voltage</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Engine Model</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Power/Speed</p>
+                    <p>kW/RPM</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Cylinder No.</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Dimensions</p>
+                    <p>L×W×H(mm)</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Weight</p>
+                    <p>(kg)</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>kW</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>kVA</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Hz/ V</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ95J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>95</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>119</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD066TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>110/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1841*800*1090</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1050</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ84J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>84</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>105</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD136</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>93/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1981*770*1125</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1230</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ110J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>110</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>137.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD136T</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>125/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2096*770*1125</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1320</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ120J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>120</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>150</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD136TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>138/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2096*825*1125</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1400</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ150J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>150</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>187.5</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD086TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>186/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2146*825*1162</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1480</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ180J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>180</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>225</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD196TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>199/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2197*854*1272</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1760</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ216J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>216</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>270</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD126TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>247/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2256*854*1272</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1980</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ320J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>320</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD158TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>353/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>8</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2299*1222*1274</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2600</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ400J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>400</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>500</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD180TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>441/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>10</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2532*1222*1369</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3060</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ480J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>480</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>600</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AD222TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>530/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2690*1222*1399</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3500</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ335J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>335</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>418</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4AD158TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>390/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>8</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2467*1237*1317</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2950</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>CCFJ515J-WTP</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>515</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>644</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>60/440</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>4AD222TI</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>588/1800</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>12</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>2858*1243*1436</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3780</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="mb-10"></div>
+      </div>
+    ),
+    descriptionImg: "",
+    category: "MarineGenerator",
+    brand: "Doosan Series",
+  },
+  {
+    id: 16,
+    mainImg: "/48.webp",
+    name: "Газовый генератор Waukesha",
+    shortDescription:
+      "Газовый генератор Waukesha Специально разработан для самых сложных и удаленных условий нефтегазовой промышленности, наши ранние технологии до сих пор остаются одними из лучших. Сегодня мы продолжаем развивать эти наработки, совершенствуем технологии двигателей, создаем новые сервисные инновации и расширяем влияние нашей растущей сети каналов. В компании Waukesha мы ежедневно работаем над проектированием и созданием двигателей и программ, которые помогут максимально повысить эффективность вашей работы и строить ваше будущее.",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div>
+        <p>
+          Газовые двигатели Waukesha спроектированы для надежной работы в
+          изолированных, критически важных и сложных приложениях.
+          Распространение продукции Waukesha компанией Clarke Energy ограничено
+          территорией Индии. Благодаря прочной конструкции и непревзойденной
+          гибкости, наши двигатели с богатым и обедненным горением охватывают
+          широкий спектр применений и уровней соответствия различным
+          экологическим стандартам. Предлагая обе конструкции, с богатым и
+          обедненным горением, индийская команда Clarke Energy предоставляет ряд
+          продуктов, чтобы помочь нашим клиентам делать разумный выбор для
+          будущего.
+        </p>
+        <p>
+          Разработанный для требовательной отрасли и опирающийся на более чем
+          вековой опыт в производстве двигателей, двигатель Waukesha является
+          надежной инвестицией, обеспечивающей душевное спокойствие благодаря
+          многочисленным преимуществам.
+        </p>
+        <img src="/49.png"></img>
+        <p>Преимущества</p>
+        <ul>
+          <li>
+            - Прочные конструкции, которые обеспечивают крайнее доверие в
+            удаленных, сложных и часто критически важных приложениях.
+          </li>
+          <li>
+            - Непревзойденная толерантность к изменению качества топлива,
+            которая максимизирует выходную мощность, время безотказной работы и
+            прибыльность.
+          </li>
+          <li>
+            - Портфель моделей с гибкими уровнями выбросов, чтобы
+            соответствовать местным требованиям к качеству воздуха, даже когда
+            двигатели перемещаются на новые объекты.
+          </li>
+          <li>
+            - Модели для использования биогаза для наилучшего использования
+            доступных видов топлива.
+          </li>
+          <li>
+            - Clarke Energy предоставляет запчасти и обслуживание для двигателей
+            Waukesha круглосуточно.
+          </li>
+          <li>
+            - Стратегически расположенное обучение с авторизацией завода,
+            которое обеспечивает знания для защиты и увеличения стоимости
+            двигателя Waukesha.
+          </li>
+        </ul>
+        <p>Диапазон электрической мощности</p>
+        <ul>
+          <li>- Waukesha VGF (220 кВт – 830 кВт)</li>
+          <li>- Waukesha VHP (540 кВт – 1600 кВт)</li>
+          <li>- Waukesha 275GL+ (2,415 кВт – 3,605 кВт)</li>
+          <li>- Waukesha Mobiflex (943 кВт и 1,680 кВт)</li>
+        </ul>
+        <img src="/50.webp"></img>
+        <img src="/51.webp"></img>
+        <p>Помощь в планировании на будущее</p>
+        <p>
+          При выборе типа двигателя, который наилучшим образом соответствует
+          вашим потребностям, необходимо учитывать множество факторов. Описав
+          некоторые из этих ключевых аспектов, мы надеемся, что вы получите
+          представление и перспективу для принятия наилучшего решения в вашей
+          текущей ситуации, принимая во внимание будущее.
+        </p>
+        <ul className="mb-10">
+          Три критически важных аспекта<li>- Регулирование выбросов</li>
+          <li>- Экономическая эффективность</li>
+          <li>- Углеродный след</li>
+        </ul>
+      </div>
+    ),
+    descriptionImg: "",
+    category: "GasGenerator",
+    brand: "Waukesha Series",
+  },
+  {
+    id: 17,
+    mainImg: "/INNIO.webp",
+    name: "Газовый генератор Jenbacher",
+    shortDescription:
+      "Газовый генератор Jenbacher Газовый генератор Jenbacher был непрерывно усовершенствован на основе обширного полевого опыта и достижений в технологии проектирования двигателей для повышения эффективности. Оснащенный 8-цилиндровым рядным двигателем, он способствует оптимизированному сгоранию для выработки электроэнергии с высокой эффективностью в диапазоне 335 кВт.",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div>
+        <p className="text-xl">Бренд</p>
+        <p>INNIO</p>
+        <p>
+          INNIO находится в деревне Йенбах, Австрия, где также расположен центр
+          производства газовых двигателей Jenbacher. На предприятии площадью
+          65,000 квадратных метров работают более 1,600 человек. Эта отмеченная
+          наградами фабрика является лидером в области экологической
+          устойчивости, обучения на производстве, профессиональной подготовки и
+          энергосбережения.
+        </p>
+        <p className="text-xl">Бизнес JENBACHER компании INNIO</p>
+        <p>
+          Подразделение газовых двигателей Jenbacher в компании INNIO является
+          мировым лидером в производстве газовых двигателей, комплектных
+          генераторных установок и когенерационных установок для генерации
+          энергии. Газовые двигатели Jenbacher, мощностью от 200 кВт до 10 МВт,
+          работают на природном газе или различных других газах, включая биогаз,
+          свалочный газ, газ из сточных вод, синтетические газы и водород.
+          Подразделение газовых двигателей Jenbacher компании INNIO поставляет
+          инновационные газовые двигатели Jenbacher в Европу, Америку, Азию,
+          Южную Африку и Южную Америку. Во всем мире используется примерно
+          20,000 газовых двигателей Jenbacher, производящих почти 28 ГВт общей
+          выходной мощности.
+        </p>
+        <img src="/52.webp"></img>
+        <p className="text-xl">ПРОГРАММА</p>
+        <p>
+          Газовые двигатели Jenbacher известны во всем мире своей
+          производительностью и надежностью. Более 80 лет Jenbacher признан
+          производителем, разрабатывающим и производящим газовые двигатели для
+          эффективной генерации тепла и электроэнергии. Продукция компании
+          хорошо развита и протестирована, что позволяет точно соответствовать
+          специфическим требованиям каждого клиента. Основные компоненты,
+          необходимые для надежной работы двигателя, такие как свечи зажигания,
+          газовые миксеры и системы управления двигателем, разрабатываются
+          непосредственно в Йенбахе. Это позволяет Jenbacher контролировать
+          разработку и строительство, системную интеграцию и тестирование полных
+          установок.
+        </p>
+        <p>
+          Газовые двигатели Jenbacher предоставляют диапазон мощности от 200 кВт
+          до 10 МВт с гибкостью топлива для работы на природном газе или ряде
+          других газов. Двигатели Jenbacher обеспечивают местное снабжение
+          электроэнергией, теплом и охлаждением для различных коммерческих,
+          промышленных и муниципальных приложений, особенно для производства
+          возобновляемой энергии и энергии из отходов, промышленной генерации
+          энергии и когенерации/ТЭЦ (совмещенная генерация тепла и
+          электроэнергии) и генерации энергии на нефтяных месторождениях. Более
+          20,000 газовых двигателей Jenbacher работают в более чем 100 странах.
+        </p>
+        <p>
+          Через местных партнеров по каналам Jenbacher может помочь вам выбрать
+          из обширного портфолио газовых двигателей Jenbacher компании INNIO,
+          чтобы удовлетворить ваши специфические потребности с точки зрения
+          электрической мощности, а также тепловой или охлаждающей способности.
+          Но если энергия является наследием мира, то цифровизация — это его
+          будущее. Благодаря цифровизации, Jenbacher постоянно улучшает дизайн и
+          конструкцию продукции на фабриках нового поколения, квалифицированно
+          выполняет услуги компании и выходит за рамки реактивных решений
+          данных, переходя к прогнозным решениям.
+        </p>
+        <img src="/53.webp"></img>
+        <img src="/54.webp"></img>
+        <p className="text-xl">ПОРТФОЛИО</p>
+        <ul>
+          Газовые двигатели Jenbacher компании INNIO имеют диапазон мощности от
+          200 кВт до 10 МВт, обеспечивая гибкость в выборе топлива для работы
+          как на природном газе, так и на различных других газах, таких как:
+          <li>- Попутный / факельный газ</li>
+          <li>- Биогаз</li>
+          <li>- Полигонный газ</li>
+          <li>- Природный газ</li>
+          <li>- Газ из сточных вод</li>
+          <li>- Пропан</li>
+          <li>
+            - Специальные газы (например, газ угольных шахт, коксовый газ,
+            пиролизный газ, стальной газ, древесный газ и т.д.)
+          </li>
+        </ul>
+        <p>
+          С более чем 16,000 действующими газовыми двигателями Jenbacher,
+          компания обеспечивает местное снабжение электроэнергией, теплом и
+          охлаждением для различных коммерческих, промышленных и муниципальных
+          приложений в более чем 100 странах. Фактически, Jenbacher имеет одну
+          из крупнейших установленных баз газовых двигателей для совмещенной
+          генерации тепла и электроэнергии (ТЭЦ) в мире.
+        </p>
+        <img src="/55.webp"></img>
+        <img src="/56.webp" className="mb-10"></img>
+      </div>
+    ),
+    descriptionImg: "",
+    category: "GasGenerator",
+    brand: "Jenbacher Series",
+  },
+  {
+    id: 18,
+    mainImg: "/57.webp",
+    name: "Газовый генератор Jichai",
+    shortDescription:
+      "Газовый генератор Jichai У нас многолетний опыт производства метанового генератора мощностью 1000 кВт, запасных частей к двигателю, а также запасных частей для газового двигателя Jichai 12V190, благодаря которому мы можем предложить вам лучшие продукты и услуги, чтобы вы могли быть спокойны. Наша компания придерживается принципа «постоянного совершенствования, клиент прежде всего, ориентированность на честность», и предоставляет клиентам высококачественные газовые электростанции и услуги. Мы стремимся улучшить деловую репутацию предприятия и создать положительный социальный имидж компании. Мы придерживаемся политики качества «для пользователей» и предоставляем клиентам в стране и за рубежом более экономичные продукты, конкурентоспособные цены, своевременную доставку и высококачественные услуги. Чтобы хорошо выполнить работу, предприятие должно нести ответственность за проект и удовлетворять пользователей. В рамках бизнес-философии, заключающейся в использовании технологических инноваций в качестве ориентира, опираясь на талантливых специалистов и рыночный спрос как на средство, мы внедряем инновации в технологии и совершенствуем услуги. Мы углубляемся на все уровни предприятия, во все аспекты, тщательно и совершенным образом, чтобы производительность продуктов и услуг достигла наилучших результатов.",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div>
+        <p>ВВЕДЕНИЕ</p>
+        <p>
+          Газовый двигатель H16V190ZLT-2 с внешним смешиванием разработан нашей
+          компанией для удовлетворения требований рынка. Весь двигатель был
+          оптимизирован путем исправления недостатков первого поколения газовых
+          двигателей. Производительность, топливная экономичность и надежность
+          этого двигателя значительно улучшены благодаря использованию внешнего
+          смешивания, увеличению степени сжатия и коэффициента подъема,
+          увеличению коэффициента завихрения, реализации обедненного горения
+          путем контроля соотношения воздух-топливо, применению
+          высокоэнергетического зажигания и т.д.
+        </p>
+        <p>
+          Эта серия двигателей в основном используется для генерации энергии
+          одним двигателем или несколькими двигателями, образующими
+          электростанцию. Она также может использоваться в качестве источника
+          энергии для компрессоров, насосов для перекачки нефти, насосов для
+          впрыска воды и т.д.
+        </p>
+        <p className="text-xl">ОСНОВНЫЕ ХАРАКТЕРИСТИКИ</p>
+        <ul className="border border-grey-400 flex mb-10">
+          <li className="border border-grey-400 w-1/2">
+            <ul>
+              Дизайн двигателя
+              <li>- Разработан компанией AVL, Австрия</li>
+              <li>- Интеллектуальная собственность принадлежит JCPC</li>
+              <li>
+                - Анализ методом конечных элементов с учетом трехосного
+                напряжения
+              </li>
+              <li>- Длинный ход поршня, больший рабочий объем</li>
+              <li>- Низкая скорость (1000 об/мин), более надежный</li>
+              <li>- Передовая мировая стандартная производительность</li>
+            </ul>
+            <ul>
+              Генератор
+              <li>- Бесщеточное возбуждение</li>
+              <li>- AVR (Автоматический регулятор напряжения)</li>
+              <li>- Улучшенная изоляция и защита</li>
+            </ul>
+            <ul>
+              Безопасность
+              <li>
+                - Автоматическая защита от остановки при низком давлении масла
+              </li>
+              <li>
+                - Автоматическая защита от остановки при превышении скорости
+              </li>
+              <li>- Взрывозащита</li>
+              <li>
+                - Сигнализация при высокой температуре охлаждающей жидкости
+              </li>
+              <li>- Сигнализация при низком уровне охлаждающей жидкости</li>
+              <li>- Сигнализация при высокой температуре масла</li>
+              <li>- Полная электрическая защита</li>
+              <li>- Устройство аварийной остановки</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              Тестирование
+              <li>
+                - Строгий контроль и заводские испытания для каждого генератора
+              </li>
+              <li>- Тест производительности запуска</li>
+              <li>- Тест на нагрузку</li>
+              <li>- Тест на синхронизацию</li>
+              <li>- Тест системы безопасности</li>
+            </ul>
+            <ul>
+              Полное оснащение
+              <li>- Стандартный объем поставки</li>
+              <li>- Ремонтные инструменты</li>
+            </ul>
+            <ul>
+              Легкость установки и удаления
+              <li>
+                - Все оборудование на общем основании с трехточечной опорой
+              </li>
+              <li>- Простота установки</li>
+              <li>- Высокопрочная основа для подъема и снятия</li>
+            </ul>
+            <ul>
+              Техническая поддержка и обслуживание
+              <li>- Техническая поддержка и обучающие услуги</li>
+              <li>- Круглосуточный телефон для технической поддержки</li>
+              <li>- Быстрая поставка запасных частей</li>
+              <li>
+                - Послепродажное обслуживание на весь срок службы генераторной
+                установки
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p className="text-xl">Таблица параметров свойств</p>
+        <div className="w-full">
+          <div className="flex overflow-scroll w-full">
+            <table className="border border-grey-400 w-full">
+              <tbody>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Model</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1100GF-T</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Engine type</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>H16V190ZLT-2</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Alternator type</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1FC series（siemens technology）</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      Rated &nbsp; Power * &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                      &nbsp; &nbsp; &nbsp; &nbsp;kW
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1100</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      Rated &nbsp; Speed &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                      &nbsp; &nbsp; &nbsp; &nbsp; rpm
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1000</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      Rated &nbsp; Frequency &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                      &nbsp; &nbsp; &nbsp;Hz
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Rated &nbsp; PF &nbsp;</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>0.8</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Voltage Regulation</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>AVR</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Turbocharger &nbsp; Brand</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>ABB</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Alternator &nbsp; Brand</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Domestic &nbsp; Factory（siemens &nbsp; technology）</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Ignition &nbsp; System Brand</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Motortech</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Control &nbsp; System Brand</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Woodward</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      Weight &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                      &nbsp; &nbsp; &nbsp; &nbsp; kg
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>19500</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      Dimension &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                      &nbsp; &nbsp; &nbsp;mm
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>6500×2312×2777</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p>
+          *Мощность и расход топлива рассчитаны на основе стандартных условий
+          ISO (температура окружающей среды 25 градусов Цельсия, атмосферное
+          давление 100 кПа и относительная влажность 30%). Мощность и расход
+          топлива на месте должны быть скорректированы в соответствии с
+          соответствующим стандартом (таблица справа для справки)
+        </p>
+        <p className="text-xl">Основные характеристики двигателя</p>
+        <div>
+          <div className="flex overflow-scroll">
+            <table className="border border-grey-400">
+              <tbody>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Model of engine</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>H16V190ZLT-2</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Rated Power(kW)</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1100kW</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Rated Speed(r/min)</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1000</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>No. and layout of cylinders</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>16-cylinder，60</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Type</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      Four stroke, &nbsp; Water cooled, Direct injection,
+                      Air-fuel ratio control, Spark plug ignition, &nbsp; Out
+                      mixing,
+                    </p>
+                    <p>
+                      Electrical control, &nbsp; Mixed after compressor,
+                      Turbocharged and after cooled.
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Heat &nbsp;consumption &nbsp; &nbsp;</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>≤9500kJ/kW·h</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Specific oil consumption (g/kW.h)</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>≤0.6</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Bore(mm)</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>190</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Stroke (mm)</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>215</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Total &nbsp; displacement (L)</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>97.53</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Governor</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Electronic Governor</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Exhaust &nbsp; temperature &nbsp;（before turbo）</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>≤700℃</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Starting &nbsp; mode</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>24V DC electric starting motor</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Direction of &nbsp; rotation</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Counter-clockwise(facing to flywheel)</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Lubrication &nbsp; method</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Pressure and splash lubrication</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Hot water outlet &nbsp; temperature &nbsp;</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>&lt;90℃</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Mid-cooler inlet water &nbsp; temperature</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>&lt;45℃</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Oil temperature &nbsp;</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>&lt;90℃</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Stable regulating &nbsp; rate &nbsp;</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>0～5 % &nbsp; adjustable</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Cooling method &nbsp;</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Horizontal radiator</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Manufacturer</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>CNPC Jichai Power Co., &nbsp; Ltd</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p className="text-xl">Основные характеристики альтернатора</p>
+        <div>
+          <div className="flex overflow-scroll">
+            <table className="border border-grey-400">
+              <tbody>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Model of &nbsp; alternator</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1FC series（siemens &nbsp; technology）</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Rated &nbsp; power(kW)</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>1100</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Rated &nbsp; voltage(V)</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>400</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Coupling</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Elastic</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Voltage &nbsp; regulator</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>3 phase &nbsp; sensing with volts/Hz.</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Voltage &nbsp; regulation</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>
+                      Less than &nbsp; +/-0.5% in steady state and less than +/-
+                      0.5% with 3% speed change.
+                    </p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Rated &nbsp; frequency</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>50Hz</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Power factor</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>COS￠=0.8</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>
+                      Wiring &nbsp; mode &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    </p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Three-phase &nbsp; four-wire system（Y）</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Excitation &nbsp; mode &nbsp; &nbsp;</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Brushless &nbsp; excitation &nbsp;</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Insulation &nbsp; class &nbsp; &nbsp; &nbsp;</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>F</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Running &nbsp; mode &nbsp; &nbsp;</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Continuous</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Protective &nbsp; class &nbsp; &nbsp; &nbsp;</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>IP23</p>
+                  </td>
+                </tr>
+                <tr className="border border-grey-400">
+                  <td className="border border-grey-400">
+                    <p>Rotating &nbsp; direction &nbsp; &nbsp;</p>
+                  </td>
+                  <td className="border border-grey-400">
+                    <p>Anticlockwise(Facing &nbsp; to input end)</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p>Стандартный объем поставки</p>
+        <ul className="border border-grey-400 flex">
+          <li className="border border-grey-400 w-1/2">
+            Двигатель на природном газе
+            <ul>
+              <ul>
+                Система впуска воздуха
+                <li>- Воздушный фильтр</li>
+                <li>- Воздушный охладитель</li>
+                <li>- Кронштейн</li>
+              </ul>
+              <ul>
+                Система управления
+                <li>- Регулятор</li>
+                <li>- Панель управления</li>
+                <li>- Взрывозащита</li>
+                <li>- Система безопасности</li>
+              </ul>
+              <ul>
+                Система выхлопа
+                <li>- Глушитель выхлопа</li>
+                <li>- Турбокомпрессор выхлопных газов</li>
+                <li>- Выпускной коллектор</li>
+                <li>- Гофрированная труба</li>
+                <li>- Выхлопная труба</li>
+                <li>- Выхлопной коленный патрубок</li>
+              </ul>
+              <ul>
+                Система охлаждения<li>- Горизонтальный радиатор</li>
+              </ul>
+            </ul>
+          </li>
+          <li className="border border-grey-400 w-1/2">
+            <ul>
+              Система пуска <li>- Постоянный ток пускового двигателя</li>
+              <li>- Электрический стартер 24 В</li>
+            </ul>
+            <ul>
+              Система смазки <li>- Основной масляный насос</li>
+              <li>- Фильтр для смазочного масла</li>
+              <li>- Охладитель смазочного масла</li>
+              <li>- Центробежный фильтр для смазочного масла</li>
+            </ul>
+            <ul>
+              Альтернатор <li>- Бесщеточный альтернатор возбуждения</li>
+              <li>- AVR (в цифровом режиме)</li>
+            </ul>
+            <ul>
+              Запасные части <li>- Обычные ремонтные инструменты</li>
+              <li>- Специальные запасные части</li>
+            </ul>
+            <ul>Техническая документация</ul>
+            <ul>
+              Другие компоненты <li>- Общая основа</li>
+              <li>- Эластичная муфта</li>
+            </ul>
+          </li>
+        </ul>
+        <p className="mt-10">Срок поставки</p>
+        <p>
+          Три месяца после вступления контракта в силу или по договоренности
+          обеих сторон.
+        </p>
+        <p>Гарантия</p>
+        <p>
+          Один год после поставки или накопительно 1500 часов рабочего времени,
+          в зависимости от того, что наступит первым.
+        </p>
+        <p>Установка и наладка</p>
+        <p className="mb-10">
+          Если клиенту потребуется, чтобы наша компания осуществила руководство
+          по установке и наладке, мы организуем выезд двух инженеров для
+          оказания услуг на месте. Все расходы, включая транспорт, проживание и
+          страхование за рубежом, будут предоставлены клиентом.
+        </p>
+      </div>
+    ),
+    descriptionImg: "",
+    category: "GasGenerator",
+    brand: "Jichai Series",
+  },
+  {
+    id: 19,
+    mainImg: "/58.webp",
+    name: "Газотурбинный генератор AECC AGT-15Gas мощностью 15 500 кВт.",
+    shortDescription:
+      "Газотурбинный генератор AECC AGT-15Gas мощностью 15 500 кВт. Данные о производительности турбинной установки.",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div>
+        <p>
+          China Aero Engine Group Co., Ltd. — это военно-промышленное
+          предприятие, находящееся под прямым управлением центрального
+          правительства. Оно включает 29 напрямую подведомственных единиц и 3
+          основные компании, котирующиеся на фондовой бирже. Компания обладает
+          высокими научно-исследовательскими и производственными возможностями,
+          а также относительно полной системой НИОКР и производства авиационных
+          двигателей и газовых турбин, предлагая широкий спектр продукции.
+          Оборудуя различные типы военных самолетов, тяжелых и военных кораблей,
+          а также малые и средние генераторные установки, компания внесла
+          выдающийся вклад в развитие национальной оборонной промышленности и
+          экономики страны.
+        </p>
+        <p>
+          Производственные данные газотурбинного генератора AECC AGT-15Gas
+          мощностью 15 500 кВт:
+        </p>
+        <ul className="flex">
+          <li className="w-1/2 flex justify-center items-center">
+            <img src="/59.webp" className="w-80"></img>
+          </li>
+          <li className="w-1/2 flex justify-center items-center">
+            <img src="/60.webp" className="w-80"></img>
+          </li>
+        </ul>
+        <div className="w-full flex justify-center">
+          <img src="/61.png"></img>
+        </div>
+        <ul>
+          <li>
+            - первая в моей стране легкая аэродеривативная газовая турбина с
+            независимыми правами интеллектуальной собственности
+          </li>
+          <li>
+            - Используется в распределенной энергетике, аварийном
+            электроснабжении, для топлив со средней и низкой теплотворной
+            способностью, генерации электроэнергии на водородосодержащем топливе
+            и в других областях
+          </li>
+          <li>
+            - Высокий общий термический КПД и низкие эксплуатационные затраты
+          </li>
+        </ul>
+        <img src="/62.webp"></img>
+        <img src="/63.webp" className="mb-10"></img>
+      </div>
+    ),
+    descriptionImg: "",
+    category: "GasGenerator",
+    brand: "Газотурбинный двигатель",
+  },
+  {
+    id: 20,
+    mainImg: "/64.webp",
+    name: "Газотурбинный генератор AECC AGT-25Gas мощностью 27 400 кВт.",
+    shortDescription:
+      "Газотурбинный генератор AECC AGT-25Gas мощностью 27 400 кВт. Данные о производительности турбинной установки.",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div>
+        <p>
+          China Aero Engine Group Co., Ltd. — это военно-промышленное
+          предприятие, находящееся под прямым управлением центрального
+          правительства. Оно включает 29 напрямую подведомственных единиц и 3
+          основные компании, котирующиеся на фондовой бирже. Компания обладает
+          высокими научно-исследовательскими и производственными возможностями,
+          а также относительно полной системой НИОКР и производства авиационных
+          двигателей и газовых турбин, предлагая широкий спектр продукции.
+          Оборудуя различные типы военных самолетов, тяжелых и военных кораблей,
+          а также малые и средние генераторные установки, компания внесла
+          выдающийся вклад в развитие национальной оборонной промышленности и
+          экономики страны.
+        </p>
+        <p>
+          Производственные данные газотурбинного генератора AECC AGT-25Gas
+          мощностью 27 400 кВт:
+        </p>
+        <ul className="flex">
+          <li className="w-1/2 flex justify-center items-center">
+            <img src="/59.webp" className="w-80"></img>
+          </li>
+          <li className="w-1/2 flex justify-center items-center">
+            <img src="/60.webp" className="w-80"></img>
+          </li>
+        </ul>
+        <div className="w-full flex justify-center items-center">
+          <div>
+            <img src="/65.png"></img>
+          </div>
+        </div>
+        <ul>
+          <li>
+            - первая в моей стране легкая аэродеривативная газовая турбина с
+            независимыми правами интеллектуальной собственности
+          </li>
+          <li>
+            - Используется в распределенной энергетике, аварийном
+            электроснабжении, для топлив со средней и низкой теплотворной
+            способностью, генерации электроэнергии на водородосодержащем топливе
+            и в других областях
+          </li>
+          <li>
+            - Высокий общий термический КПД и низкие эксплуатационные затраты
+          </li>
+        </ul>
+        <img src="/62.webp"></img>
+        <img src="/63.webp" className="mb-10"></img>
+      </div>
+    ),
+    descriptionImg: "",
+    category: "GasGenerator",
+    brand: "Газотурбинный двигатель",
+  },
+  {
+    id: 21,
+    mainImg: "/62.webp",
+    name: "Газотурбинный генератор AECC AGT-7Gas мощностью 6950 кВт.",
+    shortDescription:
+      "Газотурбинный генератор AECC AGT-7Gas мощностью 6950 кВт. Данные о производительности турбинной установки.",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div>
+        <p>
+          China Aero Engine Group Co., Ltd. — это военно-промышленное
+          предприятие, находящееся под прямым управлением центрального
+          правительства. Оно включает 29 напрямую подведомственных единиц и 3
+          основные компании, котирующиеся на фондовой бирже. Компания обладает
+          высокими научно-исследовательскими и производственными возможностями,
+          а также относительно полной системой НИОКР и производства авиационных
+          двигателей и газовых турбин, предлагая широкий спектр продукции.
+          Оборудуя различные типы военных самолетов, тяжелых и военных кораблей,
+          а также малые и средние генераторные установки, компания внесла
+          выдающийся вклад в развитие национальной оборонной промышленности и
+          экономики страны.
+        </p>
+        <p>
+          Производственные данные газотурбинного генератора AECC AGT-25Gas
+          мощностью 27 400 кВт:
+        </p>
+        <ul className="flex">
+          <li className="w-1/2 flex justify-center items-center">
+            <img src="/59.webp" className="w-80"></img>
+          </li>
+          <li className="w-1/2 flex justify-center items-center">
+            <img src="/60.webp" className="w-80"></img>
+          </li>
+        </ul>
+        <div className="w-full flex justify-center items-center">
+          <div>
+            <img src="/66.png"></img>
+          </div>
+        </div>
+        <ul>
+          <li>
+            - первая в моей стране легкая аэродеривативная газовая турбина с
+            независимыми правами интеллектуальной собственности
+          </li>
+          <li>
+            - Используется в распределенной энергетике, аварийном
+            электроснабжении, для топлив со средней и низкой теплотворной
+            способностью, генерации электроэнергии на водородосодержащем топливе
+            и в других областях
+          </li>
+          <li>
+            - Высокий общий термический КПД и низкие эксплуатационные затраты
+          </li>
+        </ul>
+        <img src="/62.webp"></img>
+        <img src="/63.webp" className="mb-10"></img>
+      </div>
+    ),
+    descriptionImg: "",
+    category: "GasGenerator",
+    brand: "Газотурбинный двигатель",
+  },
+  {
+    id: 23,
+    mainImg: "/64.webp",
+    name: "Газотурбинный генератор AECC AGT-12Gas мощностью 11 500 кВт.",
+    shortDescription:
+      "Газотурбинный генератор AECC AGT-12Gas мощностью 11 500 кВт. Данные о производительности турбинной установки.",
+    qrCode:
+      "https://www.cnroyalpower.com/phoenix/admin/prod/qrcode/redirect/oCKBDiGMZHwE",
+    fullDescription: (
+      <div>
+        <p>
+          China Aero Engine Group Co., Ltd. — это военно-промышленное
+          предприятие, находящееся под прямым управлением центрального
+          правительства. Оно включает 29 напрямую подведомственных единиц и 3
+          основные компании, котирующиеся на фондовой бирже. Компания обладает
+          высокими научно-исследовательскими и производственными возможностями,
+          а также относительно полной системой НИОКР и производства авиационных
+          двигателей и газовых турбин, предлагая широкий спектр продукции.
+          Оборудуя различные типы военных самолетов, тяжелых и военных кораблей,
+          а также малые и средние генераторные установки, компания внесла
+          выдающийся вклад в развитие национальной оборонной промышленности и
+          экономики страны.
+        </p>
+        <p>
+          Производственные данные газотурбинного генератора AECC AGT-25Gas
+          мощностью 27 400 кВт:
+        </p>
+        <ul className="flex">
+          <li className="w-1/2 flex justify-center items-center">
+            <img src="/59.webp" className="w-80"></img>
+          </li>
+          <li className="w-1/2 flex justify-center items-center">
+            <img src="/60.webp" className="w-80"></img>
+          </li>
+        </ul>
+        <div className="w-full flex justify-center items-center">
+          <div>
+            <img src="/67.png"></img>
+          </div>
+        </div>
+        <ul>
+          <li>
+            - первая в моей стране легкая аэродеривативная газовая турбина с
+            независимыми правами интеллектуальной собственности
+          </li>
+          <li>
+            - Используется в распределенной энергетике, аварийном
+            электроснабжении, для топлив со средней и низкой теплотворной
+            способностью, генерации электроэнергии на водородосодержащем топливе
+            и в других областях
+          </li>
+          <li>
+            - Высокий общий термический КПД и низкие эксплуатационные затраты
+          </li>
+        </ul>
+        <img src="/62.webp"></img>
+        <img src="/63.webp" className="mb-10"></img>
+      </div>
+    ),
+    descriptionImg: "",
+    category: "GasGenerator",
+    brand: "Газотурбинный двигатель",
   },
 ];
 interface NewsDataParam {

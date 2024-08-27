@@ -13,8 +13,13 @@ interface Param {
 import { useCartDispatch } from "../../context/cartContext";
 export default function GoodsPage() {
   const ProductName = useParams();
+  console.log(ProductName);
   const [numberItems, setNumberItems] = useState(1);
-  const item = products[Number(ProductName.article)];
+  //const item = products[Number(ProductName.article)];
+  const item = products.filter(
+    (item) => item.id === Number(ProductName.article)
+  )[0];
+  console.log(item);
   const payload = {
     id: item.id,
     mainImg: item.mainImg,

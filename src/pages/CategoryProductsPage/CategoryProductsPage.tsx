@@ -7,7 +7,7 @@ import { FaBars } from "react-icons/fa";
 import ProductCard from "../../componensts/ProductCard/ProductCard";
 import Footer from "../../componensts/Footer/Footer";
 import { products } from "../../db/data";
-const numberOfPages: number = Math.ceil(products.length / 6);
+
 const ProductTipe = [
   {
     id: 1,
@@ -16,6 +16,10 @@ const ProductTipe = [
     products: [
       "Cummins Series",
       "Mitsubishi Series",
+      "MTU Series",
+      "Тихий Контейнеризированный",
+      "Perkins Series",
+      "Volvo Series",
       "Weichai Series",
       "Yuchai Series",
     ],
@@ -24,19 +28,36 @@ const ProductTipe = [
     id: 2,
     title: "Судовой генератор",
     href: "/ProductsPage/type/MarineGenerator/",
-    products: ["Cummins Series", "Weichai Series", "Yuchai Series"],
+    products: [
+      "Cummins Series",
+      "Perkins Series",
+      "Doosan Series",
+      "Weichai Series",
+      "Yuchai Series",
+    ],
   },
   {
     id: 3,
     title: "Газовый генератор",
     href: "/ProductsPage/type/GasGenerator/",
-    products: ["Cummins Series", "Серия турбин Siemens", "Weichai Series"],
+    products: [
+      "Cummins Series",
+      "Waukesha Series",
+      "Jenbacher Series",
+      "Weichai Series",
+      "Jichai Series",
+      "Газотурбинный двигатель",
+    ],
   },
-  {
+
+  /*{
     id: 4,
     title: "Оборудование для металлообработки",
     href: "/ProductsPage/type/MetalFormingEquipment/",
-    products: ["Cummins", "Mitsu", "MTU"],
+    products: [
+      "Оборудование для производства стальных труб",
+      "Пресс для экструзии алюминия",
+    ],
   },
   {
     id: 5,
@@ -55,14 +76,22 @@ const ProductTipe = [
     title: "Генератор на тяжелом топливе",
     href: "/ProductsPage/type/HFOGenerator/",
     products: ["Cummins", "Mitsu", "MTU"],
-  },
+  },*/
 ];
 export default function CategoryProductsPage() {
   const Param = useParams();
-  const Category = Param.Category?.replaceAll(" ", "");
-  const Brand = Param.Brand?.replaceAll(" ", "");
+  const Category = Param.Category?.replaceAll("", "");
+  console.log(Category);
+  const Brand = Param.Brand?.replaceAll("", "");
+  console.log(Brand);
   const [currentPage, setCurrentPage] = useState(1);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const productArray = products.filter(
+    (item) =>
+      (item.category === Category && item.brand === Brand) ||
+      (item.category === Category && Brand === "all")
+  );
+  console.log(productArray);
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -189,7 +218,8 @@ export default function CategoryProductsPage() {
             })}
           </div>
           <div className="flex min-h-96 w-[25.6rem] md:w-[80rem] md:gap-5 gap-1 justify-center md:justify-start md:items-start items-center px-4 md:px-0 flex-wrap">
-            {products.map((item, index) => {
+            {productArray.map((item, index) => {
+              console.log(item.id);
               if (
                 (index >= currentPage * 6 - 6 &&
                   index <= currentPage * 6 - 1 &&
@@ -201,7 +231,7 @@ export default function CategoryProductsPage() {
                   <ProductCard
                     key={index}
                     id={item.id}
-                    link={`/ProductsPage/${index}/${item.name}`}
+                    link={`/ProductsPage/${item.id}/${item.name}`}
                     img={item.mainImg}
                     name={item.name}
                   ></ProductCard>
@@ -214,20 +244,22 @@ export default function CategoryProductsPage() {
         </div>
       </div>
       <div className="w-full flex justify-center items-center gap-3">
-        {Array.from({ length: numberOfPages }).map((_, index) => {
-          return (
-            <div key={index}>
-              <button
-                onClick={() => setCurrentPage(index + 1)}
-                className={`${
-                  currentPage === index + 1 ? "text-2xl" : "text-base"
-                } border-2 w-10 h-10`}
-              >
-                {index + 1}
-              </button>
-            </div>
-          );
-        })}
+        {Array.from({ length: Math.ceil(productArray.length / 6) }).map(
+          (_, index) => {
+            return (
+              <div key={index}>
+                <button
+                  onClick={() => setCurrentPage(index + 1)}
+                  className={`${
+                    currentPage === index + 1 ? "text-2xl" : "text-base"
+                  } border-2 w-10 h-10`}
+                >
+                  {index + 1}
+                </button>
+              </div>
+            );
+          }
+        )}
       </div>
       <Footer></Footer>
     </div>

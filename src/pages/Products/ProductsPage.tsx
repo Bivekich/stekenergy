@@ -16,6 +16,10 @@ const ProductTipe = [
     products: [
       "Cummins Series",
       "Mitsubishi Series",
+      "MTU Series",
+      "Тихий Контейнеризированный",
+      "Perkins Series",
+      "Volvo Series",
       "Weichai Series",
       "Yuchai Series",
     ],
@@ -24,19 +28,36 @@ const ProductTipe = [
     id: 2,
     title: "Судовой генератор",
     href: "/ProductsPage/type/MarineGenerator/",
-    products: ["Cummins Series", "Weichai Series", "Yuchai Series"],
+    products: [
+      "Cummins Series",
+      "Perkins Series",
+      "Doosan Series",
+      "Weichai Series",
+      "Yuchai Series",
+    ],
   },
   {
     id: 3,
     title: "Газовый генератор",
     href: "/ProductsPage/type/GasGenerator/",
-    products: ["Cummins Series", "Серия турбин Siemens", "Weichai Series"],
+    products: [
+      "Cummins Series",
+      "Waukesha Series",
+      "Jenbacher Series",
+      "Weichai Series",
+      "Jichai Series",
+      "Gas Turbine Engine",
+    ],
   },
-  {
+
+  /*{
     id: 4,
     title: "Оборудование для металлообработки",
     href: "/ProductsPage/type/MetalFormingEquipment/",
-    products: ["Cummins", "Mitsu", "MTU"],
+    products: [
+      "Оборудование для производства стальных труб",
+      "Пресс для экструзии алюминия",
+    ],
   },
   {
     id: 5,
@@ -55,7 +76,7 @@ const ProductTipe = [
     title: "Генератор на тяжелом топливе",
     href: "/ProductsPage/type/HFOGenerator/",
     products: ["Cummins", "Mitsu", "MTU"],
-  },
+  },*/
 ];
 
 export default function ProductsPage() {
@@ -196,7 +217,7 @@ export default function ProductsPage() {
                   <ProductCard
                     key={index}
                     id={item.id}
-                    link={`/ProductsPage/${index}/${item.name}`}
+                    link={`/ProductsPage/${item.id}/${item.name}`}
                     img={item.mainImg}
                     name={item.name}
                   ></ProductCard>

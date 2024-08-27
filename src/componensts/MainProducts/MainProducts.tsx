@@ -1,13 +1,13 @@
 import MainProductCard from "./MainProductCard/MainProductCard";
 import { products } from "../../db/data";
-import { useEffect, useState } from "react";
+import { ReactElement, useEffect, useState } from "react";
 interface Param {
   id: number;
   mainImg: string;
   name: string;
   shortDescription: string;
   qrCode: string;
-  fullDescription: string;
+  fullDescription: ReactElement;
   descriptionImg: string;
 }
 export default function MainProducts() {

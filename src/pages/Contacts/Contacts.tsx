@@ -127,6 +127,17 @@ export default function ContactsPage() {
                   <span>Телефон производства:</span>
                   <span>+86-523-86326170</span>
                 </li>
+                <li>
+                  <span>Royal Co. </span>
+                  <span>
+                    <a
+                      className="text-blue-400"
+                      href="https://www.cnroyalpower.com/contactus.html"
+                    >
+                      https://www.cnroyalpower.com/contactus.html
+                    </a>
+                  </span>
+                </li>
               </ul>
             </div>
             <form
