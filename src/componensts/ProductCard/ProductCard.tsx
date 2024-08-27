@@ -27,17 +27,17 @@ export default function ProductCard({ id, img, link, name }: ProductProp) {
     link: link,
   };
   return (
-    <div className="flex flex-col w-[47%] md:w-[30%] lg:w-96 h-[20rem] lg:h-[30rem] md:h-[20rem] items-center justify-center border-2 border-black bg-white mb-2 overflow-hidden p-4 sm:p-2 gap-4">
-      <div>
+    <div className="flex flex-col w-[47%] md:w-[30%] lg:w-96 h-[20rem] lg:h-[30rem] md:h-[20rem] items-center justify-center border-2 border-black bg-white mb-2 overflow-hidden p-1 sm:p-2 gap-4">
+      <div className="relative w-full h-full">
         <a href={link}>
           <img
             src={img}
-            className="object-center md:max-h-32 lg:max-h-56 max-h-32 max-w-full"
+            className="object-center w-full h-full absolute top-0"
           ></img>
         </a>
       </div>
       <div className="mt-2 text-center">
-        <span className="flex text-black text-xl sm:text-sm md:text-base mb-auto flex-wrap">
+        <span className="flex text-black lg:text-xl sm:text-sm md:text-base mb-auto flex-wrap w-full h-1/3 text-center">
           {name}
         </span>
       </div>

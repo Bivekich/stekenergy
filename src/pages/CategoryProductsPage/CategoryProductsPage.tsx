@@ -225,7 +225,10 @@ export default function CategoryProductsPage() {
                   index <= currentPage * 6 - 1 &&
                   item.category === Category &&
                   item.brand === Brand) ||
-                (item.category === Category && Brand === "all")
+                (item.category === Category &&
+                  Brand === "all" &&
+                  index >= currentPage * 6 - 6 &&
+                  index <= currentPage * 6 - 1)
               ) {
                 return (
                   <ProductCard

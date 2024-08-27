@@ -38,7 +38,7 @@ export default function GoodsPage() {
         <Header></Header>
       </div>
 
-      <div className="flex justify-center items-center lg:h-20 h-1/3 overflow-hidden bg-white">
+      <div className="flex justify-center items-center overflow-hidden bg-white">
         <div className="flex lg:w-1/2 md:w-[90%] w-[90%] text-black font-bold text-2xl lg:justify-between flex-col lg:flex-row lg:items-end justify-end pb-5 border-b-2 ml-auto mr-auto">
           <div>
             <span>{ProductName.nameOfProduct}</span>
@@ -54,9 +54,9 @@ export default function GoodsPage() {
         </div>
       </div>
 
-      <div className="w-full flex justify-center mt-10 pb-5">
-        <div className="flex lg:w-1/2 w-screen px-4 flex-col md:justify-normal md:items-start justify-center items-center md:flex-row">
-          <img src={item.mainImg} className="w-1/3 h-fit"></img>
+      <div className="w-full flex justify-center mt-16 pb-5">
+        <div className="relative flex lg:w-1/2 w-screen px-4 flex-col md:justify-normal md:items-start justify-center items-center md:flex-row">
+          <img src={item.mainImg} className="w-1/2"></img>
           <div className="flex-1"></div>
           <div className="lg:ml-10 md:px-3 lg:px-0">
             <span className="flex w-96 flex-col px-4 md:px-0">
