@@ -227,7 +227,7 @@ export default function Footer() {
       <div className="flex w-full min-h-10 bg-[#5e5c5c] justify-center items-center mt-5">
         <span className="flex justify-center items-center w-full text-center">
           {" "}
-          Авторские права © 2024 Stekenergy, Ltd. Все права защищены.
+          Авторские права © 2024 ООО "Стэк Энерджи", Ltd. Все права защищены.
         </span>
       </div>
     </div>

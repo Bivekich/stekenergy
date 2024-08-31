@@ -44,7 +44,8 @@ export default function ContactsPage() {
     }
   };
   const data = [
-    "Город Москва, Спартаковский пер, д. 26 стр. 2 АДРЕС склада :105082, город Москва, УЛ. 2-хуторская 38а стр 1 БЦ башилов двор ",
+    "Город Москва, Спартаковский пер, д. 26 стр. 2",
+    "105082, город Москва, УЛ. 2-хуторская 38а стр 1 БЦ башилов двор",
     "+86-523-86326170",
     "+86-523-86326170",
     "+86-15850872118 / +86-18012096599",
@@ -86,45 +87,25 @@ export default function ContactsPage() {
                 с вами и совместного развития для светлого будущего!
               </span>
               <img src="/weibiaoti-990-516.webp"></img>
-              <ul>
+              <ul className="flex flex-col gap-3">
                 <li>
                   <span>Адрес:</span>
                   <span> {data[0]}</span>
                 </li>
                 <li>
-                  <span>Тел:</span>
+                  <span>Адрес склада:</span>
                   <span> {data[1]}</span>
                 </li>
                 <li>
-                  <span>Факс:</span>
-                  <span>{data[2]}</span>
-                </li>
-                <li>
-                  <span>Рабочий тел:</span>
-                  <span> {data[3]}</span>
-                </li>
-                <li>
-                  <span>Wechat:</span>
-                  <span> {data[4]}</span>
-                </li>
-                <li>
                   <span>E-mail:</span>
-                  <span> {data[5]}</span>
-                </li>
-                <li>
-                  <span>Skype:</span>
                   <span> {data[6]}</span>
                 </li>
                 <li>
-                  <span>Whatsapp:</span>
-                  <span>{data[7]}</span>
-                </li>
-                <li>
                   <span>Адрес производства:</span>
-                  <span>{data[8]}</span>
+                  <span> {data[9]}</span>
                 </li>
                 <li>
-                  <span>Телефон производства:</span>
+                  <span>Телефон производства: </span>
                   <span>+86-523-86326170</span>
                 </li>
                 <li>
