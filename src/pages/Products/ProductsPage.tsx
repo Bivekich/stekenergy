@@ -207,7 +207,7 @@ export default function ProductsPage() {
               );
             })}
           </div>
-          <div className="flex min-h-96 w-[25.6rem] md:w-[80rem] md:gap-5 gap-1 justify-center md:justify-start md:items-start items-center px-4 md:px-0 flex-wrap">
+          <div className="flex min-h-96 w-[25.6rem] md:w-[80rem] lg:w-full md:gap-5 lg:gap-10 gap-1 justify-center md:justify-start md:items-start items-center px-4 md:px-0 flex-wrap">
             {products.map((item, index) => {
               if (
                 index >= currentPage * 6 - 6 &&

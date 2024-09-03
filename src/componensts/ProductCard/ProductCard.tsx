@@ -27,7 +27,7 @@ export default function ProductCard({ id, img, link, name }: ProductProp) {
     link: link,
   };
   return (
-    <div className="flex flex-col w-[47%] md:w-[30%] lg:w-96 h-[20rem] lg:h-[30rem] md:h-[20rem] items-center justify-center border-2 border-black bg-white mb-2 overflow-hidden p-1 sm:p-2 gap-4">
+    <div className="flex flex-col w-[47%] md:w-[30%] lg:w-[30%] h-[20rem] lg:h-[32rem] md:h-[20rem] items-center justify-center border-2 border-black bg-white mb-2 overflow-hidden p-1 sm:p-2 gap-4">
       <div className="relative w-full h-full">
         <a href={link}>
           <img
