@@ -4,14 +4,19 @@ import PopUp from "../ShopCartPopUp/PopUP";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import { client } from "../../../stackenergy/client";
+interface headerBut {
+  NameOfSection: string;
+  LinkOfSection: string;
+}
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [isHide, setIsHide] = useState<boolean>(false);
   const [clickAnime, setClickAnim] = useState<string>("left");
   const [isClicked, setIsClicked] = useState<boolean>(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const [headerButtons, setHeaderButtons] = useState<headerBut[]>([]);
+  const [headerIcon, setHeaderIcon] = useState("");
   const handleHide = () => {
     setIsClicked(true);
     setTimeout(() => setIsHide(!isHide), 500);
@@ -22,8 +27,18 @@ export default function Header() {
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  useEffect(() => {
+    const query = async () => {
+      const data = await client.fetch(
+        "*[_type == 'header']{icon{asset->{url}}, sections}"
+      );
+      setHeaderIcon(data[0].icon.asset.url);
+      setHeaderButtons(data[0].sections);
+    };
+    query();
+  }, []);
 
-  const headerButtons = [
+  /*const headerButtons = [
     {
       title: "Главная",
       href: "/",
@@ -52,7 +67,7 @@ export default function Header() {
       title: "Видео",
       href: "/Video",
     },
-  ];
+  ];*/
 
   useEffect(() => {
     const handleScroll = () => {
@@ -85,30 +100,34 @@ export default function Header() {
             {isMenuOpen ? <FaTimes size="1.5rem" /> : <FaBars size="1.5rem" />}
           </button>
         </div>
-        <div className="hidden md:flex">
-          <img src="/Energylogo.png" className="w-[4.5rem]" />
-        </div>
+        {headerIcon && (
+          <div className="hidden md:flex">
+            <img src={headerIcon} className="w-[4.5rem]" />
+          </div>
+        )}
 
-        <div className="m-auto hidden md:flex">
-          <ul className="flex gap-7">
-            {headerButtons.map((item, index) => {
-              return (
-                <li
-                  key={index}
-                  className="relative group inline-block cursor-pointer"
-                >
-                  <Link
-                    to={item.href}
-                    className="text-white transition-colors duration-300"
+        {headerButtons && (
+          <div className="m-auto hidden md:flex">
+            <ul className="flex gap-7">
+              {headerButtons.map((item, index) => {
+                return (
+                  <li
+                    key={index}
+                    className="relative group inline-block cursor-pointer"
                   >
-                    {item.title}
-                  </Link>
-                  <span className="absolute left-1/2 bottom-[2px] w-full h-[2px] bg-white scale-x-0 group-hover:scale-x-100 transform -translate-x-1/2 origin-center transition-transform duration-300 ease-in-out"></span>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+                    <Link
+                      to={item.LinkOfSection}
+                      className="text-white transition-colors duration-300"
+                    >
+                      {item.NameOfSection}
+                    </Link>
+                    <span className="absolute left-1/2 bottom-[2px] w-full h-[2px] bg-white scale-x-0 group-hover:scale-x-100 transform -translate-x-1/2 origin-center transition-transform duration-300 ease-in-out"></span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
 
         <div className="block pl-[34%] md:hidden">
           <img src="/Energylogo.png" className="w-[4.5rem]" />
@@ -130,10 +149,10 @@ export default function Header() {
             {headerButtons.map((item, index) => (
               <li key={index} className="mb-4">
                 <a
-                  href={item.href}
+                  href={item.LinkOfSection}
                   className="text-white transition-colors duration-300"
                 >
-                  {item.title}
+                  {item.NameOfSection}
                 </a>
               </li>
             ))}

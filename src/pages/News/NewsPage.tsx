@@ -1,9 +1,47 @@
+import { useEffect, useState } from "react";
 import Footer from "../../componensts/Footer/Footer";
 import Header from "../../componensts/Header/Header";
 import NewsPageCard from "../../componensts/NewsPageCard/NewsPageCard";
-import { NewsData } from "../../db/data";
-
+import { client } from "../../../stackenergy/client";
+interface newsData {
+  id: number;
+  title: string;
+  des: string;
+  img: string;
+  isIndustry: boolean;
+  isCompany: boolean;
+  date: string;
+}
 export default function NewsPage() {
+  const [newsData, setNewsData] = useState<newsData[]>([]);
+  useEffect(() => {
+    const query = async () => {
+      const data = await client.fetch(
+        "*[_type == 'newsData']{title, des, img{asset->{url}}, isIndustry, isCompany, date, author, src}"
+      );
+      let arr: newsData[] = [];
+
+      data.map((item: any) => {
+        arr.push({
+          id: data.length,
+          title: item.title,
+          des: item.des,
+          img: item.img.asset.url === null ? "" : item.img.asset.url,
+          isIndustry: item.isIndustry,
+          isCompany: item.isCompany,
+          date:
+            "" +
+            new Date(item.date).getFullYear() +
+            "" +
+            new Date(item.date).getMonth() +
+            "" +
+            new Date(item.date).getDay(),
+        });
+      });
+      setNewsData(arr);
+    };
+    query();
+  }, []);
   return (
     <div className="w-screen flex flex-col">
       <div className="h-32 bg-white">
@@ -28,7 +66,7 @@ export default function NewsPage() {
 
       <div className="flex w-full justify-center  px-2 md:px-2 lg:mt-0 mt-5">
         <div className="flex lg:w-[65%] md:w-full w-full items-center justify-center md:justify-start flex-wrap flex-col md:flex-row md:gap-0 gap-10">
-          {NewsData.map((item, index) => {
+          {newsData.map((item, index) => {
             return (
               <NewsPageCard
                 key={index}

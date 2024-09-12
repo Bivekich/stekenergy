@@ -46,7 +46,7 @@ export default function ProductCard({ id, img, link, name }: ProductProp) {
         <div className="flex w-60 h-23 bg-gray-400 text-center items-center">
           <a
             className="flex w-full justify-center items-center h-full gap-3 text-sm md:text-base"
-            href={`/Inquire/${item.id}/prod`}
+            href={`/Inquire/${item.id}/prod/1/inq`}
           >
             <span className="flex w-full justify-center items-center h-full lg:gap-3 gap-0 md:gap-0 text-sm md:text-base">
               <IoMailOutline

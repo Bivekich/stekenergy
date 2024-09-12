@@ -18434,6 +18434,8 @@ interface NewsDataParam {
   isIndustry: boolean;
   isCompany: boolean;
   date: Date;
+  author: string;
+  src: string;
 }
 export const NewsData: Array<NewsDataParam> = [
   {
@@ -18445,6 +18447,8 @@ export const NewsData: Array<NewsDataParam> = [
     isIndustry: false,
     isCompany: true,
     date: new Date(2023, 6, 4),
+    author: "",
+    src: "",
   },
   {
     id: 2,
@@ -18455,6 +18459,8 @@ export const NewsData: Array<NewsDataParam> = [
     isIndustry: false,
     isCompany: false,
     date: new Date(2022, 6, 24),
+    author: "",
+    src: "",
   },
   {
     id: 3,
@@ -18464,5 +18470,7 @@ export const NewsData: Array<NewsDataParam> = [
     isIndustry: true,
     isCompany: false,
     date: new Date(2022, 9, 8),
+    author: "",
+    src: "",
   },
 ];

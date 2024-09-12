@@ -1,12 +1,53 @@
 import { useParams } from "react-router-dom";
 import Header from "../../componensts/Header/Header";
-import { NewsData } from "../../db/data";
 import Footer from "../../componensts/Footer/Footer";
+import { useState, useEffect } from "react";
+import { client } from "../../../stackenergy/client";
+interface newsData {
+  id: number;
+  title: string;
+  des: string;
+  img: string;
+  isIndustry: boolean;
+  isCompany: boolean;
+  date: Date;
+  src: string;
+  author: string;
+}
 export default function NewsMainPage() {
+  const [news, setNews] = useState<newsData[]>();
   const params = useParams();
   const newsTitle = params.Title;
   const paramsId = Number(params?.id) - 1;
-  const news = NewsData[paramsId];
+  useEffect(() => {
+    const query = async () => {
+      const data = await client.fetch(
+        "*[_type == 'newsData']{title, des, img{asset->{url}}, isIndustry, isCompany, date, author, src}"
+      );
+      let arr: newsData[] = [];
+      arr.push({
+        id: data.length,
+        title: data[paramsId].title,
+        des: data[paramsId].des,
+        img:
+          data[paramsId].img.asset.url === null
+            ? ""
+            : data[paramsId].img.asset.url,
+        isIndustry: data[paramsId].isIndustry,
+        isCompany: data[paramsId].isCompany,
+        date: new Date(
+          new Date(data[paramsId].date).getFullYear(),
+          new Date(data[paramsId].date).getMonth(),
+          new Date(data[paramsId].date).getDay()
+        ),
+        src: data[paramsId].src,
+        author: data[paramsId].author,
+      });
+
+      setNews(arr);
+    };
+    query();
+  }, []);
   return (
     <div className="w-screen min-h-screen flex flex-col">
       <div className="h-32 bg-white">
@@ -28,33 +69,35 @@ export default function NewsMainPage() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center mt-10 md:mb-10 lg:mb-0 px-4 lg:px-0 gap-3 text-center ">
-        <div>
-          <span className="text-xl">{news.title}</span>
+      {news && (
+        <div className="flex flex-col justify-center items-center mt-10 md:mb-10 lg:mb-0 px-4 lg:px-0 gap-3 text-center ">
+          <div>
+            <span className="text-xl">{news[0].title}</span>
+          </div>
+          <div>
+            <ul className="flex gap-5 justify-center flex-col md:flex-row">
+              <li>Просмотрено:</li>
+              <li>Автор: {news[0].author}</li>
+              {
+                <li>
+                  Время публикации: {news[0].date.getFullYear()}-
+                  {news[0].date.getMonth() < 9
+                    ? "0" + news[0].date.getMonth()
+                    : news[0].date.getMonth()}
+                  -
+                  {news[0].date.getDate() < 9
+                    ? "0" + news[0].date.getDate()
+                    : news[0].date.getDate()}
+                </li>
+              }
+              <li>Источник: {news[0].src}</li>
+            </ul>
+          </div>
+          <div>
+            <span>{news[0].des}</span>
+          </div>
         </div>
-        <div>
-          <ul className="flex gap-5 justify-center flex-col md:flex-row">
-            <li>Просмотрено:</li>
-            <li>Автор:</li>
-            {
-              <li>
-                Время публикации: {news.date.getFullYear()}-
-                {news.date.getMonth() < 9
-                  ? "0" + news.date.getMonth()
-                  : news.date.getMonth()}
-                -
-                {news.date.getDate() < 9
-                  ? "0" + news.date.getDate()
-                  : news.date.getDate()}
-              </li>
-            }
-            <li>Источник:</li>
-          </ul>
-        </div>
-        <div>
-          <span>{news.des}</span>
-        </div>
-      </div>
+      )}
       <div className="flex-1 mb-10 lg:mb-0"></div>
       <div className="justify-self-end">
         <Footer></Footer>

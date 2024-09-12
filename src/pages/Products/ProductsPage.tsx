@@ -1,14 +1,13 @@
 import Header from "../../componensts/Header/Header";
 import { Dropdown, DropdownItem } from "flowbite-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import ProductCard from "../../componensts/ProductCard/ProductCard";
 import Footer from "../../componensts/Footer/Footer";
-import { products } from "../../db/data";
+import { client } from "../../../stackenergy/client";
 
-const numberOfPages: number = Math.ceil(products.length / 6);
-const ProductTipe = [
+/*const ProductTipe = [
   {
     id: 1,
     title: "Дизельный генератор",
@@ -76,10 +75,67 @@ const ProductTipe = [
     title: "Генератор на тяжелом топливе",
     href: "/ProductsPage/type/HFOGenerator/",
     products: ["Cummins", "Mitsu", "MTU"],
-  },*/
-];
-
+  },
+];*/
+interface Product {
+  id: number;
+  title: string;
+  href: string;
+  products: Array<string>;
+}
+interface Item {
+  id: number;
+  mainImg: string;
+  title: string;
+  shortDes: string;
+  fullDescription: any;
+  category: string;
+  brand: string;
+}
 export default function ProductsPage() {
+  const [ProductTipe, setProductTipe] = useState<Product[]>([]);
+  const [products, setProducts] = useState<Item[]>([]);
+  const [numberOfPages, setNumberOfPages] = useState<number>(0);
+  useEffect(() => {
+    const query = async () => {
+      const data = await client.fetch(
+        "*[_type == 'productsCategorys']{category[]{title,ref,products}}"
+      );
+      let arr = data[0].category.map((item: any, index: any) => {
+        return {
+          id: index,
+          title: item.title,
+          href: item.ref,
+          products: item.products,
+        };
+      });
+      setProductTipe(arr);
+      setNumberOfPages(Math.ceil(products.length / 6));
+    };
+    query();
+  }, []);
+
+  useEffect(() => {
+    const query = async () => {
+      const data = await client.fetch(
+        "*[_type == 'product']{mainImg{asset->{url}}, title, shortDes, fullDescription, category, brand}"
+      );
+      const arr = data.map((item: any, index: number) => {
+        return {
+          id: index + 1,
+          mainImg: item.mainImg.asset.url,
+          title: item.title,
+          shortDes: item.shortDes,
+          fullDescription: item.fullDescription,
+          category: item.category,
+          brand: item.brand,
+        };
+      });
+      setProducts(arr);
+    };
+    query();
+  }, []);
+
   const [currentPage, setCurrentPage] = useState(1);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleMenuToggle = () => {
@@ -118,7 +174,7 @@ export default function ProductsPage() {
         </button>
       </div>
       <div>
-        {isMenuOpen && (
+        {ProductTipe && isMenuOpen && (
           <div className="flex lg:hidden w-full justify-center items-center">
             <ul className="flex flex-col items-center py-4">
               <div className="flex flex-col gap-5">
@@ -217,9 +273,9 @@ export default function ProductsPage() {
                   <ProductCard
                     key={index}
                     id={item.id}
-                    link={`/ProductsPage/${item.id}/${item.name}`}
+                    link={`/ProductsPage/${item.id}/${item.title}`}
                     img={item.mainImg}
-                    name={item.name}
+                    name={item.title}
                   ></ProductCard>
                 );
               }

@@ -1,14 +1,14 @@
 import { useParams } from "react-router-dom";
 import Header from "../../componensts/Header/Header";
 import { Dropdown, DropdownItem } from "flowbite-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import ProductCard from "../../componensts/ProductCard/ProductCard";
 import Footer from "../../componensts/Footer/Footer";
-import { products } from "../../db/data";
+import { client } from "../../../stackenergy/client";
 
-const ProductTipe = [
+/*const ProductTipe = [
   {
     id: 1,
     title: "Дизельный генератор",
@@ -21,7 +21,7 @@ const ProductTipe = [
       "Perkins Series",
       "Volvo Series",
       "Weichai Series",
-      "Yuchai Series",
+      "Weichai Series",
     ],
   },
   {
@@ -76,14 +76,80 @@ const ProductTipe = [
     title: "Генератор на тяжелом топливе",
     href: "/ProductsPage/type/HFOGenerator/",
     products: ["Cummins", "Mitsu", "MTU"],
-  },*/
-];
+  },
+]*/
+interface Product {
+  id: number;
+  title: string;
+  href: string;
+  products: Array<string>;
+}
+interface Item {
+  id: number;
+  mainImg: string;
+  title: string;
+  shortDes: string;
+  fullDescription: any;
+  category: string;
+  brand: string;
+}
 export default function CategoryProductsPage() {
+  const [ProductTipe, setProductTipe] = useState<Product[]>([]);
+  const [products, setProducts] = useState<Item[]>([]);
+  useEffect(() => {
+    const query = async () => {
+      const data = await client.fetch(
+        "*[_type == 'productsCategorys']{category[]{title,ref,products}}"
+      );
+      let arr = data[0].category.map((item: any, index: any) => {
+        return {
+          id: index,
+          title: item.title,
+          href: item.ref,
+          products: item.products,
+        };
+      });
+      setProductTipe(arr);
+    };
+    query();
+  }, []);
+
+  useEffect(() => {
+    const query = async () => {
+      const data = await client.fetch(
+        "*[_type == 'product']{mainImg{asset->{url}}, title, shortDes, fullDescription, category, brand}"
+      );
+      console.log(data);
+    };
+    query();
+  }, []);
+
+  useEffect(() => {
+    const query = async () => {
+      const data = await client.fetch(
+        "*[_type == 'product']{mainImg{asset->{url}}, title, shortDes, fullDescription, category, brand}"
+      );
+      const arr = data.map((item: any, index: number) => {
+        return {
+          id: index + 1,
+          mainImg: item.mainImg.asset.url,
+          title: item.title,
+          shortDes: item.shortDes,
+          fullDescription: item.fullDescription,
+          category: item.category,
+          brand: item.brand,
+        };
+      });
+      setProducts(arr);
+    };
+    query();
+  }, []);
+
   const Param = useParams();
   const Category = Param.Category?.replaceAll("", "");
-  console.log(Category);
+  Category;
   const Brand = Param.Brand?.replaceAll("", "");
-  console.log(Brand);
+  Brand;
   const [currentPage, setCurrentPage] = useState(1);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const productArray = products.filter(
@@ -91,7 +157,7 @@ export default function CategoryProductsPage() {
       (item.category === Category && item.brand === Brand) ||
       (item.category === Category && Brand === "all")
   );
-  console.log(productArray);
+  productArray;
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -101,7 +167,6 @@ export default function CategoryProductsPage() {
       <div className="h-32">
         <Header></Header>
       </div>
-
       <div className="flex justify-center items-center lg:h-20 h-1/3 overflow-hidden">
         <div className="flex lg:w-[80%] md:w-[90%] w-[90%] text-black font-bold text-2xl lg:justify-between flex-col lg:flex-row lg:items-end justify-end pb-5 border-b-2 ml-auto mr-auto">
           <div>
@@ -128,7 +193,7 @@ export default function CategoryProductsPage() {
         </button>
       </div>
       <div>
-        {isMenuOpen && (
+        {ProductTipe && isMenuOpen && (
           <div className="flex lg:hidden w-full justify-center items-center">
             <ul className="flex flex-col items-center py-4">
               <div className="flex flex-col gap-5">
@@ -173,7 +238,6 @@ export default function CategoryProductsPage() {
           </div>
         )}
       </div>
-
       <div
         className={`lg:flex w-full ${
           isMenuOpen ? "mt-20 h-full" : ""
@@ -219,7 +283,7 @@ export default function CategoryProductsPage() {
           </div>
           <div className="flex min-h-96 w-[25.6rem] md:w-[80rem] lg:w-full md:gap-5 lg:gap-10 gap-1 justify-center md:justify-start md:items-start items-center px-4 md:px-0 flex-wrap">
             {productArray.map((item, index) => {
-              console.log(item.id);
+              item.id;
               if (
                 (index >= currentPage * 6 - 6 &&
                   index <= currentPage * 6 - 1 &&
@@ -234,9 +298,9 @@ export default function CategoryProductsPage() {
                   <ProductCard
                     key={index}
                     id={item.id}
-                    link={`/ProductsPage/${item.id}/${item.name}`}
+                    link={`/ProductsPage/${item.id}/${item.title}`}
                     img={item.mainImg}
-                    name={item.name}
+                    name={item.title}
                   ></ProductCard>
                 );
               } else {

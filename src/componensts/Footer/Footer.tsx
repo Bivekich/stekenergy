@@ -2,9 +2,25 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { client } from "../../../stackenergy/client";
+interface productCategory {
+  category: string;
+  link: string;
+}
+interface quickLinks {
+  title: string;
+  link: string;
+}
 export default function Footer() {
+  const [productCategory, setProductCategory] = useState<productCategory[]>([]);
+  const [quickLinks, setQuickLinks] = useState<quickLinks[]>([]);
+  const [copyright, setCopyRight] = useState("");
+  const [productCategoryTitle, setProductCategoryTitle] = useState("");
+  const [quickLinksTitle, setQuickLinksTitle] = useState("");
+  const [title, setTitle] = useState("");
+  const [logo, setLogo] = useState("");
   const [emailRequired, setEmailRequired] = useState(false);
   const [messageRequired, setMassageRequired] = useState(false);
   const [emailData, setEmailData] = useState<string>("");
@@ -37,7 +53,24 @@ export default function Footer() {
       setEmailRequired(true);
     }
   };
-  const productCategory = [
+
+  useEffect(() => {
+    const query = async () => {
+      const data = await client.fetch(
+        "*[_type == 'footer']{logo{asset->{url}}, title, productCategoryTitle, quickLinksTitle, productCategory, quickLinks, copyright}"
+      );
+      setProductCategory(data[0].productCategory);
+      setQuickLinks(data[0].quickLinks);
+      setLogo(data[0].logo.asset.url);
+      setTitle(data[0].title);
+      setProductCategoryTitle(data[0].productCategoryTitle);
+      setQuickLinksTitle(data[0].quickLinksTitle);
+      setCopyRight(data[0].copyright);
+    };
+    query();
+  }, []);
+
+  /*const productCategory = [
     {
       title: "Дизельный генератор",
       link: "/ProductsPage/type/DieselGenerator/all",
@@ -66,9 +99,9 @@ export default function Footer() {
       title: "Химические вещества",
       link: "/ProductsPage/type/Chemicals/all",
     },
-  ];
+  ];*/
 
-  const quickLinks = [
+  /*const quickLinks = [
     {
       title: "Главная",
       link: "/",
@@ -97,7 +130,7 @@ export default function Footer() {
       title: "Политика конфиденциальности",
       link: "/Privacy",
     },
-  ];
+  ];*/
 
   const handleMassageRequired = (e: React.FormEvent<HTMLTextAreaElement>) => {
     if (e.currentTarget.value !== "") {
@@ -110,11 +143,8 @@ export default function Footer() {
     <div className="flex w-full min-h-[50rem] flex-col bg-[#5e5c5c] text-white justify-center items-center">
       <div className="flex-grow flex min-w-3/4 nin-h-2/4 gap-x-24 flex-wrap flex-col md:flex-row justify-center">
         <div className="flex flex-col gap-5 mt-10">
-          <img src="/Energylogo.png" className="w-52"></img>
-          <span className="w-80">
-            Мы с нетерпением ждем установления хороших партнерских отношений с
-            вами и совместного развития для многообещающего будущего!
-          </span>
+          <img src={logo} className="w-52"></img>
+          <span className="w-80">{title}</span>
           <ul className="flex gap-2">
             <li className="flex bg-[#ffffff] w-8 h-8 items-center justify-center rounded-full">
               <a href="https://www.facebook.com/CNRoyalPower/">
@@ -140,13 +170,13 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col mt-10 gap-1">
-          <span className="text-2xl w-56">Категория товара</span>
+          <span className="text-2xl w-56">{productCategoryTitle}</span>
           <ul className="flex flex-col gap-1">
             {productCategory.map((item, index) => {
               return (
                 <li key={index}>
                   <a href={item.link} className="hover:text-blue-400">
-                    {item.title}
+                    {item.category}
                   </a>
                 </li>
               );
@@ -155,7 +185,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col mt-10 gap-1">
-          <span className="text-2xl w-52">Быстрые ссылки</span>
+          <span className="text-2xl w-52">{quickLinksTitle}</span>
           <ul className="flex flex-col gap-1">
             {quickLinks.map((item, index) => {
               return (
@@ -227,7 +257,7 @@ export default function Footer() {
       <div className="flex w-full min-h-10 bg-[#5e5c5c] justify-center items-center mt-5">
         <span className="flex justify-center items-center w-full text-center">
           {" "}
-          Авторские права © 2024 ООО "Стэк Энерджи", Ltd. Все права защищены.
+          {copyright}
         </span>
       </div>
     </div>

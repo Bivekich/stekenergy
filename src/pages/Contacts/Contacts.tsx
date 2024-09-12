@@ -1,7 +1,8 @@
 import Footer from "../../componensts/Footer/Footer";
 import Header from "../../componensts/Header/Header";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { client } from "../../../stackenergy/client";
 export default function ContactsPage() {
   const [emailRequired, setEmailRequired] = useState(false);
   const [messageRequired, setMassageRequired] = useState(false);
@@ -9,6 +10,22 @@ export default function ContactsPage() {
   const [message, setMessage] = useState<string>("");
   const [tel, setTel] = useState<string>("");
   const [name, setName] = useState<string>("");
+
+  const [title, setTitle] = useState<string>("");
+  const [des, setDes] = useState<string>("");
+  const [info, setInfo] = useState<{ from: string; to: string }[]>([]);
+  useEffect(() => {
+    const query = async () => {
+      const data = await client.fetch(
+        "*[_type == 'contactsPage']{title, des, info[]{from, to}}"
+      );
+      setTitle(data[0].title);
+      setDes(data[0].des);
+      setInfo(data[0].info);
+    };
+    console.log(info);
+    query();
+  }, []);
 
   const handleEmailRequired = (e: React.FormEvent<HTMLInputElement>) => {
     if (e.currentTarget.value !== "") {
@@ -43,9 +60,9 @@ export default function ContactsPage() {
       setMassageRequired(true);
     }
   };
-  const data = [
+  /*const data = [
     "Город Москва, Спартаковский пер, д. 26 стр. 2",
-    "105082, город Москва, УЛ. 2-хуторская 38а стр 1 БЦ башилов двор",
+    "105082, город Москва, УЛ. 2-хуторская 38а стр 1 БЦ Башилов двор",
     "+86-523-86326170",
     "+86-523-86326170",
     "+86-15850872118 / +86-18012096599",
@@ -54,7 +71,7 @@ export default function ContactsPage() {
     "414833725@qq.com",
     "+8615850872118",
     "Здание 24, Zhongjia International Plaza, город Тайчжоу, провинция Цзянсу, Китай",
-  ];
+  ];*/
   return (
     <div className="flex flex-col w-screen">
       <div className="h-32 bg-white">
@@ -80,47 +97,29 @@ export default function ContactsPage() {
       <div className="flex w-full justify-center mt-5 lg:mt-0 mb-10">
         <div className="w-screen lg:w-1/2">
           <div className="w-full flex flex-col lg:flex-row">
-            <div className="lg:w-1/2 md:w-full flex flex-col gap-2 px-4 lg:px-0">
-              <span className="text-2xl font-bold">Stekenergy</span>
-              <span>
-                Мы с нетерпением ждем установления хороших партнерских отношений
-                с вами и совместного развития для светлого будущего!
-              </span>
-              <img src="/weibiaoti-990-516.webp"></img>
-              <ul className="flex flex-col gap-3">
-                <li>
-                  <span>Адрес:</span>
-                  <span> {data[0]}</span>
-                </li>
-                <li>
-                  <span>Адрес склада:</span>
-                  <span> {data[1]}</span>
-                </li>
-                <li>
-                  <span>E-mail:</span>
-                  <span> {data[6]}</span>
-                </li>
-                <li>
-                  <span>Адрес производства:</span>
-                  <span> {data[9]}</span>
-                </li>
-                <li>
-                  <span>Телефон производства: </span>
-                  <span>+86-523-86326170</span>
-                </li>
-                <li>
-                  <span>Royal Co. </span>
-                  <span>
-                    <a
-                      className="text-blue-400"
-                      href="https://www.cnroyalpower.com/contactus.html"
-                    >
-                      https://www.cnroyalpower.com/contactus.html
-                    </a>
-                  </span>
-                </li>
-              </ul>
-            </div>
+            {info && (
+              <div className="lg:w-1/2 md:w-full flex flex-col gap-2 px-4 lg:px-0">
+                <span className="text-2xl font-bold">{title}</span>
+                <span>{des}</span>
+                <img src="/weibiaoti-990-516.webp"></img>
+                <ul className="flex flex-col gap-3">
+                  {info.map((item, index) => {
+                    return (
+                      <li key={index}>
+                        <span>{item.from} </span>
+                        {item.to[0] === "h" ? (
+                          <a href={item.to} className="text-blue-400">
+                            {item.to}
+                          </a>
+                        ) : (
+                          <span>{item.to}</span>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
             <form
               className="flex flex-col gap-2 lg:w-[45%] md:w-full mt-14 text-black ml-0 lg:ml-auto px-4 lg:px-0 mb-5 lg:mb-0"
               onSubmit={(e) => sendEmail(e)}
